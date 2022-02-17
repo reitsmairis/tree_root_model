@@ -1,0 +1,262 @@
+Region,Scientific Name,Common Name,SpCode,Tree Type,Avg dw/fw (g),dw/fw sd,Avg dw g/m2,dw g/m2 sd,n,Notes
+CenFla,Acer rubrum,red maple,ACRU,BDM,0.46,0.04,102.75,12.28,10,
+CenFla,Cinnamomum camphora,camphor tree,CICA,BEM,0.48,0.04,116.42,6.64,10,
+CenFla,Eriobotrya japonica,loquat tree,ERJA,BES,0.41,0.06,162.48,26.87,10,
+CenFla,Juniperus virginiana var. silicicola,southern redcedar,JUSI,CEM,0.5,0.03,405.68,48.08,10,
+CenFla,Koelreuteria elegans,Chinese rain tree,KOELFO,BDM,0.49,0.04,68.35,12.55,10,
+CenFla,Lagerstroemia indica,common crapemyrtle,LAIN,BDS,0.34,0.03,81.38,18.16,10,
+CenFla,Liquidambar styraciflua,sweetgum,LIST,BDL,0.31,0.02,93.74,15.48,10,
+CenFla,Magnolia grandiflora,southern magnolia,MAGR,BEL,0.35,0.03,144.87,22.25,10,
+CenFla,Pinus elliottii,slash pine,PIEL,CEL,0.44,0.01,107.74,11.5,10,
+CenFla,Platanus occidentalis,American sycamore,PLOC,BDL,0.38,0.04,74.6,13.45,10,
+CenFla,Platycladus orientalis,Oriental arborvitae,THOR,CES,0.42,0.01,207.09,29.85,10,
+CenFla,Prunus caroliniana,Carolina laurelcherry,PRCA,BES,0.45,0.05,118.66,19.2,10,
+CenFla,Quercus laurifolia,laurel oak,QULA2,BDL,0.48,0.01,117.81,37.87,10,
+CenFla,Quercus shumardii,Shumard oak,QUSH,BDL,0.5,0.02,110.12,16.49,10,
+CenFla,Quercus virginiana,live oak,QUVI,BEL,0.49,0.04,135.18,51.85,10,
+CenFla,Sabal palmetto,cabbage palmetto,SAPA,PEM,0.41,0.16,207.21,83.86,7,7 fronds collected
+CenFla,Syagrus romanzoffiana,queen palm,SYRO,PEL,0.46,0.03,132.76,59.85,7,7 fronds collected
+CenFla,Triadica sebifera,tallowtree,TRSE6,BDM,0.36,0.03,73.87,10.81,10,
+CenFla,Ulmus parvifolia,Chinese elm,ULPA,BDM,0.42,0.04,130.78,37.3,10,
+CenFla,Washingtonia robusta,Mexican fan palm,WARO,PES,0.42,0.07,149.5,18.68,4,4 fronds collected
+GulfCo,Acer rubrum,red maple,ACRU,BDL,0.32,0.02,72.68,14.58,10,
+GulfCo,Butia capitata,jelly palm,BUCA,PES,0.71,,331.74,,1,one frond sampled only
+GulfCo,Carya illinoinensis,pecan,CAIL,BDL,0.45,0.03,104.35,16.85,10,
+GulfCo,Celtis laevigata,sugarberry,CELA,BDL,0.33,0.04,58.41,11.16,10,
+GulfCo,Cornus florida,flowering dogwood,COFL,BDS,0.39,0.03,78.34,21.27,10,
+GulfCo,Gleditsia triacanthos,honeylocust,GLTR,BDL,0.4,0.03,159.31,142.22,10,
+GulfCo,Ilex opaca,American holly,ILOP,BEM,0.52,0.02,206.95,13.51,10,
+GulfCo,Juniperus virginiana,eastern red cedar,JUVI,CEM,0.45,0.02,357.56,46.51,10,
+GulfCo,Lagerstroemia indica,common crapemyrtle,LAIN,BDS,0.3,0.03,78.58,13.71,10,
+GulfCo,Liquidambar styraciflua,sweetgum,LIST,BDL,0.35,0.04,98.9,24.22,10,
+GulfCo,Magnolia grandiflora,southern magnolia,MAGR,BEM,0.43,0.02,221.77,17.98,10,
+GulfCo,Pinus taeda,loblolly pine,PITA,CEL,0.39,0.01,572.86,25.14,10,
+GulfCo,Platanus occidentalis,American sycamore,PLOC,BDL,0.4,0.06,71.94,15.67,10,
+GulfCo,Pyrus calleryana,Callery pear,PYCA,BDM,0.49,0.02,154.87,22.36,10,
+GulfCo,Quercus laurifolia,laurel oak,QULA2,BDL,0.53,0.02,135.55,14.41,10,
+GulfCo,Quercus nigra,water oak,QUNI,BDL,0.53,0.01,147.77,14.32,10,
+GulfCo,Quercus phellos,willow oak,QUPH,BDL,0.5,0.03,100.79,10.68,10,
+GulfCo,Quercus virginiana,live oak,QUVI,BEL,0.52,0.01,255.19,197.58,10,
+GulfCo,Sabal palmetto,cabbage palmetto,SAPA,PEM,0.63,,303.42,,1,one frond sampled only
+InlEmp,Brachychiton populneum ,kurrajong,BRPO,BEM,0.35,,122.79,,20,dry weights for each sample bag not weighed separately
+InlEmp,Cinnamomum camphora,camphor tree,CICA,BEL,0.46,,176.12,,20,dry weights for each sample bag not weighed separately
+InlEmp,Eucalyptus sideroxylon,red ironbark,EUSI,BEL,0.47,,179.2,,20,dry weights for each sample bag not weighed separately
+InlEmp,Fraxinus uhdei,evergreen ash,FRUH,BDL,0.45,,164.23,,20,dry weights for each sample bag not weighed separately
+InlEmp,Fraxinus velutina 'Modesto',Modesto ash,FRVE_G,BDM,0.53,,144.64,,20,dry weights for each sample bag not weighed separately
+InlEmp,Ginkgo biloba,ginkgo,GIBI,BDL,0.41,,176.63,,20,dry weights for each sample bag not weighed separately
+InlEmp,Jacaranda mimosifolia,jacaranda,JAMI,BDM,0.36,,114.76,,20,dry weights for each sample bag not weighed separately
+InlEmp,Lagerstroemia indica,common crapemyrtle,LAIN,BDS,0.46,,256.51,,20,dry weights for each sample bag not weighed separately
+InlEmp,Liquidambar styraciflua,sweetgum,LIST,BDL,0.46,,145.46,,20,dry weights for each sample bag not weighed separately
+InlEmp,Liriodendron tulipifera,tulip tree,LITU,BDL,0.34,,89.61,,20,dry weights for each sample bag not weighed separately
+InlEmp,Magnolia grandiflora,southern magnolia,MAGR,BEL,0.54,,289.27,,20,dry weights for each sample bag not weighed separately
+InlEmp,Pinus brutia,Turkish pine; east Mediterranean pine,PIBR2,CEM,0.36,,446.89,,20,dry weights for each sample bag not weighed separately
+InlEmp,Pinus canariensis,Canary Island pine,PICA,CEL,0.5,,342.79,,20,dry weights for each sample bag not weighed separately
+InlEmp,Pistacia chinensis,Chinese pistache,PICH,BDM,0.45,,118.87,,20,dry weights for each sample bag not weighed separately
+InlEmp,Platanus x acerifolia,London planetree,PLAC,BDL,0.55,,128.41,,20,dry weights for each sample bag not weighed separately
+InlEmp,Platanus racemosa,California sycamore,PLRA,BDL,0.56,,139.39,,20,dry weights for each sample bag not weighed separately
+InlEmp,Pyrus calleryana,Callery pear,PYCA,BDM,0.59,,186.43,,20,dry weights for each sample bag not weighed separately
+InlEmp,Quercus agrifolia,coastal live oak; California live oak,QUAG,BEL,0.52,,358.25,,20,dry weights for each sample bag not weighed separately
+InlEmp,Quercus ilex,holly oak,QUIL2,BEL,0.6,,202.39,,20,dry weights for each sample bag not weighed separately
+InlEmp,Schinus molle,California peppertree,SCMO,BEM,0.31,,166.69,,20,dry weights for each sample bag not weighed separately
+InlEmp,Schinus terebinthifolius,Brazilian pepper,SCTE,BES,0.43,,153.77,,20,dry weights for each sample bag not weighed separately
+InlEmp,Washingtonia robusta,Mexican fan palm,WARO,PES,0.47,0.05,271.45,52.9,4,4 fronds collected
+LoMidW,Acer platanoides,Norway maple,ACPL,BDL,0.31,0.12,101.52,53.63,10,
+LoMidW,Acer rubrum,red maple,ACRU,BDL,0.32,0.05,108.69,16.68,10,
+LoMidW,Acer saccharinum,silver maple,ACSA1,BDL,0.29,0.07,85.92,15.37,10,
+LoMidW,Acer saccharum,sugar maple,ACSA2,BDL,0.38,0.06,122.58,30.86,10,
+LoMidW,Catalpa speciosa,northern catalpa,CASP,BDL,0.25,0.03,72.01,16.29,10,
+LoMidW,Celtis occidentalis,northern hackberry,CEOC,BDL,0.31,0.05,72.6,13,10,
+LoMidW,Cercis canadensis,eastern redbud,CECA,BDS,0.27,0.04,95.05,9.89,10,
+LoMidW,Fraxinus americana,white ash,FRAM,BDL,0.37,0.02,102.43,16.89,10,
+LoMidW,Fraxinus pennsylvanica,green ash,FRPE,BDL,0.33,0.04,116.06,22.56,10,
+LoMidW,Gleditsia triacanthos,honeylocust,GLTR,BDL,0.32,0.07,114.58,29.89,10,
+LoMidW,Juglans nigra,black walnut,JUNI,BDL,0.3,0.03,87.52,10.82,10,
+LoMidW,Malus sp.,apple,MA2,BDS,0.23,0.07,105.13,21.14,10,
+LoMidW,Morus sp.,mulberry,MO,BDM,0.26,0.04,99.88,22.03,10,
+LoMidW,Picea pungens,blue spruce,PIPU,CEL,0.42,0.04,340.97,169.38,10,
+LoMidW,Pinus strobus,eastern white pine,PIST,CEL,0.34,0.03,250.6,32.06,10,
+LoMidW,Populus deltoides,eastern cottonwood,PODE,BDL,0.28,0.03,122.01,20.47,10,
+LoMidW,Pyrus calleryana,Callery pear,PYCA,BDM,0.3,0.03,115.7,25.59,10,
+LoMidW,Quercus rubra,northern red oak,QURU,BDL,0.34,0.05,109.22,21.66,10,
+LoMidW,Tilia cordata,littleleaf linden,TICO,BDM,0.28,0.06,100.13,37.61,10,
+LoMidW,Ulmus pumila,Siberian elm,ULPU,BDL,0.26,0.05,106.42,13.37,10,
+MidWst,Acer negundo,boxelder,ACNE,BDM,0.3,0.03,52.94,10.21,10,
+MidWst,Acer platanoides,Norway maple,ACPL,BDL,0.39,0.03,49.84,7.5,10,
+MidWst,Acer rubrum,red maple,ACRU,BDL,0.46,0.02,83.29,11.79,10,
+MidWst,Acer saccharinum,silver maple,ACSA1,BDL,0.44,0.03,85.83,14.78,10,
+MidWst,Acer saccharum,sugar maple,ACSA2,BDL,0.42,0.04,53.62,11.55,10,
+MidWst,Celtis occidentalis,northern hackberry,CEOC,BDL,0.4,0.02,68.23,6.79,10,
+MidWst,Fraxinus americana,white ash,FRAM,BDL,0.4,0.03,71.4,15.16,10,
+MidWst,Fraxinus pennsylvanica,green ash,FRPE,BDL,0.34,0.03,68.62,13.05,10,
+MidWst,Ginkgo biloba,ginkgo,GIBI,BDM,0.31,0.03,91.24,14.1,10,
+MidWst,Gleditsia triacanthos,honeylocust,GLTR,BDM,0.39,0.02,89.52,12.86,10,
+MidWst,Malus sp.,apple,MA2,BDS,0.4,0.05,67.53,20.5,10,
+MidWst,Quercus palustris,pin oak,QUPA,BDL,0.44,0.02,84.97,10.85,10,
+MidWst,Quercus rubra,northern red oak,QURU,BDL,0.45,0.02,85.06,16.44,10,
+MidWst,Tilia americana,American basswood,TIAM,BDL,0.37,0.03,77.04,22.04,10,
+MidWst,Tilia cordata,littleleaf linden,TICO,BDM,0.35,0.03,57.33,15.11,10,
+MidWst,Ulmus americana,American elm,ULAM,BDL,0.36,0.02,82.3,9.63,10,
+MidWst,Ulmus pumila,Siberian elm,ULPU,BDM,0.41,0.02,124.67,18.41,10,
+NMtnPr,Acer platanoides,Norway maple,ACPL,BDL,0.4,0.03,68.23,19.36,10,
+NMtnPr,Acer saccharinum,silver maple,ACSA1,BDL,0.48,0.09,83.03,29.01,10,
+NMtnPr,Acer saccharum,sugar maple,ACSA2,BDL,0.36,0.06,75.73,11.58,10,
+NMtnPr,Celtis occidentalis,northern hackberry,CEOC,BDL,0.45,0.04,76.18,16.71,10,
+NMtnPr,Fraxinus americana,white ash,FRAM,BDL,0.42,0.06,74.91,11.4,10,
+NMtnPr,Fraxinus pennsylvanica,green ash,FRPE,BDL,0.39,0.08,84.76,20.89,10,
+NMtnPr,Gleditsia triacanthos,honeylocust,GLTR,BDL,0.44,0.03,96.98,21.79,10,
+NMtnPr,Gymnocladus dioicus,Kentucky coffeetree,GYDI,BDL,0.36,0.03,58.25,13.26,10,
+NMtnPr,Malus sp.,apple,MA2,BDS,0.31,0.09,54.94,13.7,10,
+NMtnPr,Picea pungens,blue spruce,PIPU,CEL,0.45,0.01,428,29.51,10,
+NMtnPr,Pinus nigra,Austrian pine,PINI,CEM,0.43,0.04,411.32,41.37,10,
+NMtnPr,Pinus ponderosa,ponderosa pine,PIPO,CEL,0.44,0.02,399.01,31.95,10,
+NMtnPr,Populus sargentii,plains cottonwood,POSA,BDL,0.27,0.04,70.73,12.52,10,
+NMtnPr,Prunus sp.,plum,PR,BDS,0.41,0.09,71.12,15.74,10,
+NMtnPr,Pyrus species,pear,PY,BDM,0.42,0.02,120.06,14.26,10,
+NMtnPr,Quercus macrocarpa,bur oak,QUMA1,BDL,0.53,0.11,122.42,14.97,10,
+NMtnPr,Tilia americana,American basswood,TIAM,BDL,0.33,0.03,69.46,8.3,10,
+NMtnPr,Tilia cordata,littleleaf linden,TICO,BDL,0.33,0.07,57.75,14.78,10,
+NMtnPr,Ulmus americana,American elm,ULAM,BDL,0.43,0.04,84.33,22.85,10,
+NMtnPr,Ulmus pumila,Siberian elm,ULPU,BDL,0.33,0.04,70.29,15.34,10,
+NoCalC,Acacia melanoxylon,black acacia,ACME,BEL,0.56,0.05,219.54,23.17,10,
+NoCalC,Acer palmatum,Japanese maple,ACPA,BDS,0.51,0.02,90.67,10.69,10,
+NoCalC,Cinnamomum camphora,camphor tree,CICA,BEM,0.53,0.05,167.57,18.93,9,
+NoCalC,Eucalyptus globulus,blue gum eucalyptus,EUGL,BEL,0.55,0.03,338.48,28.62,10,
+NoCalC,Fraxinus velutina 'Modesto',Modesto ash,FRVE_G,BDL,0.6,0.05,184.02,18.19,10,
+NoCalC,Ginkgo biloba,ginkgo,GIBI,BDM,0.38,0.02,156,60.01,10,
+NoCalC,Liquidambar styraciflua,sweetgum,LIST,BDL,0.48,0.04,125.75,18.38,10,
+NoCalC,Liriodendron tulipifera,tulip tree,LITU,BDL,0.36,0.01,83,5.16,10,
+NoCalC,Magnolia grandiflora,southern magnolia,MAGR,BEM,0.48,0.02,232.77,15.65,10,
+NoCalC,Pinus radiata,Monterey pine,PIRA,CEL,0.52,0.03,762.71,127.18,10,
+NoCalC,Pistacia chinensis,Chinese pistache,PICH,BDM,0.51,0.04,143.94,25.88,10,
+NoCalC,Pittosporum undulatum,victorian box,PIUN,BEM,0.49,0.01,149.41,11.55,10,
+NoCalC,Platanus hybrida,London planetree,PLAC,BDL,0.42,0.14,107.74,12.69,10,
+NoCalC,Prunus cerasifera,cherry plum,PRCE,BDS,0.45,0.02,73.19,27.38,10,
+NoCalC,Pyrus calleryana,Callery pear,PYCA,BDM,0.57,0.03,175.06,34.38,10,
+NoCalC,Pyrus kawakamii,evergreen pear,PYKA,BEM,0.58,0.09,243.93,48.81,10,
+NoCalC,Quercus agrifolia,coastal live oak; California live oak,QUAG,BEL,0.6,0.02,251.98,9.65,10,
+NoCalC,Robinia pseudoacacia,black locust,ROPS,BDM,0.42,0.03,86.2,8.34,10,
+NoCalC,Sequoia sempervirens,coast redwood,SESE,CEL,0.52,0.03,556.77,94.4,10,
+NoCalC,Ulmus americana,American elm,ULAM,BDL,0.79,1.19,160.98,243.3,9,
+NoCalC,Ulmus parvifolia,Chinese elm,ULPA,BDL,0.46,0.01,192.29,16.69,10,
+NoEast,Acer platanoides,Norway maple,ACPL,BDL,0.41,0.04,62.05,18.87,10,
+NoEast,Acer rubrum,red maple,ACRU,BDL,0.37,0.13,72.68,16.1,10,
+NoEast,Acer saccharinum,silver maple,ACSA1,BDL,0.41,0.04,89.82,18.86,10,
+NoEast,Acer saccharum,sugar maple,ACSA2,BDL,0.44,0.02,80.77,13.07,10,
+NoEast,Aesculus hippocastanum,horsechestnut,AEHI,BDL,0.43,0.06,85.38,10.89,10,
+NoEast,Fraxinus pennsylvanica,green ash,FRPE,BDL,0.44,0.02,109.44,12.42,10,
+NoEast,Ginkgo biloba,ginkgo,GIBI,BDL,0.35,0.08,130.59,31.82,10,
+NoEast,Gleditsia triacanthos,honeylocust,GLTR,BDL,0.44,0.03,124.66,21.56,10,
+NoEast,Liquidambar styraciflua,sweetgum,LIST,BDL,0.35,0.08,93.78,25.84,10,
+NoEast,Malus sp.,apple,MA2,BDS,0.5,0.05,109.68,23.11,10,
+NoEast,Pinus strobus,eastern white pine,PIST,CEL,0.38,0.1,717.94,376.53,10,
+NoEast,Platanus hybrida,London planetree,PLAC,BDL,0.41,0.01,110.02,20.02,10,
+NoEast,Prunus serrulata,Kwanzan cherry,PRSE2,BDS,0.43,0.03,99.32,19.35,10,
+NoEast,Pyrus calleryana,Callery pear,PYCA,BDM,0.46,0.06,130.15,35.72,10,
+NoEast,Quercus palustris,pin oak,QUPA,BDL,0.45,0.05,88.17,28.31,10,
+NoEast,Quercus phellos,willow oak,QUPH,BDL,0.46,0.03,183.61,278.65,10,
+NoEast,Quercus rubra,northern red oak,QURU,BDL,0.46,0.03,96.79,24.42,10,
+NoEast,Tilia cordata,littleleaf linden,TICO,BDL,0.38,0.04,141.78,236.15,10,
+NoEast,Tilia tomentosa,silver linden,TITO,BDL,0.38,0.01,73.85,8.99,10,
+NoEast,Ulmus americana,American elm,ULAM,BDL,0.4,0.01,99.77,20.85,10,
+NoEast,Zelkova serrata,Japanese zelkova,ZESE,BDL,0.45,0.05,73.05,39.55,10,
+Piedmt,Acer rubrum,red maple,ACRU,BDM,0.44,0.04,86.92,21.3,10,
+Piedmt,Acer saccharinum,silver maple,ACSA1,BDL,0.4,0.03,84.77,9.26,10,
+Piedmt,Acer saccharum,sugar maple,ACSA2,BDL,0.36,0.12,57.99,30.52,10,
+Piedmt,Betula nigra,river birch,BENI,BDM,0.35,0.07,69.63,15.32,10,
+Piedmt,Cornus florida,flowering dogwood,COFL,BDS,0.35,0.05,54.49,14.71,10,
+Piedmt,Ilex opaca,American holly,ILOP,BES,0.34,0.05,124.53,32.68,10,
+Piedmt,Juniperus virginiana,eastern red cedar,JUVI,CEM,0.4,0.02,559.08,78.1,10,
+Piedmt,Lagerstroemia sp.,common crapemyrtle,LA6,BDS,0.32,0.03,112.76,18.18,10,
+Piedmt,Liquidambar styraciflua,sweetgum,LIST,BDL,0.33,0.04,80.11,20.74,10,
+Piedmt,Magnolia grandiflora,southern magnolia,MAGR,BEM,0.4,0.04,165.31,26.11,10,
+Piedmt,Malus sp.,apple,MA2,BDS,0.28,0.06,57.71,19.52,10,
+Piedmt,Pinus echinata,shortleaf pine,PIEC,CEL,0.38,0.02,706.35,201.79,10,
+Piedmt,Pinus taeda,loblolly pine,PITA,CEL,0.39,0.03,525.79,98.03,10,
+Piedmt,Prunus sp.,plum,PR,BDS,0.29,0.05,57.86,17.15,10,
+Piedmt,Prunus yedoensis,Yoshino flowering cherry,PRYE,BDS,0.4,0.05,116.85,28.23,10,
+Piedmt,Pyrus calleryana,Callery pear,PYCA,BDS,0.37,0.08,113.74,41.72,10,
+Piedmt,Quercus alba,white oak,QUAL,BDL,0.42,0.05,73.03,17.37,10,
+Piedmt,Quercus nigra,water oak,QUNI,BEL,0.44,0.08,91.73,20.63,10,
+Piedmt,Quercus phellos,willow oak,QUPH,BDL,0.42,0.04,86.21,18.5,10,
+Piedmt,Quercus rubra,northern red oak,QURU,BDL,0.42,0.06,71.81,16.01,10,
+Piedmt,Ulmus alata,winged elm,ULAL,BDL,0.5,0.03,84.65,16.63,10,
+SoCalC,Callistemon citrinus,lemon bottlebrush,CACI,BES,,,204.01,,1,"10 samples taken from ea of 3 trees, but trees each processed as one whole"
+SoCalC,Cedrus deodara,deodar cedar,CEDE,CEL,,,390.93,11.19,3,"10 samples taken from ea of 3 trees, but trees each processed as one whole"
+SoCalC,Ceratonia siliqua,algarrobo Europeo,CESI3,BEM,,,233.23,22.2,3,"10 samples taken from ea of 3 trees, but trees each processed as one whole"
+SoCalC,Cinnamomum camphora,camphor tree,CICA,BEM,,,129.86,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Cupaniopsis anacardioides,carrotwood,CUAN,BES,,,178.53,20.01,3,"10 samples taken from ea of 3 trees, but trees each processed as one whole"
+SoCalC,Ficus thonningii,figueira benjamin,FIMI,BEM,,,141.5,7.04,3,"10 samples taken from ea of 3 trees, but trees each processed as one whole"
+SoCalC,Jacaranda mimosifolia,jacaranda,JAMI,BDS,,,115.85,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Liquidambar styraciflua,sweetgum,LIST,BDM,,,124,4.85,3,"10 samples taken from ea of 3 trees, but trees each processed as one whole"
+SoCalC,Magnolia grandiflora,southern magnolia,MAGR,BEM,,,235.45,13.78,3,"10 samples taken from ea of 3 trees, but trees each processed as one whole"
+SoCalC,Melaleuca quinquenervia,punk tree,MEQU,BEM,,,201.99,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Metrosideros excelsa,New Zealand christmas tree,MEEX,BEM,,,219.06,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Phoenix canariensis,Canary Island date palm,PHCA,PEL,,,226.15,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Pinus canariensis,Canary island pine,PICA,CEL,,,371.31,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Pittosporum undulatum,victorian box,PIUN,BEM,,,143.46,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Podocarpus macrophyllus,yew podocarpus,POMA,BES,,,209.84,13.34,2,"10 samples taken from ea of 2 trees, but trees each processed as one whole"
+SoCalC,Schinus terebinthifolius,Brazilian pepper,SCTE,BES,,,121.99,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Tristaniopsis conferta,Brisbane box,TRCO,BEM,,,174.3,,1,"10 samples taken from 1 tree, but tree  processed as one whole"
+SoCalC,Washingtonia robusta,Mexican fan palm,WARO,PES,,,216.16,,1,2 fronds collected but dw and leaf area samples processed as one
+SWDsrt,Acacia farnesiana,sweet acacia,ACFA,BDS,0.48,0.08,178.75,42.23,10,
+SWDsrt,Acacia salicina,willow acacia,ACSA3,BEM,0.32,0.02,187.23,16.85,10,
+SWDsrt,Brachychiton populneum ,kurrajong,BRPO,BEM,0.37,0.02,86.14,6.4,10,
+SWDsrt,Chilopsis linearis,desert willow,CHLI,BDS,0.4,0.02,159.62,25.89,10,
+SWDsrt,Eucalyptus microtheca,coolibah tree,EUMI2,BEL,0.48,0.08,145.29,12.16,10,
+SWDsrt,Fraxinus uhdei,evergreen ash,FRUH,BDL,0.47,0.02,126.35,11.21,10,
+SWDsrt,Fraxinus velutina 'Modesto',Modesto ash,FRVE_G,BDM,0.44,0.02,120.11,13.48,10,
+SWDsrt,Morus alba,white mulberry,MOAL,BDM,0.49,0.04,153.46,30.14,10,
+SWDsrt,Olea europaea,olive,OLEU,BES,0.52,0.02,256.39,18.88,10,
+SWDsrt,Parkinsonia aculeata,Jerusalem thorn,PAAC,BDM,0.4,0.06,586.32,126.61,10,
+SWDsrt,Parkinsonia florida,blue paloverde,CEFL,BDM,0.51,0.05,181.85,40.64,10,
+SWDsrt,Phoenix dactylifera,date palm,PHDA4,PEM,0.68,0.02,309.49,5.62,2,2 fronds collected and processed separately
+SWDsrt,Pinus eldarica,Afghan pine,PIEL2,CEL,0.43,0.02,452.68,142.21,10,
+SWDsrt,Pinus halepensis,aleppo pine,PIHA,CEL,0.47,0.02,515.04,199.92,10,
+SWDsrt,Pistacia chinensis,Chinese pistache,PICH,BDM,0.47,0.06,132.31,27.57,10,
+SWDsrt,Prosopis chilensis,algarrobo,PRCH,BDM,0.45,0.03,177.36,21.06,10,
+SWDsrt,Quercus virginiana,live oak,QUVI,BEM,0.52,0.1,185.64,29.68,10,
+SWDsrt,Rhus lancea,African sumac,RHLA,BES,0.46,0.04,132.57,15.47,10,
+SWDsrt,Ulmus parvifolia,Chinese elm,ULPA,BDM,0.53,0.01,203.71,20.19,10,
+SWDsrt,Washingtonia filifera,California palm,WAFI,PES,0.52,0.01,193.01,27.01,2,2 fronds collected and processed separately
+SWDsrt,Washingtonia robusta,Mexican fan palm,WARO,PES,0.54,0.06,192.46,2.98,2,2 fronds collected and processed separately
+TpIntW,Acer platanoides,Norway maple,ACPL,BDM,0.43,0.02,68.37,13.43,10,
+TpIntW,Acer saccharinum,silver maple,ACSA1,BDL,0.46,0.12,83.03,11.59,7,
+TpIntW,Acer saccharum,sugar maple,ACSA2,BDL,0.43,0.03,59.23,12.41,10,
+TpIntW,Catalpa speciosa,northern catalpa,CASP,BDL,0.32,0.05,81.09,35.25,10,
+TpIntW,Crataegus sp.,hawthorn,CR,BDS,0.48,0.03,113.36,25.49,10,
+TpIntW,Fraxinus americana,white ash,FRAM,BDL,0.41,0.03,101.97,12.78,10,
+TpIntW,Fraxinus pennsylvanica,green ash,FRPE,BDL,0.39,0.02,78.97,15.26,10,
+TpIntW,Gleditsia triacanthos,honeylocust,GLTR,BDL,0.45,0.03,113.71,30.52,10,
+TpIntW,Juglans nigra,black walnut,JUNI,BDL,0.41,0.03,97.23,21.33,10,
+TpIntW,Liquidambar styraciflua,sweetgum,LIST,BDL,0.38,0.03,99.82,17.96,10,
+TpIntW,Malus sp.,apple,MA2,BDS,0.42,0.06,81.29,21.26,10,
+TpIntW,Picea pungens,blue spruce,PIPU,CEL,0.49,0.03,562.63,28.25,10,
+TpIntW,Pinus sylvestris,Scotch pine,PISY,CEM,0.46,0.02,477.71,70.45,10,
+TpIntW,Platanus hybrida,London planetree,PLAC,BDL,0.4,0.02,101.34,18.5,10,
+TpIntW,Platanus occidentalis,American sycamore,PLOC,BDL,0.38,0.03,91.63,21.75,10,
+TpIntW,Pyrus calleryana,Callery pear,PYCA,BDM,0.42,0.03,93.42,14.8,10,
+TpIntW,Quercus rubra,northern red oak,QURU,BDL,0.47,0.06,89.61,13.81,10,
+TpIntW,Robinia pseudoacacia,black locust,ROPS,BDL,0.42,0.11,64.84,14.25,10,
+TpIntW,Tilia americana,American basswood,TIAM,BDL,0.37,0.03,60,13.58,10,
+TpIntW,Ulmus pumila,Siberian elm,ULPU,BDL,0.4,0.02,118.79,27.3,10,
+Tropic,Bauhinia x blakeana,Hong Kong orchid tree,BABL,BES,0.43,0.03,121.05,10.66,10,
+Tropic,Calophyllum inophyllum,kamani,CAIN4,BEM,0.41,0.06,173.82,16.25,10,
+Tropic,Cassia x nealiae,rainbow shower tree,CANE33,BDM,0.45,0.03,99.05,10.73,10,
+Tropic,Casuarina equisetifolia,Australian pine,CAEQ,BEL,0.45,0.17,1466.27,561.35,10,
+Tropic,Citharexylum spinosum,fiddlewood,CISP2,BEM,0.35,0.02,109.36,19.44,10,
+Tropic,Cocos nucifera,coconut palm,CONU,PEL,0.45,0.06,200.91,28.09,2,2 fronds collected and processed separately
+Tropic,Conocarpus erectus var. argenteus,silver buttonwood,COERA2,BES,0.34,0.02,194.06,87.11,10,
+Tropic,Cordia subcordata,kou,COSU2,BEL,0.2,0.02,50.06,9.58,10,
+Tropic,Delonix regia,royal poinciana,DERE,BDS,0.38,0.02,125.06,26.21,10,
+Tropic,Elaeodendron orientale,false olive,ELOR2,BES,0.44,0.01,216.18,14.57,10,
+Tropic,Ficus benjamina,Benjamin fig,FIBE,BEL,0.39,0.02,130.09,22.03,10,
+Tropic,Filicium decipiens,fern tree,FIDE6,BEM,0.42,0.02,151.57,27.8,10,
+Tropic,Ilex paraguariensis,Paraguay tea,ILPA2,BES,0.42,0.02,164.33,12.96,10,
+Tropic,Lagerstroemia speciosa,giant crapemyrtle,LASP,BDL,0.31,0.04,99.35,26.17,10,
+Tropic,Melaleuca quinquenervia,punk tree,MEQU,BEL,0.4,0.14,189.66,48.45,10,
+Tropic,Samanea saman,monkeypod,PISA2,BDL,0.41,0.03,118.04,21.74,10,
+Tropic,Swietenia mahagoni,West Indian mahogany,SWMA,BEL,0.45,0.02,110.92,15.42,10,
+Tropic,Tabebuia aurea,silver trumpet tree,TAAR,BEL,0.34,0.02,155.75,18.22,10,
+Tropic,Tabebuia heterophylla,pink trumpet tree,TAPA,BEL,0.36,0.02,136.29,21.7,10,
+Tropic,Tabebuia ochracea subsp. neochrysantha,golden trumpet tree,TACH,BEL,0.48,0.03,154.16,31.8,10,
+Tropic,Veitchia merrillii,Christmas palm,VEME,PES,0.41,0.02,170.11,10.17,2,2 fronds collected and processed separately

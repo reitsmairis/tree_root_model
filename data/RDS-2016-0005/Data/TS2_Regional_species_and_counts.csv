@@ -1,0 +1,348 @@
+Region,Scientific Name,Common Name,SpCode,Tree Type,Dbh_class1,Dbh_class2,Dbh_class3,Dbh_class4,Dbh_class5,Dbh_class6,Dbh_class7,Dbh_class8,Dbh_class9,Grand Total
+CenFla,Acer rubrum,red maple,ACRU,BDM,2,5,10,9,10,12,7,1,,56
+CenFla,Cinnamomum camphora,camphor tree,CICA,BEM,2,6,8,7,5,9,7,9,10,63
+CenFla,Eriobotrya japonica,loquat tree,ERJA,BES,5,10,9,7,,,,,,31
+CenFla,Juniperus virginiana var. silicicola,southern redcedar,JUSI,CEM,2,9,7,5,10,11,3,3,,50
+CenFla,Koelreuteria elegans,Chinese rain tree,KOELFO,BDM,3,6,6,12,10,4,2,,,43
+CenFla,Lagerstroemia indica,common crapemyrtle,LAIN,BDS,3,7,8,10,7,,,,,35
+CenFla,Liquidambar styraciflua,sweetgum,LIST,BDL,2,6,9,7,9,10,4,1,,48
+CenFla,Magnolia grandiflora,southern magnolia,MAGR,BEL,3,5,10,8,10,7,5,3,,51
+CenFla,Pinus elliottii,slash pine,PIEL,CEL,3,7,7,10,7,3,,,,37
+CenFla,Platanus occidentalis,American sycamore,PLOC,BDL,1,6,13,6,8,9,1,,,44
+CenFla,Platycladus orientalis,Oriental arborvitae,THOR,CES,4,3,11,14,5,,,,,37
+CenFla,Prunus caroliniana,Carolina laurelcherry,PRCA,BES,4,6,12,8,6,2,1,,,39
+CenFla,Quercus laurifolia,laurel oak,QULA2,BDL,3,6,11,6,8,11,12,7,3,67
+CenFla,Quercus shumardii,Shumard oak,QUSH,BDL,3,9,8,9,6,1,1,,,37
+CenFla,Quercus virginiana,live oak,QUVI,BEL,1,8,6,8,8,10,9,7,8,65
+CenFla,Sabal palmetto,cabbage palmetto,SAPA,PEM,,2,19,9,11,4,,,,45
+CenFla,Syagrus romanzoffiana,queen palm,SYRO,PEL,4,3,19,4,,,,,,30
+CenFla,Triadica sebifera,tallowtree,TRSE6,BDM,3,8,11,8,6,3,1,,,40
+CenFla,Ulmus parvifolia,Chinese elm,ULPA,BDM,2,8,10,10,6,1,,,,37
+CenFla,Washingtonia robusta,Mexican fan palm,WARO,PES,,1,14,15,8,1,1,,,40
+GulfCo,Acer rubrum,red maple,ACRU,BDL,4,7,13,6,3,3,,,,36
+GulfCo,Butia capitata,jelly palm,BUCA,PES,1,6,2,12,9,3,,,,33
+GulfCo,Carya illinoinensis,pecan,CAIL,BDL,2,2,8,12,8,,4,,,36
+GulfCo,Celtis laevigata,sugarberry,CELA,BDL,4,1,7,9,10,4,1,1,,37
+GulfCo,Cornus florida,flowering dogwood,COFL,BDS,2,10,15,6,1,,,,,34
+GulfCo,Gleditsia triacanthos,honeylocust,GLTR,BDL,3,6,21,7,,,,,,37
+GulfCo,Ilex opaca,American holly,ILOP,BEM,3,11,17,6,,,,,,37
+GulfCo,Juniperus virginiana,eastern red cedar,JUVI,CEM,2,10,7,8,10,5,1,,,43
+GulfCo,Lagerstroemia indica,common crapemyrtle,LAIN,BDS,5,2,18,9,7,,1,,,42
+GulfCo,Liquidambar styraciflua,sweetgum,LIST,BDL,8,3,7,10,10,7,3,2,,50
+GulfCo,Magnolia grandiflora,southern magnolia,MAGR,BEM,1,6,9,11,9,3,,1,,40
+GulfCo,Pinus taeda,loblolly pine,PITA,CEL,2,6,8,9,6,12,3,1,,47
+GulfCo,Platanus occidentalis,American sycamore,PLOC,BDL,3,9,8,9,13,8,3,3,,56
+GulfCo,Pyrus calleryana,Callery pear,PYCA,BDM,1,4,10,14,6,1,,,,36
+GulfCo,Quercus laurifolia,laurel oak,QULA2,BDL,3,3,14,9,13,8,9,12,8,79
+GulfCo,Quercus nigra,water oak,QUNI,BDL,2,6,12,9,9,18,9,3,,68
+GulfCo,Quercus phellos,willow oak,QUPH,BDL,3,11,6,9,3,6,5,1,1,45
+GulfCo,Quercus virginiana,live oak,QUVI,BEL,4,3,9,9,10,10,13,9,9,76
+GulfCo,Sabal palmetto,cabbage palmetto,SAPA,PES,2,2,16,14,6,,,,,40
+InlEmp,Brachychiton populneum,kurrajong,BRPO,BEM,3,6,14,10,3,1,,,,37
+InlEmp,Cinnamomum camphora,camphor tree,CICA,BEL,3,2,13,16,12,4,4,3,,57
+InlEmp,Eucalyptus sideroxylon,red ironbark,EUSI,BEL,,3,4,7,10,8,4,1,,37
+InlEmp,Fraxinus uhdei,evergreen ash,FRUH,BDL,,1,5,6,8,5,8,2,2,37
+InlEmp,Fraxinus velutina 'Modesto',Modesto ash,FRVE_G,BDM,5,,8,12,11,,,,,36
+InlEmp,Ginkgo biloba,ginkgo,GIBI,BDL,2,4,13,8,7,3,,,,37
+InlEmp,Jacaranda mimosifolia,jacaranda,JAMI,BDM,4,8,22,19,10,,,,,63
+InlEmp,Lagerstroemia indica,common crapemyrtle,LAIN,BDS,11,16,28,6,,,,,,61
+InlEmp,Liquidambar styraciflua,sweetgum,LIST,BDL,3,4,10,10,7,4,,,,38
+InlEmp,Liriodendron tulipifera,tulip tree,LITU,BDL,3,3,11,7,6,5,2,,,37
+InlEmp,Magnolia grandiflora,southern magnolia,MAGR,BEL,6,5,8,11,6,,1,,,37
+InlEmp,Pinus brutia,Turkish pine; east Mediterranean pine,PIBR2,CEM,3,1,3,13,14,2,1,,,37
+InlEmp,Pinus canariensis,Canary Island pine,PICA,CEL,4,1,8,7,10,9,,,,39
+InlEmp,Pistacia chinensis,Chinese pistache,PICH,BDM,5,10,22,3,,,,,,40
+InlEmp,Platanus racemosa,California sycamore,PLRA,BDL,2,3,6,10,6,5,5,,,37
+InlEmp,Platanus x acerifolia,London planetree,PLAC,BDL,4,4,14,9,5,2,,,,38
+InlEmp,Pyrus calleryana,Callery pear,PYCA,BDM,6,7,12,14,,,,,,39
+InlEmp,Quercus agrifolia,coastal live oak; California live oak,QUAG,BEL,2,2,5,6,7,8,2,4,1,37
+InlEmp,Quercus ilex,holly oak,QUIL2,BEL,2,1,10,7,6,7,2,,,35
+InlEmp,Schinus molle,California peppertree,SCMO,BEM,4,2,7,2,6,6,4,3,3,37
+InlEmp,Schinus terebinthifolius,Brazilian pepper,SCTE,BES,2,,7,16,8,3,,,,36
+InlEmp,Washingtonia robusta,Mexican fan palm,WARO,PES,,1,6,12,15,2,,,,36
+InlVal,Acer saccharinum,silver maple,ACSA1,BDL,4,2,2,4,4,4,4,4,1,29
+InlVal,Betula pendula,European white birch,BEPE,BDM,1,7,15,5,1,,,,,29
+InlVal,Celtis sinensis,Chinese hackberry,CESI4,BDL,1,,2,12,7,4,4,,,30
+InlVal,Cinnamomum camphora,camphor tree,CICA,BEM,3,3,9,8,3,5,,,,31
+InlVal,Fraxinus angustifolia 'Raywood',Raywood ash,FRAN_R,BDM,1,1,5,15,6,3,,,,31
+InlVal,Fraxinus excelsior 'Hessei',Hesse ash,FREX_H,BDL,6,5,12,3,1,,,,,27
+InlVal,Fraxinus holotricha,Moraine ash,FRHO,BDL,1,,,9,8,10,1,,,29
+InlVal,Fraxinus pennsylvanica 'Marshall',Marshall ash,FRPE_M,BDM,1,1,19,7,,,,,,28
+InlVal,Fraxinus velutina 'Modesto',Modesto ash,FRVE_G,BDL,1,,,4,15,7,1,,,28
+InlVal,Ginkgo biloba,ginkgo,GIBI,BDL,3,4,8,10,7,,,,,32
+InlVal,Gleditsia triacanthos,honeylocust,GLTR,BDL,1,,4,9,13,,,,,27
+InlVal,Koelreuteria paniculata,goldenrain tree,KOPA,BDM,13,3,3,9,1,,,,,29
+InlVal,Lagerstroemia indica,common crapemyrtle,LAIN,BDS,11,6,9,,,,,,,26
+InlVal,Liquidambar styraciflua,sweetgum,LIST,BDL,1,1,8,15,4,1,,,,30
+InlVal,Magnolia grandiflora,southern magnolia,MAGR,BEM,1,2,18,7,,1,,,,29
+InlVal,Pinus thunbergiana,Japanese black pine,PITH,CEM,1,,6,19,,,,,,26
+InlVal,Pistacia chinensis,Chinese pistache,PICH,BDM,3,3,12,8,4,,,,,30
+InlVal,Platanus x acerifolia,London planetree,PLAC,BDL,2,,10,7,5,3,,,,27
+InlVal,Prunus cerasifera,cherry plum,PRCE,BDS,1,2,21,3,,,,,,27
+InlVal,Pyrus calleryana 'Bradford',Callery pear 'Bradford',PYCA_B,BDM,1,3,12,9,5,,,,,30
+InlVal,Quercus ilex,holly oak,QUIL2,BEL,1,,,15,12,,,,,28
+InlVal,Zelkova serrata,Japanese zelkova,ZESE,BDM,2,5,6,11,6,1,,,,31
+InterW,Chilopsis linearis,desert willow,CHLI,BDS,6,16,7,1,,,,,,30
+InterW,Elaeagnus angustifolia,Russian olive,ELAN,BDS,2,3,7,7,7,3,1,,,30
+InterW,Fraxinus americana,white ash,FRAM,BDL,1,3,9,9,3,3,,,,28
+InterW,Fraxinus angustifolia,Raywood ash,FRAN2,BDM,4,9,11,3,2,1,,,,30
+InterW,Fraxinus pennsylvanica,green ash,FRPE,BDL,3,4,7,7,8,2,,,,31
+InterW,Fraxinus velutina,velvet ash,FRVE,BDL,8,8,11,10,17,10,4,,1,69
+InterW,Gleditsia triacanthos,honeylocust,GLTR,BDL,6,9,16,16,18,3,,,,68
+InterW,Koelreuteria paniculata,goldenrain tree,KOPA,BDM,1,8,9,10,,,,,,28
+InterW,Malus spp.,apple,MA2,BDS,2,5,16,7,,,,,,30
+InterW,Pinus edulis,pinyon pine,PIED,CES,2,10,11,6,,,,,,29
+InterW,Pinus nigra,Austrian pine,PINI,CEM,1,5,7,10,3,2,,,,28
+InterW,Pinus ponderosa,ponderosa pine,PIPO,CEL,,3,5,11,9,2,,,,30
+InterW,Pinus sylvestris,Scotch pine,PISY,CEL,,5,8,11,6,,,,,30
+InterW,Pistacia chinensis,Chinese pistache,PICH,BDM,5,14,9,2,,,,,,30
+InterW,Platanus x acerifolia,London planetree,PLAC,BDL,6,12,14,19,15,3,1,,,70
+InterW,Populus angustifolia,narrowleaf cottonwood,POAN,BDL,5,4,13,6,10,14,10,5,3,70
+InterW,Populus fremontii,Fremont cottonwood,POFR,BDL,2,4,9,9,7,15,13,4,7,70
+InterW,Prunus cerasifera,cherry plum,PRCE,BDS,2,10,9,9,,,,,,30
+InterW,Pyrus calleryana,Callery pear,PYCA,BDS,6,8,12,6,,,,,,32
+InterW,Ulmus pumila,Siberian elm,ULPU,BDL,4,2,9,5,12,10,15,9,4,70
+LoMidW,Acer platanoides,Norway maple,ACPL,BDL,2,,12,3,6,7,2,2,,34
+LoMidW,Acer rubrum,red maple,ACRU,BDL,2,5,5,5,4,6,3,5,,35
+LoMidW,Acer saccharinum,silver maple,ACSA1,BDL,2,2,5,6,10,11,7,8,3,54
+LoMidW,Acer saccharum,sugar maple,ACSA2,BDL,2,3,5,7,5,6,5,3,1,37
+LoMidW,Catalpa speciosa,northern catalpa,CASP,BDL,2,1,7,7,8,6,8,5,5,49
+LoMidW,Celtis occidentalis,northern hackberry,CEOC,BDL,4,3,5,5,8,8,9,6,8,56
+LoMidW,Cercis canadensis,eastern redbud,CECA,BDS,2,3,12,6,6,4,,,,33
+LoMidW,Fraxinus americana,white ash,FRAM,BDL,3,7,9,7,8,5,5,5,6,55
+LoMidW,Fraxinus pennsylvanica,green ash,FRPE,BDL,1,6,9,6,7,4,9,5,2,49
+LoMidW,Gleditsia triacanthos,honeylocust,GLTR,BDL,2,2,9,7,8,5,1,,1,35
+LoMidW,Juglans nigra,black walnut,JUNI,BDL,2,3,6,6,6,7,1,3,,34
+LoMidW,Malus spp.,apple,MA2,BDS,6,8,6,10,6,,,,,36
+LoMidW,Morus spp.,mulberry,MO,BDM,3,5,7,3,9,5,6,7,3,48
+LoMidW,Picea pungens,blue spruce,PIPU,CEL,4,6,9,14,2,,,,,35
+LoMidW,Pinus strobus,eastern white pine,PIST,CEL,5,9,10,5,9,1,,,,39
+LoMidW,Populus deltoides,eastern cottonwood,PODE,BDL,1,2,11,7,6,7,7,5,13,59
+LoMidW,Pyrus calleryana 'Bradford',Callery pear 'Bradford',PYCA_B,BDM,4,13,9,7,5,1,,,,39
+LoMidW,Quercus rubra,northern red oak,QURU,BDL,3,8,9,4,8,5,9,5,9,60
+LoMidW,Tilia cordata,littleleaf linden,TICO,BDM,3,2,7,7,4,7,5,1,,36
+LoMidW,Ulmus pumila,Siberian elm,ULPU,BDL,2,4,6,6,9,6,9,6,6,54
+MidWst,Acer negundo,boxelder,ACNE,BDM,2,1,12,10,10,5,2,1,,43
+MidWst,Acer platanoides,Norway maple,ACPL,BDL,5,8,11,12,9,2,1,,,48
+MidWst,Acer rubrum,red maple,ACRU,BDL,9,9,16,9,3,,,,,46
+MidWst,Acer saccharinum,silver maple,ACSA1,BDL,5,4,3,8,6,3,5,5,2,41
+MidWst,Acer saccharum,sugar maple,ACSA2,BDL,8,5,6,10,7,8,4,,,48
+MidWst,Celtis occidentalis,northern hackberry,CEOC,BDL,5,6,6,7,8,5,8,4,,49
+MidWst,Fraxinus americana,white ash,FRAM,BDL,11,5,5,14,3,,,,,38
+MidWst,Fraxinus pennsylvanica,green ash,FRPE,BDL,2,7,5,9,5,7,4,6,1,46
+MidWst,Ginkgo biloba,ginkgo,GIBI,BDM,12,12,18,6,,,,,,48
+MidWst,Gleditsia triacanthos,honeylocust,GLTR,BDM,9,7,11,11,9,1,,,,48
+MidWst,Malus spp.,apple,MA2,BDS,8,12,13,8,9,,,,,50
+MidWst,Quercus palustris,pin oak,QUPA,BDL,2,9,12,9,14,1,,,,47
+MidWst,Quercus rubra,northern red oak,QURU,BDL,12,6,12,10,1,2,2,,,45
+MidWst,Tilia americana,American basswood,TIAM,BDL,5,7,3,6,6,6,7,5,1,46
+MidWst,Tilia cordata,littleleaf linden,TICO,BDM,5,8,6,11,7,1,,,,38
+MidWst,Ulmus americana,American elm,ULAM,BDL,1,1,3,6,6,8,4,10,3,42
+MidWst,Ulmus pumila,Siberian elm,ULPU,BDM,3,1,9,8,8,4,4,,,37
+NMtnPr,Acer platanoides,Norway maple,ACPL,BDL,4,2,7,15,14,13,3,2,,60
+NMtnPr,Acer saccharinum,silver maple,ACSA1,BDL,2,,6,6,10,11,10,10,11,66
+NMtnPr,Acer saccharum,sugar maple,ACSA2,BDL,13,,4,1,1,2,1,,,22
+NMtnPr,Celtis occidentalis,northern hackberry,CEOC,BDL,5,6,11,7,9,9,11,6,3,67
+NMtnPr,Fraxinus americana,white ash,FRAM,BDL,4,4,7,3,6,1,6,,,31
+NMtnPr,Fraxinus pennsylvanica,green ash,FRPE,BDL,3,4,8,11,9,8,10,10,2,65
+NMtnPr,Gleditsia triacanthos,honeylocust,GLTR,BDL,4,5,9,8,10,9,12,6,1,64
+NMtnPr,Gymnocladus dioicus,Kentucky coffeetree,GYDI,BDL,5,10,12,2,1,1,,,,31
+NMtnPr,Malus spp.,apple,MA2,BDS,6,4,11,6,3,1,,,,31
+NMtnPr,Picea pungens,blue spruce,PIPU,CEL,3,4,4,8,7,7,1,,,34
+NMtnPr,Pinus nigra,Austrian pine,PINI,CEM,5,1,7,13,7,,,,,33
+NMtnPr,Pinus ponderosa,ponderosa pine,PIPO,CEL,3,5,9,10,2,2,,,,31
+NMtnPr,Populus sargentii,plains cottonwood,POSA,BDL,1,1,6,6,8,8,5,8,11,54
+NMtnPr,Prunus spp.,plum,PR,BDS,6,7,9,3,,,,,,25
+NMtnPr,Pyrus spp.,pear,PY,BDM,8,10,9,2,,,,,,29
+NMtnPr,Quercus macrocarpa,bur oak,QUMA1,BDL,5,4,7,6,8,2,1,1,,34
+NMtnPr,Tilia americana,American basswood,TIAM,BDL,2,3,5,7,7,8,1,,,33
+NMtnPr,Tilia cordata,littleleaf linden,TICO,BDL,3,5,7,8,10,1,,,,34
+NMtnPr,Ulmus americana,American elm,ULAM,BDL,3,1,1,5,10,10,10,11,10,61
+NMtnPr,Ulmus pumila,Siberian elm,ULPU,BDL,2,2,3,3,12,9,11,9,11,62
+NoCalC,Acacia melanoxylon,black acacia,ACME,BEL,4,5,5,3,7,2,6,,3,35
+NoCalC,Acer palmatum,Japanese maple,ACPA,BDS,6,7,4,14,6,1,,,,38
+NoCalC,Cinnamomum camphora,camphor tree,CICA,BEM,3,2,5,11,20,17,8,3,1,70
+NoCalC,Eucalyptus globulus,blue gum eucalyptus,EUGL,BEL,3,1,9,9,9,9,6,9,12,67
+NoCalC,Fraxinus velutina,velvet ash,FRVE,BDL,4,3,8,4,8,4,2,,,33
+NoCalC,Ginkgo biloba,ginkgo,GIBI,BDM,8,7,11,8,,,2,,,36
+NoCalC,Liquidambar styraciflua,sweetgum,LIST,BDL,5,2,7,10,9,3,,1,,37
+NoCalC,Liriodendron tulipifera,tulip tree,LITU,BDL,3,2,5,14,9,1,,,,34
+NoCalC,Magnolia grandiflora,southern magnolia,MAGR,BEM,5,3,9,3,9,6,2,,1,38
+NoCalC,Pinus radiata,Monterey pine,PIRA,CEL,2,2,3,5,2,7,6,6,2,35
+NoCalC,Pistacia chinensis,Chinese pistache,PICH,BDM,12,9,15,1,,,,,,37
+NoCalC,Pittosporum undulatum,victorian box,PIUN,BEM,4,2,9,10,6,,,,,31
+NoCalC,Platanus x acerifolia,London planetree,PLAC,BDL,2,3,10,9,18,16,9,2,1,70
+NoCalC,Prunus cerasifera,cherry plum,PRCE,BDS,6,3,16,3,3,,,,,31
+NoCalC,Pyrus calleryana,Callery pear,PYCA,BDM,4,4,7,9,6,,,,,30
+NoCalC,Pyrus kawakamii,evergreen pear,PYKA,BEM,4,3,4,12,11,1,,,,35
+NoCalC,Quercus agrifolia,coastal live oak; California live oak,QUAG,BEL,5,3,5,11,7,20,6,2,7,66
+NoCalC,Robinia pseudoacacia,black locust,ROPS,BDM,3,4,4,6,10,5,2,,,34
+NoCalC,Sequoia sempervirens,coast redwood,SESE,CEL,3,2,5,8,9,10,9,4,12,62
+NoCalC,Ulmus americana,American elm,ULAM,BDL,7,,3,5,9,13,17,3,3,60
+NoCalC,Ulmus parvifolia,Chinese elm,ULPA,BDL,6,1,6,16,3,1,,,,33
+NoEast,Acer platanoides,Norway maple,ACPL,BDL,3,5,6,7,6,6,6,2,1,42
+NoEast,Acer rubrum,red maple,ACRU,BDL,2,3,7,5,8,6,8,4,3,46
+NoEast,Acer saccharinum,silver maple,ACSA1,BDL,3,2,5,8,8,5,7,7,8,53
+NoEast,Acer saccharum,sugar maple,ACSA2,BDL,3,4,4,4,4,8,1,3,,31
+NoEast,Aesculus hippocastanum,horsechestnut,AEHI,BDL,3,1,4,6,5,8,6,,,33
+NoEast,Fraxinus pennsylvanica,green ash,FRPE,BDL,3,4,10,5,6,4,4,4,4,44
+NoEast,Ginkgo biloba,ginkgo,GIBI,BDL,3,3,6,6,6,4,4,1,,33
+NoEast,Gleditsia triacanthos,honeylocust,GLTR,BDL,3,4,5,4,10,5,2,1,,34
+NoEast,Liquidambar styraciflua,sweetgum,LIST,BDL,3,3,6,5,5,6,7,4,2,41
+NoEast,Malus spp.,apple,MA2,BDS,7,5,10,9,1,,,,,32
+NoEast,Pinus strobus,eastern white pine,PIST,CEL,4,2,6,7,5,6,1,1,,32
+NoEast,Platanus x acerifolia,London planetree,PLAC,BDL,2,4,5,6,6,8,6,7,9,53
+NoEast,Prunus serrulata,Kwanzan cherry,PRSE2,BDS,2,4,13,13,1,,,1,,34
+NoEast,Pyrus calleryana,Callery pear,PYCA,BDM,5,6,8,11,3,,,,,33
+NoEast,Quercus palustris,pin oak,QUPA,BDL,3,1,7,9,6,6,7,10,5,54
+NoEast,Quercus phellos,willow oak,QUPH,BDL,4,5,4,5,7,4,1,2,1,33
+NoEast,Quercus rubra,northern red oak,QURU,BDL,3,4,4,4,7,4,9,5,11,51
+NoEast,Tilia cordata,littleleaf linden,TICO,BDL,2,4,6,8,6,6,5,8,3,48
+NoEast,Tilia tomentosa,silver linden,TITO,BDL,4,6,10,3,6,1,,,,30
+NoEast,Ulmus americana,American elm,ULAM,BDL,2,1,3,7,3,6,5,7,6,40
+NoEast,Zelkova serrata,Japanese zelkova,ZESE,BDL,2,4,6,5,11,5,1,,,34
+PacfNW,Acer macrophyllum,bigleaf maple,ACMA,BDL,6,2,2,2,7,5,4,6,6,40
+PacfNW,Acer platanoides,Norway maple,ACPL,BDM,6,3,6,7,13,15,11,6,7,74
+PacfNW,Acer rubrum,red maple,ACRU,BDM,9,1,6,17,1,3,1,1,,39
+PacfNW,Acer saccharum,sugar maple,ACSA2,BDL,6,,1,4,4,6,8,8,,37
+PacfNW,Betula pendula,European white birch,BEPE,BDM,4,4,6,21,6,,,,,41
+PacfNW,Calocedrus decurrens,incense cedar,CADE2,CEM,5,2,2,4,14,7,4,,,38
+PacfNW,Carpinus betulus 'Fastigiata',columnar hornbeam,CABEF,BDM,7,2,13,16,1,,,,,39
+PacfNW,Crataegus x lavallei,Carriere hawthorn,CRLA,BDS,4,7,29,31,3,,,,,74
+PacfNW,Fagus sylvatica,European beech,FASY,BDL,6,3,1,10,10,6,2,,,38
+PacfNW,Fraxinus latifolia,Oregon ash,FRLA,BDL,4,2,2,6,9,8,3,3,2,39
+PacfNW,Liquidambar styraciflua,sweetgum,LIST,BDM,7,6,12,29,15,4,,,,73
+PacfNW,Malus angustifolia,southern crabapple,PYAN,BDS,8,11,20,,,,,,,39
+PacfNW,Morus alba,white mulberry,MOAL,BDM,4,,,14,19,1,,,,38
+PacfNW,Pinus contorta subsp. bolanderi,Bolander beach pine,PICO5,CES,2,1,14,20,2,,,,,39
+PacfNW,Populus balsamifera subsp. trichocarpa,black cottonwood,POTR2,BDL,5,3,,2,6,4,5,3,8,36
+PacfNW,Prunus cerasifera,cherry plum,PRCE,BDS,8,2,21,24,19,,,,,74
+PacfNW,Prunus serrulata,Kwanzan cherry,PRSE2,BDS,5,,4,11,8,9,1,,,38
+PacfNW,Pseudotsuga menziesii,Douglas fir,PSME,CEL,6,8,3,7,4,,3,5,3,39
+PacfNW,Quercus rubra,northern red oak,QURU,BDL,6,,,7,4,7,8,5,2,39
+PacfNW,Tilia americana,American basswood,TIAM,BDM,6,,,8,7,10,7,1,,39
+PacfNW,Tilia cordata,littleleaf linden,TICO,BDM,5,6,1,18,7,1,1,,1,40
+PacfNW,Ulmus americana,American elm,ULAM,BDL,4,3,1,5,6,5,4,8,5,41
+Piedmt,Acer rubrum,red maple,ACRU,BDM,2,6,4,6,6,6,8,2,4,44
+Piedmt,Acer saccharinum,silver maple,ACSA1,BDL,4,2,5,4,6,8,9,8,2,48
+Piedmt,Acer saccharum,sugar maple,ACSA2,BDL,3,6,7,5,6,7,6,,1,41
+Piedmt,Betula nigra,river birch,BENI,BDM,1,6,5,12,8,7,,,,39
+Piedmt,Cornus florida,flowering dogwood,COFL,BDS,2,9,10,12,1,,,,,34
+Piedmt,Ilex opaca,American holly,ILOP,BES,1,6,14,6,7,,,,,34
+Piedmt,Juniperus virginiana,eastern red cedar,JUVI,CEM,4,3,8,8,8,5,3,,,39
+Piedmt,Lagerstroemia spp.,common crapemyrtle,LA6,BDS,5,4,15,12,4,,,,,40
+Piedmt,Liquidambar styraciflua,sweetgum,LIST,BDL,3,3,6,6,5,8,4,5,3,43
+Piedmt,Magnolia grandiflora,southern magnolia,MAGR,BEM,1,6,6,7,6,9,6,1,,42
+Piedmt,Malus spp.,apple,MA2,BDS,3,6,6,9,5,,,,,29
+Piedmt,Pinus echinata,shortleaf pine,PIEC,CEL,4,2,6,9,7,7,1,,,36
+Piedmt,Pinus taeda,loblolly pine,PITA,CEL,2,7,5,4,8,8,3,,,37
+Piedmt,Prunus spp.,plum,PR,BDS,2,6,4,5,9,6,4,,,36
+Piedmt,Prunus yedoensis,Yoshino flowering cherry,PRYE,BDS,2,4,4,11,8,5,3,1,1,39
+Piedmt,Pyrus calleryana,Callery pear,PYCA,BDS,5,7,8,8,6,,,,,34
+Piedmt,Quercus alba,white oak,QUAL,BDL,1,5,6,5,4,5,7,8,6,47
+Piedmt,Quercus nigra,water oak,QUNI,BEL,,5,5,4,6,5,5,9,6,45
+Piedmt,Quercus phellos,willow oak,QUPH,BDL,2,4,6,7,5,4,8,8,5,49
+Piedmt,Quercus rubra,northern red oak,QURU,BDL,2,6,4,5,1,4,6,5,7,40
+Piedmt,Ulmus alata,winged elm,ULAL,BDL,2,7,4,9,7,2,1,,,32
+SacVal,Cedrus deodara ,deodar cedar,CEDE,CEL,2,3,6,7,15,5,5,9,9,61
+SacVal,Celtis occidentalis,northern hackberry,CEOC,BDL,2,4,11,6,8,4,1,1,,37
+SacVal,Celtis sinensis,Chinese hackberry,CESI4,BDL,2,4,11,12,12,8,4,4,3,60
+SacVal,Cinnamomum camphora,camphor tree,CICA,BEL,2,6,6,7,13,8,6,2,13,63
+SacVal,Fraxinus velutina 'Modesto',Modesto ash,FRVE_G,BDL,1,2,2,10,10,4,6,3,2,40
+SacVal,Ginkgo biloba ,ginkgo,GIBI,BDL,3,3,11,12,16,9,2,2,2,60
+SacVal,Lagerstroemia indica,common crapemyrtle,LAIN,BDS,2,10,10,6,,,,,,28
+SacVal,Liquidambar styraciflua,sweetgum,LIST,BDL,2,5,5,11,9,6,1,4,1,44
+SacVal,Liriodendron tulipifera,tulip tree,LITU,BDL,2,9,9,9,10,8,6,7,4,64
+SacVal,Magnolia grandiflora ,southern magnolia,MAGR,BEL,3,4,11,12,16,10,7,2,2,67
+SacVal,Pistacia chinensis,Chinese pistache,PICH,BDM,3,4,6,9,12,3,1,,,38
+SacVal,Platanus x acerifolia,London planetree,PLAC,BDL,2,6,8,5,8,7,4,7,7,54
+SacVal,Prunus cerasifera cvs.,cherry plum,PRCE,BDS,2,4,14,12,1,1,,,,34
+SacVal,Pyrus calleryana cvs.,callery pear,PYCA,BDM,2,4,8,13,4,,,,,31
+SacVal,Quercus agrifolia ,coastal live oak; California live oak,QUAG,BEL,2,4,9,7,16,9,9,5,4,65
+SacVal,Quercus lobata,valley oak,QULO,BDL,2,5,6,9,7,5,5,5,9,53
+SacVal,Quercus rubra,northern red oak,QURU,BDL,2,7,6,8,6,4,4,3,1,41
+SacVal,Sequoia sempervirens,coast redwood,SESE,CEL,2,4,11,6,8,5,2,3,11,52
+SacVal,Ulmus parvifolia ,Chinese elm,ULPA,BDL,2,5,11,7,13,16,5,3,,62
+SacVal,Zelkova serrata,Japanese zelkova,ZESE,BDL,3,5,6,7,9,3,5,4,5,47
+SoCalC,Callistemon citrinus,lemon bottlebrush,CACI,BES,1,8,20,2,,,,,,31
+SoCalC,Cedrus deodara,deodar cedar,CEDE,CEL,2,2,9,1,6,4,2,2,,28
+SoCalC,Ceratonia siliqua,algarrobo Europeo,CESI3,BEM,1,2,4,14,6,3,1,,,31
+SoCalC,Cinnamomum camphora,camphor tree,CICA,BEM,1,5,6,6,6,3,2,,,29
+SoCalC,Cupaniopsis anacardioides,carrotwood,CUAN,BES,6,4,9,10,1,,,,,30
+SoCalC,Eucalyptus ficifolia,red flowering gum,EUFI81,BEL,1,,1,6,10,5,6,3,,32
+SoCalC,Ficus thonningii,figueira benjamin,FIMI,BEM,1,,2,14,10,7,,,,34
+SoCalC,Jacaranda mimosifolia,jacaranda,JAMI,BDS,7,5,8,12,1,,,,,33
+SoCalC,Liquidambar styraciflua,sweetgum,LIST,BDM,5,1,20,6,1,,,,,33
+SoCalC,Magnolia grandiflora,southern magnolia,MAGR,BEM,5,2,11,10,5,,,,,33
+SoCalC,Melaleuca quinquenervia,punk tree,MEQU,BEM,1,,13,12,3,2,,,,31
+SoCalC,Metrosideros excelsa,New Zealand christmas tree,MEEX,BEM,1,3,17,4,5,2,,,,32
+SoCalC,Phoenix canariensis,Canary Island date palm,PHCA,PEL,,,,,,8,13,8,3,32
+SoCalC,Pinus canariensis,Canary Island pine,PICA,CEL,2,,1,12,6,7,2,,,30
+SoCalC,Pittosporum undulatum,victorian box,PIUN,BEM,1,,6,10,10,8,1,,,36
+SoCalC,Podocarpus macrophyllus,yew podocarpus,POMA,BES,3,2,23,3,,,,,,31
+SoCalC,Prunus caroliniana,Carolina laurelcherry,PRCA,BES,1,,18,12,1,,,,,32
+SoCalC,Schinus terebinthifolius,Brazilian pepper,SCTE,BES,1,1,3,16,6,3,,,1,31
+SoCalC,Tristaniopsis conferta,Brisbane box,TRCO,BEM,4,4,16,4,,,,,,28
+SoCalC,Washingtonia robusta,Mexican fan palm,WARO,PES,,,3,19,7,1,,,,30
+SWDsrt,Acacia farnesiana,sweet acacia,ACFA,BDS,7,9,12,3,,,,,,31
+SWDsrt,Acacia salicina,willow acacia,ACSA3,BEM,2,10,12,9,4,,,,,37
+SWDsrt,Brachychiton populneum,kurrajong,BRPO,BEM,4,11,11,5,3,1,,,,35
+SWDsrt,Chilopsis linearis,desert willow,CHLI,BDS,5,8,16,5,,,,,,34
+SWDsrt,Eucalyptus microtheca,coolibah tree,EUMI2,BEL,2,3,12,5,7,4,3,,,36
+SWDsrt,Fraxinus uhdei,evergreen ash,FRUH,BDL,5,10,8,5,3,1,,,,32
+SWDsrt,Fraxinus velutina,velvet ash,FRVE,BDM,6,6,16,11,11,7,2,,,59
+SWDsrt,Morus alba,white mulberry,MOAL,BDM,3,2,8,7,8,6,2,2,1,39
+SWDsrt,Olea europaea,olive,OLEU,BES,1,5,13,8,5,4,,,,36
+SWDsrt,Parkinsonia aculeata,Jerusalem thorn,PAAC,BDM,4,4,15,7,2,2,,,,34
+SWDsrt,Parkinsonia florida,blue paloverde,CEFL,BDM,7,6,12,7,,,,,,32
+SWDsrt,Phoenix dactylifera,date palm,PHDA4,PEL,,1,3,32,17,2,1,,,56
+SWDsrt,Pinus eldarica,Afghan pine,PIEL2,CEL,5,8,10,6,1,,,,,30
+SWDsrt,Pinus halepensis,aleppo pine,PIHA,CEL,1,2,4,8,11,5,3,,,34
+SWDsrt,Pistacia chinensis,Chinese pistache,PICH,BDM,5,7,14,5,2,,,,,33
+SWDsrt,Prosopis chilensis,algarrobo,PRCH,BDM,3,4,11,5,5,3,,,,31
+SWDsrt,Quercus virginiana,live oak,QUVI,BEM,6,13,17,,,,,,,36
+SWDsrt,Rhus lancea,African sumac,RHLA,BES,6,3,10,9,4,,,,,32
+SWDsrt,Ulmus parvifolia,Chinese elm,ULPA,BDM,8,14,13,1,,,,,,36
+SWDsrt,Washingtonia filifera,California palm,WAFI,PES,1,1,2,12,9,28,18,,,71
+SWDsrt,Washingtonia robusta,Mexican fan palm,WARO,PES,1,,13,43,6,,,,,63
+TpIntW,Acer platanoides,Norway maple,ACPL,BDM,3,8,10,12,12,12,3,2,,62
+TpIntW,Acer saccharinum,silver maple,ACSA1,BDL,2,3,5,9,8,7,7,6,11,58
+TpIntW,Acer saccharum,sugar maple,ACSA2,BDL,2,3,7,3,9,4,2,,,30
+TpIntW,Catalpa speciosa,northern catalpa,CASP,BDL,2,3,8,9,10,10,9,4,4,59
+TpIntW,Crataegus sp.,hawthorn,CR,BDS,3,3,8,17,2,,,,,33
+TpIntW,Fraxinus americana,white ash,FRAM,BDL,2,6,8,9,2,2,2,1,,32
+TpIntW,Fraxinus pennsylvanica,green ash,FRPE,BDL,3,9,9,8,9,9,9,3,1,60
+TpIntW,Gleditsia triacanthos,honeylocust,GLTR,BDL,2,2,6,5,9,4,4,1,,33
+TpIntW,Juglans nigra,black walnut,JUNI,BDL,3,6,8,8,13,8,5,5,1,57
+TpIntW,Liquidambar styraciflua,sweetgum,LIST,BDL,3,3,6,8,10,3,,,,33
+TpIntW,Malus spp.,apple,MA2,BDS,3,4,8,7,8,,,,,30
+TpIntW,Picea pungens,blue spruce,PIPU,CEL,3,4,4,5,8,5,,,,29
+TpIntW,Pinus sylvestris,Scotch pine,PISY,CEM,3,6,8,4,4,4,,,,29
+TpIntW,Platanus x acerifolia,London planetree,PLAC,BDL,2,6,8,11,19,5,6,3,4,64
+TpIntW,Platanus occidentalis,American sycamore,PLOC,BDL,1,3,3,4,8,9,6,7,7,48
+TpIntW,Pyrus calleryana,Callery pear,PYCA,BDM,4,9,15,3,3,,,,,34
+TpIntW,Quercus rubra,northern red oak,QURU,BDL,3,5,8,5,9,11,9,6,,56
+TpIntW,Robinia pseudoacacia,black locust,ROPS,BDL,4,3,11,3,9,11,8,7,6,62
+TpIntW,Tilia americana,American basswood,TIAM,BDL,2,5,11,13,15,12,1,,,59
+TpIntW,Ulmus pumila,Siberian elm,ULPU,BDL,3,5,3,6,6,8,14,7,3,55
+Tropic,Bauhinia x blakeana,Hong Kong orchid tree,BABL,BES,4,3,19,9,2,,,,,37
+Tropic,Calophyllum inophyllum,kamani,CAIN4,BEM,3,3,19,4,7,13,8,5,,62
+Tropic,Cassia x nealiae,rainbow shower tree,CANE33,BDM,3,3,11,7,7,5,4,1,,41
+Tropic,Casuarina equisetifolia,Australian pine,CAEQ,BEL,3,4,8,6,5,9,7,5,15,62
+Tropic,Citharexylum spinosum,fiddlewood,CISP2,BEM,3,6,15,9,1,1,,,,35
+Tropic,Cocos nucifera,coconut palm,CONU,PEL,,,11,22,1,,,,,34
+Tropic,Conocarpus erectus var. argenteus,silver buttonwood,COERA2,BES,3,7,9,4,7,2,5,,,37
+Tropic,Cordia subcordata,kou,COSU2,BEL,3,4,14,9,3,,,,,33
+Tropic,Delonix regia,royal poinciana,DERE,BDS,4,5,16,11,12,5,5,1,,59
+Tropic,Elaeodendron orientale,false olive,ELOR2,BES,3,7,8,7,8,1,,,,34
+Tropic,Ficus benjamina,Benjamin fig,FIBE,BEL,3,3,7,6,13,12,11,1,4,60
+Tropic,Filicium decipiens,fern tree,FIDE6,BEM,3,4,12,12,4,,,,,35
+Tropic,Ilex paraguariensis,Paraguay tea,ILPA2,BES,2,7,17,7,3,,,,,36
+Tropic,Lagerstroemia speciosa,giant crapemyrtle,LASP,BDL,3,3,13,7,10,1,,,,37
+Tropic,Melaleuca quinquenervia,punk tree,MEQU,BEL,4,10,13,11,8,6,7,,,59
+Tropic,Samanea saman,monkeypod,PISA2,BDL,4,2,4,7,10,6,8,6,15,62
+Tropic,Swietenia mahagoni,West Indian mahogany,SWMA,BEL,4,,5,9,7,6,9,6,8,54
+Tropic,Tabebuia aurea,silver trumpet tree,TAAR,BEL,2,5,18,8,4,,,,,37
+Tropic,Tabebuia heterophylla,pink trumpet tree,TAPA,BEL,2,5,7,8,8,4,2,,,36
+Tropic,Tabebuia ochracea subsp. neochrysantha,golden trumpet tree,TACH,BEL,3,5,6,8,6,5,3,,,36
+Tropic,Veitchia merrillii,Christmas palm,VEME,PES,1,17,14,,,,,,,32

@@ -1,0 +1,18 @@
+Region Code,Region Name,City,State,Airport Code,Data Collection Year
+Cen Fla,Central Florida,Orlando,Florida,ORL,2008
+GulfCo,Coastal Plain,Charleston,South Carolina,CHS,2004
+InlEmp,Inland Empire,Claremont,California,CLM,2000
+InlVal,Inland Valleys,Modesto,California,MOD,1998
+InterW,Interior West,Albuquerque,New Mexico,ABQ,2005
+LoMidW,Lower Midwest,Indianapolis,Indiana,IND,2006
+MidWst,Midwest,Minneapolis,Minnesota,MSP,2004
+NMtnPr,North,Fort Collins,Colorado,FNL,2002
+NoCalC,Northern California Coast,Berkeley,California,JBK,2003
+NoEast,Northeast,Queens,New York,JFK,2005
+PacfNW,Pacific Northwest,Longview,Oregon,LOG,2001
+Piedmt,South,Charlotte,North Carolina,CLT,2004
+SacVal,Sacramento Valley,Sacramento,California,SMF,2010; 2012
+SoCalC,Southern California Coast,Santa Monica,California,SMA,1999
+SWDsrt,Southwest Desert,Glendale,Arizona,GDL,2003
+TpIntW,Temperate Interior West,Boise,Idaho,BOI,2005
+Tropic,Tropical,Honolulu,Hawaii,HNL,2005

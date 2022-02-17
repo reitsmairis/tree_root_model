@@ -1,0 +1,25 @@
+Equation Species,DBH lower (cm),DBH upper (cm),Equation,Predicts,DW Density,Source
+Acer rubrum,0,35, =0.1970*dbhcm^2.1933,DW Biomass,,Ter-Mikaelian and Korzukhin 1997
+Fagus grandifolia,1,60, =0.1957*dbhcm^2.3916,DW Biomass,,Ter-Mikaelian and Korzukhin 1997
+Fraxinus americana,5,50, =0.1063*dbhcm^2.4798-EXP(-4.0813+5.8816/dbhcm),DW Biomass,,Ter-Mikaelian & Korzukhin 1997 minus Jenkins foliage
+Juniperus virginiana,14,43, =dbhcm+0.1632*dbhcm^2.2454-(dbhcm+0.1244*dbhcm^1.5549),DW Biomass,440,Jenkins et al. 2004 minus foliage ratio
+Liriodendron tulipifera,5,50, =0.0365*(dbhcm)^2.7324-EXP(-4.0813+5.8816/dbhcm),DW Biomass,,Ter-Mikaelian & Korzukhin 1997 minus Jenkins foliage
+Melaleuca quinquenervia,0.5,39, =EXP(-1.83+2.01*LN(dbhcm)),DW Biomass,,Van et al. 2000
+Quercus agrifolia,20,140, =0.0000447*(dbhcm)^2.31958*(htm)^0.62528,Volume,590,"Pillsbury and Kirkley, 1984"
+Quercus garryana,20,140, =0.0000674*(dbhcm)^2.14321*(htm)^0.74220,Volume,640,"Pillsbury and Kirkley, 1984"
+Quercus lobata,20,140, =0.0000763*(dbhcm)^1.94165*(htm)^0.86562,Volume,550,"Pillsbury and Kirkley, 1984"
+Quercus rubra,5,50, =0.1130*(dbhcm)^2.4572-EXP(-4.0813+5.8816/dbhcm),DW Biomass,,Ter-Mikaelian & Korzukhin 1997 minus Jenkins foliage
+Umbellularia californica,20,140, =0.0000763*(dbhcm)^1.94553)*(htm)^0.88389,Volume,510,"Pillsbury and Kirkley, 1984"
+Gen Hdwd aspen/alder/cottonwood/willow,12,50, =EXP(-2.2094+2.3867*LN(dbhcm))-EXP(-4.0813+5.8816/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+Gen Hdwd Harris,10,, =EXP(-2.437+2.418*LN(dbhcm))+EXP(-3.188+2.226*LN(dbhcm)),DW Biomass,,Harris et al. 1973
+Gen Hdwd maple/oak/hickory/beech,14,34, =EXP(-2.0127+2.4342*LN(dbhcm))-EXP(-4.0813+5.8816/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+Gen Hdwd soft maple/birch,12,42, =EXP(-1.9123+2.3651*LN(dbhcm))-EXP(-4.0813+5.8816/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+Gen Sftwd cedar/larch,3,61, =EXP(-2.0336+2.2592*LN(dbhcm))-EXP(-2.9584+4.4766/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+Gen Sftwd doug-fir,3,190, =EXP(-2.2304+2.4435*LN(dbhcm))-EXP(-2.9584+4.4766/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+Gen Sftwd pine,3,99, =EXP(-2.5356+2.4349*LN(dbhcm))-EXP(-2.9584+4.4766/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+Gen Sftwd spruce,3,78, =EXP(-2.0773+2.3323*LN(dbhcm))-EXP(-2.9584+4.4766/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+Gen Sftwd truefir/hemlock,3,111, =EXP(-2.5384+2.4814*LN(dbhcm))-EXP(-2.9584+4.4766/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+Gen Trop Chave,4,148, =0.112*((dw density/1000)*dbhcm^2*htm)^0.916,DW Biomass,"look up in Jenkins first, then DRYAD (Global Wood Density Database)",Chave et al. 2005
+Gen Wdlnd juniper/oak/mesquite,,, =EXP(-0.7152+1.7029*LN(dbhcm))-EXP(-4.0813+5.8816/dbhcm),DW Biomass,,Jenkins et al. 2004 minus foliage ratio
+General palms,,170, =(6*htm+0.8)+(0.8*htm+0.9),DW Biomass,,"Frangi and Lugo, 1985"
+General spiny dry climate,2,32, =EXP(-1.103+1.994*LN(dbhcm)+0.317*LN(htm)+1.303*LN(dwdensity/f)),DW Biomass,"look up in Jenkins first, then DRYAD (Global Wood Density Database)",Vieilledent et al. 2012

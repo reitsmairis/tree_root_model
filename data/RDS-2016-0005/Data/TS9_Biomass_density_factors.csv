@@ -1,0 +1,188 @@
+SpCode,Scientific Name,Common Name,DW Density,Matched Equation Species,Matched Equation SpCode,Eq Source
+ACFA,Acacia farnesiana,sweet acacia,520,Acacia longifolia,ACLO,Pillsbury et al. 1998
+ACLO,Acacia longifolia,golden wattle,520,Acacia longifolia,ACLO,Pillsbury et al. 1998
+ACMA,Acer macrophyllum,bigleaf maple,440,Acer platanoides,ACPL,McHale 2007
+ACME,Acacia melanoxylon,black acacia,573,Acacia longifolia,ACLO,Pillsbury et al. 1998
+ACNE,Acer negundo,boxelder,420,Acer platanoides,ACPL,McHale 2007
+ACPA,Acer palmatum,Japanese maple,450,Acer platanoides,ACPL,McHale 2007
+ACPL,Acer platanoides,Norway maple,520,Acer platanoides,ACPL,McHale 2007
+ACRU,Acer rubrum,red maple,490,Acer rubrum,ACRU,Ter-Mikaelian and Korzukhin 1997
+ACSA1,Acer saccharinum,silver maple,440,Acer saccharinum,ACSA1,McHale 2007
+ACSA2,Acer saccharum,sugar maple,560,Acer platanoides,ACPL,McHale 2007
+ACSA3,Acacia salicina,willow acacia,473,Acacia longifolia,ACLO,Pillsbury et al. 1998
+AEHI,Aesculus hippocastanum,horsechestnut,500,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+BABL,Bauhinia x blakeana,Hong Kong orchid tree,527,Gen Trop Chave,GNTRC,Chave et al. 2005
+BENI,Betula nigra,river birch,490,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+BEPE,Betula pendula,European white birch,530,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+BRPO,Brachychiton populneum,kurrajong,387,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+BUCA,Butia capitata,jelly palm,370,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+CABEF,Carpinus betulus 'Fastigiata',columnar hornbeam,598,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CACI,Callistemon citrinus,lemon bottlebrush,690,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CADE2,Calocedrus decurrens,incense cedar,350,Gen Sftwd cedar/larch,GNSWCL,Jenkins et al. 2004 minus foliage ratio
+CAEQ,Casuarina equisetifolia,Australian pine,728,Gen Trop Chave,GNTRC,Chave et al. 2005
+CAIL,Carya illinoinensis,pecan,600,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CAIN4,Calophyllum inophyllum,kamani,560,Gen Trop Chave,GNTRC,Chave et al. 2005
+CANE33,Cassia x nealiae,rainbow shower tree,670,Gen Trop Chave,GNTRC,Chave et al. 2005
+CASP,Catalpa speciosa,northern catalpa,380,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CECA,Cercis canadensis,eastern redbud,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CEDE,Cedrus deodara,deodar cedar,410,Gen Sftwd cedar/larch,GNSWCL,Jenkins et al. 2004 minus foliage ratio
+CEFL,Parkinsonia florida,blue paloverde,619,General spiny dry climate,GNHDV,Vieilledent et al. 2012
+CELA,Celtis laevigata,sugarberry,490,Celtis occidentalis,CEOC,McHale 2007
+CEOC,Celtis occidentalis,northern hackberry,490,Celtis occidentalis,CEOC,McHale 2007
+CESI3,Ceratonia siliqua,algarrobo Europeo,520,Ceratonia siliqua,CESI3,Pillsbury et al. 1998
+CESI4,Celtis sinensis,Chinese hackberry,490,Celtis occidentalis,CEOC,McHale 2007
+CHLI,Chilopsis linearis,desert willow,600,General spiny dry climate,GNHDV,Vieilledent et al. 2012
+CICA,Cinnamomum camphora,camphor tree,520,Cinnamomum camphora,CICA,Pillsbury et al. 1998
+CISP2,Citharexylum spinosum,fiddlewood,700,Gen Trop Chave,GNTRC,Chave et al. 2005
+COERA2,Conocarpus erectus var. argenteus,silver buttonwood,690,Gen Trop Chave,GNTRC,Chave et al. 2005
+COFL,Cornus florida,flowering dogwood,640,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CONU,Cocos nucifera,coconut palm,520,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+COSU2,Cordia subcordata,kou,640,Gen Trop Chave,GNTRC,Chave et al. 2005
+CR,Crataegus species,hawthorn,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CRLA80,Crataegus laevigata,smooth hawthorn,620,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CUAN,Cupaniopsis anacardioides,carrotwood,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+CUMA,Cupressus macrocarpa,Monterey cypress,410,Cupressus macrocarpa,CUMA,Pillsbury et al. 1998
+DERE,Delonix regia,royal poinciana,479,Gen Trop Chave,GNTRC,Chave et al. 2005
+ELAN,Elaeagnus angustifolia,Russian olive,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+ELOR2,Elaeodendron orientale,false olive,676,Gen Trop Chave,GNTRC,Chave et al. 2005
+ERJA,Eriobotrya japonica,loquat tree,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+EUFI81,Eucalyptus ficifolia,red flowering gum,794,Eucalyptus globulus,EUGL,Pillsbury et al. 1998
+EUGL,Eucalyptus globulus,blue gum eucalyptus,620,Eucalyptus globulus,EUGL,Pillsbury et al. 1998
+EUMI2,Eucalyptus microtheca,coolibah tree,994,Eucalyptus globulus,EUGL,Pillsbury et al. 1998
+EUSI,Eucalyptus sideroxylon,red ironbark,932,Eucalyptus globulus,EUGL,Pillsbury et al. 1998
+FAGR,Fagus grandifolia,American beech,585,Fagus grandifolia,FAGR,Ter-Mikaelian and Korzukhin 1997
+FASYAT,Fagus sylvatica 'Atropunicea',purple-leaf beech,585,Fagus grandifolia,FAGR,Ter-Mikaelian and Korzukhin 1997
+FIBE,Ficus benjamina,Benjamin fig,460,Gen Trop Chave,GNTRC,Chave et al. 2005
+FIDE6,Filicium decipiens,fern tree,805,Gen Trop Chave,GNTRC,Chave et al. 2005
+FIMI,Ficus thonningii,figueira benjamin,432,Gen Trop Chave,GNTRC,Chave et al. 2005
+FRAM,Fraxinus americana,white ash,550,Fraxinus americana,FRAM,Ter-Mikaelian & Korzukhin 1997 minus Jenkins foliage
+FRAN_R,Fraxinus angustifolia 'Raywood',Raywood ash,510,Fraxinus velutina 'Modesto',FRVE_G,Pillsbury et al. 1998
+FRAN2,Fraxinus angustifolia,Raywood ash,510,Fraxinus velutina 'Modesto',FRVE_G,Pillsbury et al. 1998
+FREX_H,Fraxinus excelsior 'Hessei',Hesse ash,560,Fraxinus velutina 'Modesto',FRVE_G,Pillsbury et al. 1998
+FRHO,Fraxinus holotricha,Moraine ash,510,Fraxinus velutina 'Modesto',FRVE_G,Pillsbury et al. 1998
+FRLA,Fraxinus latifolia,Oregon ash,500,Fraxinus americana,FRAM,Ter-Mikaelian & Korzukhin 1997 minus Jenkins foliage
+FRPE,Fraxinus pennsylvanica,green ash,530,Fraxinus pennsylvanica,FRPE,McHale 2007
+FRPE_M,Fraxinus pennsylvanica 'Marshall',Marshall ash,530,Fraxinus pennsylvanica,FRPE,McHale 2007
+FRUH,Fraxinus uhdei,evergreen ash,510,Fraxinus pennsylvanica,FRPE,McHale 2007
+FRVE,Fraxinus velutina,velvet ash,510,Fraxinus velutina 'Modesto',FRVE_G,Pillsbury et al. 1998
+FRVE_G,Fraxinus velutina 'Modesto',Modesto ash,510,Fraxinus velutina 'Modesto',FRVE_G,Pillsbury et al. 1998
+GIBI,Ginkgo biloba,ginkgo,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+GLTR,Gleditsia triacanthos,honeylocust,600,Gleditsia triacanthos,GLTR,McHale 2007
+GNHDAA,General hardwood jenkins,aspen/alder/cottonwood/willow,,Gen Hdwd aspen/alder/cottonwood/willow,GNHDAA,Jenkins et al. 2004 minus foliage ratio
+GNHDH,General hardwood harris,general mixed hardwood ,,Gen Hdwd Harris,GNHDH,Harris et al. 1973
+GNHDHM,General hardwood jenkins,hard maple/oak/hickory/beech,,Gen Hdwd maple/oak/hickory/beech,GNHDHM,Jenkins et al. 2004 minus foliage ratio
+GNHDSM,General hardwood jenkins,soft maple/birch,,Gen Hdwd soft maple/birch,GNHDSM,Jenkins et al. 2004 minus foliage ratio
+GNHDV,General spiny dry vieilledent,general spiny dry climate,,General spiny dry climate,GNHDV,Vieilledent et al. 2012
+GNSWCL,General softwood jenkins,cedar/larch,,Gen Sftwd cedar/larch,GNSWCL,Jenkins et al. 2004 minus foliage ratio
+GNSWDF,General softwood jenkins,Douglas fir,,Gen Sftwd doug-fir,GNSWDF,Jenkins et al. 2004 minus foliage ratio
+GNSWP,General softwood jenkins,pine,,Gen Sftwd pine,GNSWP,Jenkins et al. 2004 minus foliage ratio
+GNSWS,General softwood jenkins,spruce,,Gen Sftwd spruce,GNSWS,Jenkins et al. 2004 minus foliage ratio
+GNSWTF,General softwood jenkins,true fir/hemlock,,Gen Sftwd truefir/hemlock,GNSWTF,Jenkins et al. 2004 minus foliage ratio
+GNTRC,General tropical chave,general tropical chave,,Gen Trop Chave,GNTRC,Chave et al. 2005
+GNWDJO,General woodland jenkins,juniper/oak/mesquite,,Gen Wdlnd juniper/oak/mesquite,GNWDJO,Jenkins et al. 2004 minus foliage ratio
+GYDI,Gymnocladus dioicus,Kentucky coffeetree,530,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+ILOP,Ilex opaca,American holly,500,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+ILPA2,Ilex paraguariensis,Paraguay tea,565,Gen Trop Chave,GNTRC,Chave et al. 2005
+JAMI,Jacaranda mimosifolia,jacaranda,490,Jacaranda mimosifolia,JAMI,Pillsbury et al. 1998
+JUNI,Juglans nigra,black walnut,510,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+JUSI,Juniperus virginiana var. silicicola,southern redcedar,420,Juniperus virginiana,JUVI,Jenkins et al. 2004 minus foliage ratio
+JUVI,Juniperus virginiana,eastern red cedar,440,Juniperus virginiana,JUVI,Jenkins et al. 2004 minus foliage ratio
+KOEL,Koelreuteria elegans,flamegold,595,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+KOPA,Koelreuteria paniculata,goldenrain tree,620,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+LA6,Lagerstroemia species,common crapemyrtle,571,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+LAIN,Lagerstroemia indica,common crapemyrtle,571,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+LASP,Lagerstroemia speciosa,giant crapemyrtle,612,Gen Trop Chave,GNTRC,Chave et al. 2005
+LIST,Liquidambar styraciflua,sweetgum,460,Liquidambar styraciflua,LIST,Pillsbury et al. 1998
+LITU,Liriodendron tulipifera,tulip tree,400,Liriodendron tulipifera,LITU,Ter-Mikaelian & Korzukhin 1997 minus Jenkins foliage
+MA2,Malus species,apple,610,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+MAGR,Magnolia grandiflora,southern magnolia,460,Magnolia grandiflora,MAGR,Pillsbury et al. 1998
+MEEX,Metrosideros excelsa,New Zealand christmas tree,1150,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+MEQU,Melaleuca quinquenervia,punk tree,520,Melaleuca quinquenervia (Florida),MEQU,Van et al. 2000
+MO,Morus species,mulberry,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+MOAL,Morus alba,white mulberry,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+OLEU,Olea europaea,olive,700,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PAAC,Parkinsonia aculeata,Jerusalem thorn,610,General spiny dry climate,GNHDV,Vieilledent et al. 2012
+PHCA,Phoenix canariensis,Canary Island date palm,370,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+PHDA4,Phoenix dactylifera,date palm,370,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+PIBR2,Pinus brutia,Turkish pine; east Mediterranean pine,430,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PICA,Pinus canariensis,Canary Island pine,610,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PICH,Pistacia chinensis,Chinese pistache,685,Pistacia chinensis,PICH,Pillsbury et al. 1998
+PICO5,Pinus contorta var. bolanderi,Bolander beach pine,380,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PIEC,Pinus echinata,shortleaf pine,470,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PIED,Pinus edulis,pinyon pine,500,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PIEL2,Pinus eldarica,Afghan pine,540,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PIHA,Pinus halepensis,aleppo pine,460,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PINI,Pinus nigra,Austrian pine,430,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PIPO,Pinus ponderosa,ponderosa pine,380,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PIPU,Picea pungens,blue spruce,360,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PIRA,Pinus radiata,Monterey pine,400,Pinus radiata,PIRA,Pillsbury et al. 1998
+PISA2,Samanea saman,monkeypod,520,Gen Trop Chave,GNTRC,Chave et al. 2005
+PIST,Pinus strobus,eastern white pine,340,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PISY,Pinus sylvestris,Scotch pine,430,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PITA,Pinus taeda,loblolly pine,470,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PITH,Pinus thunbergiana,Japanese black pine,430,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+PIUN,Pittosporum undulatum,victorian box,745,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PLAC,Platanus x acerifolia,London planetree,500,Platanus x acerifolia,PLAC,Pillsbury et al. 1998
+PLOC,Platanus occidentalis,American sycamore,480,Platanus x acerifolia,PLAC,Pillsbury et al. 1998
+PLRA,Platanus racemosa,California sycamore,480,Platanus x acerifolia,PLAC,Pillsbury et al. 1998
+POAN,Populus angustifolia,narrowleaf cottonwood,350,Populus sargentii,POSA,McHale 2007
+PODE,Populus deltoides,eastern cottonwood,370,Populus sargentii,POSA,McHale 2007
+POFR,Populus fremontii,Fremont cottonwood,410,Populus sargentii,POSA,McHale 2007
+POMA,Podocarpus macrophyllus,yew podocarpus,470,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+POSA,Populus sargentii,plains cottonwood,370,Populus sargentii,POSA,McHale 2007
+POTR2,Populus balsamifera ssp. trichocarpa,black cottonwood,310,Populus sargentii,POSA,McHale 2007
+PR,Prunus species,plum,560,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PRACM,Prestoea montana,Sierran palm,370,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+PRCA,Prunus caroliniana,Carolina laurelcherry,560,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PRCE,Prunus cerasifera,cherry plum,470,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PRCEKW,Prunus cerasifera 'Thundercloud',thundercloud purple plum,560,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PRCH,Prosopis chilensis,algarrobo,740,General spiny dry climate,GNHDV,Vieilledent et al. 2012
+PRSE2,Prunus serrulata,Kwanzan cherry,560,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PRYE,Prunus yedoensis,Yoshino flowering cherry,470,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PSME,Pseudotsuga menziesii,Douglas fir,450,Gen Sftwd doug-fir,GNSWDF,Jenkins et al. 2004 minus foliage ratio
+PY,Pyrus species,pear,600,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PYAN,Malus angustifolia,southern crabapple,610,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PYCA,Pyrus calleryana,Callery pear,600,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PYCA_B,Pyrus calleryana 'Bradford',Callery pear 'Bradford',600,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+PYKA,Pyrus kawakamii,evergreen pear,600,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+QUAG,Quercus agrifolia,coastal live oak; California live oak,590,Quercus agrifolia,QUAG,"Pillsbury and Kirkley, 1984"
+QUAL,Quercus alba,white oak,600,Quercus garryana,QUGA4,"Pillsbury and Kirkley, 1984"
+QUGA4,Quercus garryana,Oregon white oak,640,Quercus garryana,QUGA4,"Pillsbury and Kirkley, 1984"
+QUIL2,Quercus ilex,holly oak,820,Quercus ilex,QUIL2,Pillsbury et al. 1998
+QULA2,Quercus laurifolia,laurel oak,560,Quercus lobata,QULO,"Pillsbury and Kirkley, 1984"
+QULO,Quercus lobata,valley oak,550,Quercus lobata,QULO,"Pillsbury and Kirkley, 1984"
+QUMA1,Quercus macrocarpa,bur oak,580,Quercus macrocarpa,QUMA1,McHale 2007
+QUNI,Quercus nigra,water oak,560,Quercus agrifolia,QUAG,"Pillsbury and Kirkley, 1984"
+QUPA,Quercus palustris,pin oak,580,Quercus agrifolia,QUAG,"Pillsbury and Kirkley, 1984"
+QUPH,Quercus phellos,willow oak,560,Quercus agrifolia,QUAG,"Pillsbury and Kirkley, 1984"
+QURU,Quercus rubra,northern red oak,560,Quercus rubra,QURU,Ter-Mikaelian & Korzukhin 1997 minus Jenkins foliage
+QUSH,Quercus shumardii,Shumard oak,590,Quercus agrifolia,QUAG,"Pillsbury and Kirkley, 1984"
+QUVI,Quercus virginiana,live oak,800,Quercus garryana,QUGA4,"Pillsbury and Kirkley, 1984"
+RHLA,Rhus lancea,African sumac,540,General spiny dry climate,GNHDV,Vieilledent et al. 2012
+ROPS,Robinia pseudoacacia,black locust,660,Gleditsia triacanthos,GLTR,McHale 2007
+SAPA,Sabal palmetto,cabbage palmetto,520,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+SCMO,Schinus molle,California peppertree,650,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+SCTE,Schinus terebinthifolius,Brazilian pepper,650,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+SESE,Sequoia sempervirens,coast redwood,360,Gen Sftwd cedar/larch,GNSWCL,Jenkins et al. 2004 minus foliage ratio
+SWMA,Swietenia mahagoni,West Indian mahogany,750,Gen Trop Chave,GNTRC,Chave et al. 2005
+SYRO,Syagrus romanzoffiana,queen palm,370,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+TAAR,Tabebuia aurea,silver trumpet tree,520,Gen Trop Chave,GNTRC,Chave et al. 2005
+TACH,Tabebuia ochracea subsp. neochrysantha,golden trumpet tree,960,Gen Trop Chave,GNTRC,Chave et al. 2005
+TAPA,Tabebuia heterophylla,pink tecoma,520,Gen Trop Chave,GNTRC,Chave et al. 2005
+THOR,Platycladus orientalis,Oriental arborvitae,527,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+TIAM,Tilia americana,American basswood,320,Tilia cordata,TICO,McHale 2007
+TICO,Tilia cordata,littleleaf linden,420,Tilia cordata,TICO,McHale 2007
+TITO,Tilia tomentosa,silver linden,320,Tilia cordata,TICO,McHale 2007
+TRCO,Tristaniopsis conferta,Brisbane box,750,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+TRSE6,Triadica sebifera,tallowtree,520,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+UGEB,Urban general broadleaf,urban general broadleaf,,Urb Gen Broadleaf,UGEB,Aguaron and McPherson 2012
+UGEC,Urban general conifer,urban general conifer,,Urb Gen Conifer,UGEC,Aguaron and McPherson 2012
+ULAL,Ulmus alata,winged elm,600,Ulmus pumila,ULPU,McHale 2007
+ULAM,Ulmus americana,American elm,460,Ulmus americana,ULAM,McHale 2007
+ULPA,Ulmus parvifolia,Chinese elm,730,Ulmus parvifolia chinensis,ULPA,Pillsbury et al. 1998
+ULPU,Ulmus pumila,Siberian elm,540,Ulmus pumila,ULPU,McHale 2007
+UMCA,Umbellularia californica,California laurel,510,Umbellularia californica,UMCA,"Pillsbury and Kirkley, 1984"
+VEME,Veitchia merrillii,manila palm,370,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+WAFI,Washingtonia filifera,California palm,370,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+WARO,Washingtonia robusta,Mexican fan palm,370,Prestoea montana,PRACM,"Frangi and Lugo, 1985"
+ZESE,Zelkova serrata,Japanese zelkova,520,Zelkova serrata,ZESE,Pillsbury et al. 1998

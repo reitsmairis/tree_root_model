@@ -1,0 +1,13 @@
+EqName,Equation
+loglogw1,EXP(a+b*LN(LN(age or dbh +1) + (mse/2)))
+loglogw2,EXP(a+b*LN(LN(age or dbh+1))+(SQRT(age or dbh)*(mse/2)))
+loglogw3,EXP(a+b*LN(LN(age or dbh+1))+(age or dbh)*(mse/2))
+loglogw4,EXP(a+b*LN(LN(age or dbh+1))+(age^2 or dbh^2)*(mse/2))
+lin,a+b * age or dbh
+quad,a+b * x+c *x^2
+cub,a+b * x+c *x^2 + d * x^3
+quart,a+b * x+c *x^2 + d * x^3 + e*x^4
+expow1,EXP(a+ b * (age or dbh) + (mse/2))
+expow2,EXP(a+b*(age or dbh)+SQRT(age or dbh)*(mse/2))
+expow3,EXP(a+b*(age or dbh)+(age or dbh)*(mse/2))
+expow4,EXP(a+b*(age or dbh)+(age^2 or dbh^2)*(mse/2))

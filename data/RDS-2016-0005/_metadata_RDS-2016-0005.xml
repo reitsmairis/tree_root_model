@@ -1,0 +1,2486 @@
+<?xml-stylesheet href='NBII_classic.xsl' type='text/xsl'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>McPherson, E. Gregory</origin>
+        <origin>van Doorn, Natalie S.</origin>
+        <origin>Peper, Paula J.</origin>
+        <pubdate>2016</pubdate>
+        <title>Urban tree database</title>
+        <geoform>tabular digital data</geoform>
+        <pubinfo>
+          <pubplace>Fort Collins, CO</pubplace>
+          <publish>Forest Service Research Data Archive</publish>
+        </pubinfo>
+        <onlink>https://doi.org/10.2737/RDS-2016-0005</onlink>
+        <othercit>Updated 21 January 2020</othercit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This data publication contains urban tree growth data collected over a period of 14 years (1998-2012) in 17 cities from 13 states across the United States: Arizona, California, Colorado, Florida, Hawaii, Idaho, Indiana, Minnesota, New Mexico, New York, North Carolina, Oregon, and South Carolina. 
+
+Measurements were taken on over 14,000 urban street and park trees. Key information collected for each tree species includes bole and crown size, location, and age. Based on these measurements, 365 sets of allometric equations were developed for tree species from around the U.S. Each “set” consists of eight equations for each of the approximately 20 most abundant species in each of 16 climate regions. Tree age is used to predict a species diameter at breast height (dbh), and dbh is used to predict tree height, crown diameter, crown height, and leaf area. Dbh is also used to predict age. For applications with remote sensing, average crown diameter is used to predict dbh. There are 171 distinct species represented within this database. Some species grow in more than one region. The Urban Tree Database (UTD) contains foliar biomass data (raw data and summarized results from the foliar sampling for each species and region) that are fundamental to calculating leaf area, as well as tree biomass equations (compiled from literature) for carbon storage estimates. An expanded list of dry weight biomass density factors for common urban species is made available to assist users in using volumetric equations.</abstract>
+      <purpose>Information on urban tree growth underpins models used to calculate effects of trees on the environment and human well-being. Maximum tree size and other growth data are used by urban forest managers, landscape architects and planners to select trees most suitable to the amount of growing space, thereby reducing costly future conflicts between trees and infrastructure. Growth data are used to develop correlations between growth and influencing factors such as site conditions and stewardship practices. Despite the importance of tree growth data to the science and practice of urban forestry, our knowledge is scant. Over a period of 14 years scientists with the U.S. Forest Service recorded data from a consistent set of measurements on over 14,000 trees in 17 U.S. cities.</purpose>
+      <supplinf>These data were originally published on 03/02/2016. The metadata was updated on 10/06/2016 to include reference to a new publication. Minor metadata updates were made on 12/15/2016. On 01/07/2020 this data publication was updated to correct a few species' names and systematic errors in the data that were found. A complete list of these changes is included (\Supplements\Errata_Jan2020_RDS-2016-0005.pdf). In addition, we have included a list of changes for the General Technical Report associated with these data (\Supplements\Errata_Jan2020_PNW-GTR-253.pdf).</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>1998</begdate>
+          <enddate>2012</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>Ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <descgeog>Data are from a consistent set of measurements on over 14,000 trees in these 17 U.S. cities:
+
+Orlando, Florida
+Charleston, South Carolina
+Claremont, California
+Modesto, California
+Albuquerque, New Mexico
+Indianapolis, Indiana
+Minneapolis, Minnesota
+Fort Collins, Colorado
+Berkeley, California
+Queens, New York
+Longview, Oregon
+Charlotte, North Carolina
+Sacramento, California
+Santa Monica, California
+Glendale, Arizona
+Boise, Idaho
+Honolulu, Hawaii</descgeog>
+      <bounding>
+        <westbc>-160</westbc>
+        <eastbc>-65</eastbc>
+        <northbc>50</northbc>
+        <southbc>20</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>biota</themekey>
+        <themekey>environment</themekey>
+        <themekey>health</themekey>
+        <themekey>planningCadastre</themekey>
+        <themekey>society</themekey>
+      </theme>
+      <theme>
+        <themekt>National Research &amp; Development Taxonomy</themekt>
+        <themekey>Ecology, Ecosystems, &amp; Environment</themekey>
+        <themekey>Environment and People</themekey>
+        <themekey>Urban natural resources management</themekey>
+        <themekey>Forest &amp; Plant Health</themekey>
+        <themekey>Climate effects</themekey>
+        <themekey>Human effects</themekey>
+        <themekey>Inventory, Monitoring, &amp; Analysis</themekey>
+        <themekey>Natural Resource Management &amp; Use</themekey>
+        <themekey>Ecosystem services</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>allometry</themekey>
+        <themekey>growth models</themekey>
+        <themekey>predictive equations</themekey>
+        <themekey>tree growth</themekey>
+        <themekey>urban trees</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>United States of America</placekey>
+        <placekey>Arizona</placekey>
+        <placekey>California</placekey>
+        <placekey>Colorado</placekey>
+        <placekey>Florida</placekey>
+        <placekey>Hawaii</placekey>
+        <placekey>Idaho</placekey>
+        <placekey>Indiana</placekey>
+        <placekey>Minnesota</placekey>
+        <placekey>New Mexico</placekey>
+        <placekey>New York</placekey>
+        <placekey>North Carolina</placekey>
+        <placekey>Oregon</placekey>
+        <placekey>South Carolina</placekey>
+        <placekey>Orlando</placekey>
+        <placekey>Charleston</placekey>
+        <placekey>Claremont</placekey>
+        <placekey>Modesto</placekey>
+        <placekey>Albuquerque</placekey>
+        <placekey>Indianapolis</placekey>
+        <placekey>Minneapolis</placekey>
+        <placekey>Fort Collins</placekey>
+        <placekey>Berkeley</placekey>
+        <placekey>Queens</placekey>
+        <placekey>Longview</placekey>
+        <placekey>Charlotte</placekey>
+        <placekey>Sacramento</placekey>
+        <placekey>Santa Monica</placekey>
+        <placekey>Glendale</placekey>
+        <placekey>Boise</placekey>
+        <placekey>Honolulu</placekey>
+      </place>
+    </keywords>
+    <taxonomy>
+      <keywtax>
+        <taxonkt>None</taxonkt>
+        <taxonkey>plants</taxonkey>
+        <taxonkey>multiple species</taxonkey>
+      </keywtax>
+      <taxonsys>
+        <classsys>
+          <classcit>
+            <citeinfo>
+              <origin>ITIS</origin>
+              <pubdate>2016</pubdate>
+              <title>Integrated Taxonomic Information System</title>
+              <geoform>database</geoform>
+              <othercit>Retrieved [January, 28, 2016] </othercit>
+              <onlink>https://www.itis.gov</onlink>
+            </citeinfo>
+          </classcit>
+          <classmod>The taxonomy provided for some species is slightly different than the species name provided in the data file. Differences are described below.
+
+1. Original name: Veitchia merrillii, but taxonomy provided for this species' synonym: Adonidia merrilii.
+
+2. Original name: Acacia farnesiana; provided taxonomy for ITIS accepted name:  Vachellia farnesiana var. farnesiana
+
+3. Original name: Cupressus macrocarpa; provided taxonomy for ITIS accepted name: Callitropsis macrocarpa
+
+4. Original name: Eucalyptus ficifolia; provided taxonomy for ITIS accepted name: Corymbia ficifolia
+
+5. Original name: Pinus eldarica; provided taxonomy for ITIS accepted name: Pinus brutia var. eldarica 
+
+6. Original name: Pinus thunbergiana; provided taxonomy for ITIS accepted name: Pinus thunbergii 
+
+7. Original name: Platanus hybrida; provided taxonomy for ITIS accepted name: Platanus acerifolia
+
+8. Original name: Plantanus x acerifolia; provided taxonomy for ITIS accepted name: Platanus acerifolia
+
+9. Original name: Populus sargentii; provided taxonomy for ITIS accepted name: Populus deltoides ssp. monilifera 
+
+10. Original name: Prestoea montana; provided taxonomy for ITIS accepted name: Prestoea acuminata var. montana
+
+11. Original name: Pyrus kawakamii; provided taxonomy for ITIS accepted name: Pyrus calleryana 
+
+12. Original name: Rhus lancea; provided taxonomy for ITIS accepted name:  Searsia lancea
+
+13. Original name: Populus balsamifera subsp. Trichocarpa; provided taxonomy for ITIS accepted name: Populus trichocarpa</classmod>
+        </classsys>
+      </taxonsys>
+      <taxoncl>
+        <taxonrn>Kingdom</taxonrn>
+        <taxonrv>Plantae</taxonrv>
+        <common>plantes</common>
+        <common>Planta</common>
+        <common>Vegetal</common>
+        <common>plants</common>
+        <taxoncl>
+          <taxonrn>Subkingdom</taxonrn>
+          <taxonrv>Viridiplantae</taxonrv>
+          <taxoncl>
+            <taxonrn>Infrakingdom</taxonrn>
+            <taxonrv>Streptophyta</taxonrv>
+            <common>land plants</common>
+            <taxoncl>
+              <taxonrn>Superdivision</taxonrn>
+              <taxonrv>Embryophyta</taxonrv>
+              <taxoncl>
+                <taxonrn>Division</taxonrn>
+                <taxonrv>Tracheophyta</taxonrv>
+                <common>vascular plants</common>
+                <common>tracheophytes</common>
+                <taxoncl>
+                  <taxonrn>Subdivision</taxonrn>
+                  <taxonrv>Spermatophytina</taxonrv>
+                  <common>spermatophytes</common>
+                  <common>seed plants</common>
+                  <common>phanérogames</common>
+                  <taxoncl>
+                    <taxonrn>Class</taxonrn>
+                    <taxonrv>Magnoliopsida</taxonrv>
+                    <taxoncl>
+                      <taxonrn>Superorder</taxonrn>
+                      <taxonrv>Asteranae</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Cornales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Cornaceae</taxonrv>
+                          <common>dogwoods</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Cornus</taxonrv>
+                            <common>dogwood</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Cornus florida</taxonrv>
+                              <common>flowering dogwood</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Lamiales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Verbenaceae</taxonrv>
+                          <common>verbenas</common>
+                          <common>verbénacées</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Citharexylum</taxonrv>
+                            <common>fiddlewood</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Citharexylum spinosum</taxonrv>
+                              <common>fiddlewood</common>
+                              <common>spiny fiddlewood</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Oleaceae</taxonrv>
+                          <common>olives</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Fraxinus</taxonrv>
+                            <common>ash</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Fraxinus pennsylvanica</taxonrv>
+                              <common>green ash</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Fraxinus americana</taxonrv>
+                              <common>white ash</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Fraxinus velutina</taxonrv>
+                              <common>velvet ash</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Fraxinus latifolia</taxonrv>
+                              <common>Oregon ash</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Fraxinus excelsior</taxonrv>
+                              <common>European ash</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Fraxinus uhdei</taxonrv>
+                              <common>Mexican ash</common>
+                              <common>tropical ash</common>
+                              <common>shamel ash</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Olea</taxonrv>
+                            <common>olive</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Olea europaea</taxonrv>
+                              <common>olive</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Bignoniaceae</taxonrv>
+                          <common>bignonias</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Catalpa</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Catalpa speciosa</taxonrv>
+                              <common>northern catalpa</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Chilopsis</taxonrv>
+                            <common>desert willow</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Chilopsis linearis</taxonrv>
+                              <common>desert willow</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Jacaranda</taxonrv>
+                            <common>jacaranda</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Jacaranda mimosifolia</taxonrv>
+                              <common>black poui</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Tabebuia</taxonrv>
+                            <common>trumpet-tree</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Tabebuia heterophylla</taxonrv>
+                              <common>white cedar</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Tabebuia aurea</taxonrv>
+                              <common>Caribbean trumpet-tree</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Apiales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Pittosporaceae</taxonrv>
+                          <common>pittosporums</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Pittosporum</taxonrv>
+                            <common>cheesewood</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pittosporum undulatum</taxonrv>
+                              <common>mock orange</common>
+                              <common>sweet pittosporum</common>
+                              <common>Victorian box</common>
+                              <common>Victorian laurel</common>
+                              <common>Australian cheesewood</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Aquifoliales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Aquifoliaceae</taxonrv>
+                          <common>hollies</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Ilex</taxonrv>
+                            <common>hollies</common>
+                            <common>holly</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ilex opaca</taxonrv>
+                              <common>American holly</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ilex paraguariensis</taxonrv>
+                              <common>mate</common>
+                              <common>Paraguay tea</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Boraginales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Cordiaceae</taxonrv>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Cordia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Cordia subcordata</taxonrv>
+                              <common>kou</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                    <taxoncl>
+                      <taxonrn>Superorder</taxonrn>
+                      <taxonrv>Lilianae</taxonrv>
+                      <common>monocots</common>
+                      <common>monocotyledons</common>
+                      <common>monocotylédones</common>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Arecales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Arecaceae</taxonrv>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Cocos</taxonrv>
+                            <common>coconut palm</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Cocos nucifera</taxonrv>
+                              <common>coconut palm</common>
+                              <common>Palma de Coco</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Phoenix</taxonrv>
+                            <common>date palm</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Phoenix dactylifera</taxonrv>
+                              <common>date palm</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Phoenix canariensis</taxonrv>
+                              <common>Canary Island date palm</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Prestoea</taxonrv>
+                            <common>prestoea</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Prestoea acuminata</taxonrv>
+                              <common>Sierran palm</common>
+                              <taxoncl>
+                                <taxonrn>Variety</taxonrn>
+                                <taxonrv>Prestoea acuminata var. montana</taxonrv>
+                                <common>Sierran palm</common>
+                              </taxoncl>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Sabal</taxonrv>
+                            <common>palmetto</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Sabal palmetto</taxonrv>
+                              <common>cabbage palmetto</common>
+                              <common>cabbage palm</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Washingtonia</taxonrv>
+                            <common>fan palm</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Washingtonia robusta</taxonrv>
+                              <common>Washington fan palm</common>
+                              <common>Mexican fan palm</common>
+                              <common>Washingtonia colorada</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Washingtonia filifera</taxonrv>
+                              <common>Washingtonia de Castilla</common>
+                              <common>California fan palm</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Syagrus</taxonrv>
+                            <common>syagrus</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Syagrus romanzoffiana</taxonrv>
+                              <common>queen palm</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Butia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Butia capitata</taxonrv>
+                              <common>South American jelly palm</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Adonidia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Adonidia merrillii</taxonrv>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                    <taxoncl>
+                      <taxonrn>Superorder</taxonrn>
+                      <taxonrv>Magnolianae</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Magnoliales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Magnoliaceae</taxonrv>
+                          <common>magnolias</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Magnolia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Magnolia grandiflora</taxonrv>
+                              <common>laurier tulipier</common>
+                              <common>bull-bay</common>
+                              <common>southern magnolia</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Liriodendron</taxonrv>
+                            <common>tuliptree</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Liriodendron tulipifera</taxonrv>
+                              <common>yellow poplar</common>
+                              <common>tulip poplar</common>
+                              <common>yellow-poplar</common>
+                              <common>tuliptree</common>
+                              <common>bois-jaune</common>
+                              <common>tulip-poplar</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Laurales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Lauraceae</taxonrv>
+                          <common>laurels</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Cinnamomum</taxonrv>
+                            <common>cinnamon</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Cinnamomum camphora</taxonrv>
+                              <common>camphortree</common>
+                              <common>camphor tree</common>
+                              <common>camphor laurel</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Umbellularia</taxonrv>
+                            <common>California laurel</common>
+                            <common>Californian bay</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Umbellularia californica</taxonrv>
+                              <common>California laurel</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                    <taxoncl>
+                      <taxonrn>Superorder</taxonrn>
+                      <taxonrv>Proteanae</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Proteales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Platanaceae</taxonrv>
+                          <common>plane trees</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Platanus</taxonrv>
+                            <common>sycamore</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Platanus occidentalis</taxonrv>
+                              <common>sycamore</common>
+                              <common>American sycamore</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Platanus racemosa</taxonrv>
+                              <common>California sycamore</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Platanus acerifolia</taxonrv>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                    <taxoncl>
+                      <taxonrn>Superorder</taxonrn>
+                      <taxonrv>Rosanae</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Fagales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Juglandaceae</taxonrv>
+                          <common>walnuts</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Carya</taxonrv>
+                            <common>caryer</common>
+                            <common>hickory</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Carya illinoinensis</taxonrv>
+                              <common>nuez encarcelada</common>
+                              <common>nogal morado</common>
+                              <common>pecanier</common>
+                              <common>pecan</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Juglans</taxonrv>
+                            <common>nogal</common>
+                            <common>walnut</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Juglans nigra</taxonrv>
+                              <common>black walnut</common>
+                              <common>noyer noir</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Fagaceae</taxonrv>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Quercus</taxonrv>
+                            <common>chêne</common>
+                            <common>oak</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus nigra</taxonrv>
+                              <common>water oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus palustris</taxonrv>
+                              <common>pin oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus phellos</taxonrv>
+                              <common>willow oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus virginiana</taxonrv>
+                              <common>live oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus macrocarpa</taxonrv>
+                              <common>bur oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus agrifolia</taxonrv>
+                              <common>California live oak</common>
+                              <common>coast live oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus alba</taxonrv>
+                              <common>chêne blanc</common>
+                              <common>white oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus garryana</taxonrv>
+                              <common>Oregon white oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus laurifolia</taxonrv>
+                              <common>laurel oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus lobata</taxonrv>
+                              <common>California white oak</common>
+                              <common>valley oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus rubra</taxonrv>
+                              <common>northern red oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus shumardii</taxonrv>
+                              <common>Shumard's oak</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Quercus ilex</taxonrv>
+                              <common>holly oak</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Fagus</taxonrv>
+                            <common>beech</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Fagus grandifolia</taxonrv>
+                              <common>American beech</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Fagus sylvatica</taxonrv>
+                              <common>European beech</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Betulaceae</taxonrv>
+                          <common>alder</common>
+                          <common>birch</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Betula</taxonrv>
+                            <common>birch</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Betula nigra</taxonrv>
+                              <common>river birch</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Betula pendula</taxonrv>
+                              <common>European white birch</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Carpinus</taxonrv>
+                            <common>hornbeam</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Carpinus betulus</taxonrv>
+                              <common>European hornbeam</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Casuarinaceae</taxonrv>
+                          <common>beef wood</common>
+                          <common>beefwood</common>
+                          <common>she-oak</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Casuarina</taxonrv>
+                            <common>she-oak</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Casuarina equisetifolia</taxonrv>
+                              <common>Australian pine</common>
+                              <common>common ironwood</common>
+                              <common>horsetail casuarina</common>
+                              <common>beach she-oak</common>
+                              <common>Australian-pine</common>
+                              <common>coast she-oak</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Malvales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Malvaceae</taxonrv>
+                          <common>mallows</common>
+                          <common>mauves</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Tilia</taxonrv>
+                            <common>basswood</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Tilia americana</taxonrv>
+                              <common>American basswood</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Tilia cordata</taxonrv>
+                              <common>littleleaf linden</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Tilia tomentosa</taxonrv>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Brachychiton</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Brachychiton populneum</taxonrv>
+                              <common>whiteflower kurrajong</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Rosales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Ulmaceae</taxonrv>
+                          <common>elms</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Ulmus</taxonrv>
+                            <common>elm</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ulmus americana</taxonrv>
+                              <common>American elm</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ulmus alata</taxonrv>
+                              <common>winged elm</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ulmus parvifolia</taxonrv>
+                              <common>lacebark elm</common>
+                              <common>Chinese elm</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ulmus pumila</taxonrv>
+                              <common>Siberian elm</common>
+                              <common>Chinese elm</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Zelkova</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Zelkova serrata</taxonrv>
+                              <common>Japanese zelkova</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Moraceae</taxonrv>
+                          <common>mulberries</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Morus</taxonrv>
+                            <common>mulberry</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Morus alba</taxonrv>
+                              <common>mulberry</common>
+                              <common>white mulberry</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Ficus</taxonrv>
+                            <common>fig</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ficus benjamina</taxonrv>
+                              <common>weeping fig</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ficus thonningii</taxonrv>
+                              <common>Chinese banyan</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Cannabaceae</taxonrv>
+                          <common>hemp</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Celtis</taxonrv>
+                            <common>hackberry</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Celtis occidentalis</taxonrv>
+                              <common>hackberry</common>
+                              <common>common hackberry</common>
+                              <common>micocoulier occidental</common>
+                              <common>western hackberry</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Celtis laevigata</taxonrv>
+                              <common>sugar hackberry</common>
+                              <common>sugarberry</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Celtis sinensis</taxonrv>
+                              <common>Chinese hackberry</common>
+                              <common>Japanese hackberry</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Rosaceae</taxonrv>
+                          <common>roses</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Crataegus</taxonrv>
+                            <common>hawthorns</common>
+                            <common>aubépines</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Crataegus laevigata</taxonrv>
+                              <common>smooth hawthorn</common>
+                              <common>English hawthorn</common>
+                              <common>whitethorn</common>
+                              <common>woodland hawthorn</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Crataegus X lavallei</taxonrv>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Prunus</taxonrv>
+                            <common>chokecherry</common>
+                            <common>plum</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Prunus caroliniana</taxonrv>
+                              <common>Carolina laurelcherry</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Prunus cerasifera</taxonrv>
+                              <common>myrobalan plum</common>
+                              <common>ciruela chabacana</common>
+                              <common>cherry plum</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Prunus serrulata</taxonrv>
+                              <common>Japanese flowering cherry</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Prunus yedoensis</taxonrv>
+                              <common>Yoshino cherry</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Malus</taxonrv>
+                            <common>apple</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Malus angustifolia</taxonrv>
+                              <common>southern crabapple</common>
+                              <common>southern crab apple</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Pyrus</taxonrv>
+                            <common>pear</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pyrus calleryana</taxonrv>
+                              <common>Callery pear</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Eriobotrya</taxonrv>
+                            <common>loquat</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Eriobotrya japonica</taxonrv>
+                              <common>loquat</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Elaeagnaceae</taxonrv>
+                          <common>oleasters</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Elaeagnus</taxonrv>
+                            <common>silverberry</common>
+                            <common>oleaster</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Elaeagnus angustifolia</taxonrv>
+                              <common>Russian olive</common>
+                              <common>Russian-olive</common>
+                              <common>Trebizond-date</common>
+                              <common>oleaster</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Myrtales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Lythraceae</taxonrv>
+                          <common>loosestrife</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Lagerstroemia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Lagerstroemia indica</taxonrv>
+                              <common>crapemyrtle</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Myrtaceae</taxonrv>
+                          <common>myrtles</common>
+                          <common>myrtacées</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Callistemon</taxonrv>
+                            <common>bottlebrush</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Callistemon citrinus</taxonrv>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Eucalyptus</taxonrv>
+                            <common>gum</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Eucalyptus globulus</taxonrv>
+                              <common>bluegum eucalyptus</common>
+                              <common>Tasmanian bluegum</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Eucalyptus sideroxylon</taxonrv>
+                              <common>red ironbark eucalyptus</common>
+                              <common>red ironbark</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Eucalyptus microtheca</taxonrv>
+                              <common>coolabah</common>
+                              <common>coolibah</common>
+                              <common>flooded-box</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Melaleuca</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Melaleuca quinquenervia</taxonrv>
+                              <common>bottle brush tree</common>
+                              <common>cajeput tree</common>
+                              <common>melaleuca</common>
+                              <common>niaouli</common>
+                              <common>paperbark</common>
+                              <common>punktree</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Metrosideros</taxonrv>
+                            <common>lehua</common>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Tristaniopsis</taxonrv>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Corymbia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Corymbia ficifolia</taxonrv>
+                              <common>redflower gum</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Combretaceae</taxonrv>
+                          <common>combretums</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Conocarpus</taxonrv>
+                            <common>mangrove</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Conocarpus erectus</taxonrv>
+                              <common>button mangrove</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Celastrales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Celastraceae</taxonrv>
+                          <common>bittersweet</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Elaeodendron</taxonrv>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Sapindales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Sapindaceae</taxonrv>
+                          <common>soapberries</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Filicium</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Filicium decipiens</taxonrv>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Koelreuteria</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Koelreuteria elegans</taxonrv>
+                              <common>golden rain tree</common>
+                              <common>flamegold</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Koelreuteria paniculata</taxonrv>
+                              <common>goldenrain tree</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Aesculus</taxonrv>
+                            <common>buckeye</common>
+                            <common>horsechestnut</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Aesculus hippocastanum</taxonrv>
+                              <common>horse chestnut</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Acer</taxonrv>
+                            <common>maples</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acer palmatum</taxonrv>
+                              <common>Japanese maple</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acer rubrum</taxonrv>
+                              <common>red maple</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acer saccharum</taxonrv>
+                              <common>sugar maple</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acer macrophyllum</taxonrv>
+                              <common>bigleaf maple</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acer negundo</taxonrv>
+                              <common>ashleaf maple</common>
+                              <common>boxelder</common>
+                              <common>boxelder maple</common>
+                              <common>California boxelder</common>
+                              <common>Manitoba maple</common>
+                              <common>western boxelder</common>
+                              <common>box elder</common>
+                              <common>three-leaf maple</common>
+                              <common>ash-leaf maple</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acer platanoides</taxonrv>
+                              <common>Norway maple</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acer saccharinum</taxonrv>
+                              <common>silver maple</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Cupaniopsis</taxonrv>
+                            <common>carrotwood</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Cupaniopsis anacardioides</taxonrv>
+                              <common>carrotwood</common>
+                              <common>carrot weed</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Anacardiaceae</taxonrv>
+                          <common>cashews</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Pistacia</taxonrv>
+                            <common>pistache</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pistacia chinensis</taxonrv>
+                              <common>Chinese pistache</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Schinus</taxonrv>
+                            <common>peppertree</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Schinus molle</taxonrv>
+                              <common>peppertree</common>
+                              <common>American pepper</common>
+                              <common>escobilla</common>
+                              <common>false pepper</common>
+                              <common>molle del Peru</common>
+                              <common>pepper tree</common>
+                              <common>Peruvian peppertree</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Schinus terebinthifolius</taxonrv>
+                              <common>Brazilian pepper-tree</common>
+                              <common>Christmas berry</common>
+                              <common>faux poivrier</common>
+                              <common>Florida holly</common>
+                              <common>warui</common>
+                              <common>Christmasberry</common>
+                              <common>Brazilian peppertree</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Searsia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Searsia lancea</taxonrv>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Meliaceae</taxonrv>
+                          <common>mahogany</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Swietenia</taxonrv>
+                            <common>mahogany</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Swietenia mahagoni</taxonrv>
+                              <common>West Indian mahogany</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Fabales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Fabaceae</taxonrv>
+                          <common>peas</common>
+                          <common>legumes</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Vachellia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Vachellia farnesiana</taxonrv>
+                              <common>sweet acacia</common>
+                              <taxoncl>
+                                <taxonrn>Variety</taxonrn>
+                                <taxonrv>Vachellia farnesiana var. farnesiana</taxonrv>
+                                <common>sweet acacia</common>
+                              </taxoncl>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Cassia</taxonrv>
+                            <common>cassia</common>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Cercis</taxonrv>
+                            <common>redbud</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Cercis canadensis</taxonrv>
+                              <common>eastern redbud</common>
+                              <common>redbud</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Robinia</taxonrv>
+                            <common>locust</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Robinia pseudoacacia</taxonrv>
+                              <common>black locust</common>
+                              <common>false acacia</common>
+                              <common>yellow locust</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Acacia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acacia longifolia</taxonrv>
+                              <common>Sydney golden wattle</common>
+                              <common>western yarrow</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acacia melanoxylon</taxonrv>
+                              <common>blackwood</common>
+                              <common>Australian blackwood</common>
+                              <common>blackwood acacia</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Acacia salicina</taxonrv>
+                              <common>cooba</common>
+                              <common>willow acacia</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Bauhinia</taxonrv>
+                            <common>bauhinia</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Bauhinia X blakeana</taxonrv>
+                              <common>Blake's bauhinia</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Ceratonia</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ceratonia siliqua</taxonrv>
+                              <common>St. John's bread</common>
+                              <common>carob</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Delonix</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Delonix regia</taxonrv>
+                              <common>royal poinciana</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Gleditsia</taxonrv>
+                            <common>locust</common>
+                            <common>honeylocust</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Gleditsia triacanthos</taxonrv>
+                              <common>honeylocust</common>
+                              <common>honey-locust</common>
+                              <common>common honeylocust</common>
+                              <common>honey locust</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Parkinsonia</taxonrv>
+                            <common>paloverde</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Parkinsonia aculeata</taxonrv>
+                              <common>Jerusalem thorn</common>
+                              <common>Mexican palo verde</common>
+                              <common>Jerusalem-thorn</common>
+                              <common>retama</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Parkinsonia florida</taxonrv>
+                              <common>blue paloverde</common>
+                              <common>blue palo verde</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Prosopis</taxonrv>
+                            <common>mesquite</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Prosopis chilensis</taxonrv>
+                              <common>algarrobo</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Gymnocladus</taxonrv>
+                            <common>coffeetree</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Gymnocladus dioicus</taxonrv>
+                              <common>Kentucky coffeetree</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Samanea</taxonrv>
+                            <common>raintree</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Samanea saman</taxonrv>
+                              <common>raintree</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Malpighiales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Salicaceae</taxonrv>
+                          <common>willows</common>
+                          <common>saules</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Populus</taxonrv>
+                            <common>cottonwood</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Populus trichocarpa</taxonrv>
+                              <common>black cottonwood</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Populus deltoides</taxonrv>
+                              <common>plains cottonwood</common>
+                              <common>common cottonwood</common>
+                              <common>eastern cottonwood</common>
+                              <taxoncl>
+                                <taxonrn>Subspecies</taxonrn>
+                                <taxonrv>Populus deltoides ssp. monilifera</taxonrv>
+                                <common>eastern cottonwood</common>
+                                <common>plains cottonwood</common>
+                              </taxoncl>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Populus angustifolia</taxonrv>
+                              <common>narrowleaf cottonwood</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Populus balsamifera</taxonrv>
+                              <common>balsam poplar</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Populus fremontii</taxonrv>
+                              <common>cottonwood</common>
+                              <common>Fremont's cottonwood</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Euphorbiaceae</taxonrv>
+                          <common>spurge</common>
+                          <common>euphorbes</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Triadica</taxonrv>
+                            <common>tallowtree</common>
+                            <common>Chinese tallow</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Triadica sebifera</taxonrv>
+                              <common>tallowtree</common>
+                              <common>Chinese tallow</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Calophyllaceae</taxonrv>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Calophyllum</taxonrv>
+                            <common>calophyllum</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Calophyllum inophyllum</taxonrv>
+                              <common>mastwood</common>
+                              <common>Alexandrian laurel</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                    <taxoncl>
+                      <taxonrn>Superorder</taxonrn>
+                      <taxonrv>Saxifraganae</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Saxifragales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Altingiaceae</taxonrv>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Liquidambar</taxonrv>
+                            <common>sweetgum</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Liquidambar styraciflua</taxonrv>
+                              <common>sweetgum</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                  </taxoncl>
+                  <taxoncl>
+                    <taxonrn>Class</taxonrn>
+                    <taxonrv>Ginkgoopsida</taxonrv>
+                    <common>ginkgo</common>
+                    <taxoncl>
+                      <taxonrn>Subclass</taxonrn>
+                      <taxonrv>Ginkgooidae</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Ginkgoales</taxonrv>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Ginkgoaceae</taxonrv>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Ginkgo</taxonrv>
+                            <common>ginkgo</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Ginkgo biloba</taxonrv>
+                              <common>maidenhair tree</common>
+                              <common>common ginkgo</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                  </taxoncl>
+                  <taxoncl>
+                    <taxonrn>Class</taxonrn>
+                    <taxonrv>Pinopsida</taxonrv>
+                    <common>conifers</common>
+                    <taxoncl>
+                      <taxonrn>Subclass</taxonrn>
+                      <taxonrv>Pinidae</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Order</taxonrn>
+                        <taxonrv>Pinales</taxonrv>
+                        <common>pines</common>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Pinaceae</taxonrv>
+                          <common>pines</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Picea</taxonrv>
+                            <common>spruce</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Picea pungens</taxonrv>
+                              <common>silver spruce</common>
+                              <common>Colorado blue spruce</common>
+                              <common>blue spruce</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Pinus</taxonrv>
+                            <common>pine</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus elliottii</taxonrv>
+                              <common>slash pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus taeda</taxonrv>
+                              <common>loblolly pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus contorta</taxonrv>
+                              <common>lodgepole pine</common>
+                              <common>scrub pine</common>
+                              <common>shore pine</common>
+                              <common>tamarack pine</common>
+                              <taxoncl>
+                                <taxonrn>Variety</taxonrn>
+                                <taxonrv>Pinus contorta var. bolanderi</taxonrv>
+                                <common>Bolander beach pine</common>
+                              </taxoncl>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus echinata</taxonrv>
+                              <common>shortleaf pine</common>
+                              <common>Arkansas pine</common>
+                              <common>shortleaf yellow pine</common>
+                              <common>shortstraw pine</common>
+                              <common>southern yellow pine</common>
+                              <common>yellow pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus edulis</taxonrv>
+                              <common>twoneedle pinyon</common>
+                              <common>nut pine</common>
+                              <common>Colorado pinyon</common>
+                              <common>pinyon</common>
+                              <common>two-leaf pinyon</common>
+                              <common>two-needle pinyon</common>
+                              <common>piñón de Colorado</common>
+                              <common>piñon pine</common>
+                              <common>pinyon pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus nigra</taxonrv>
+                              <common>Austrian pine</common>
+                              <common>Australian pine</common>
+                              <common>European black pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus ponderosa</taxonrv>
+                              <common>ponderosa pine</common>
+                              <common>bull pine</common>
+                              <common>western yellow pine</common>
+                              <common>blackjack pine</common>
+                              <common>pinabete</common>
+                              <common>rock pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus radiata</taxonrv>
+                              <common>insignis pine</common>
+                              <common>pino quebradizo</common>
+                              <common>Monterey pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus strobus</taxonrv>
+                              <common>eastern white pine</common>
+                              <common>white pine</common>
+                              <common>northern white pine</common>
+                              <common>soft pine</common>
+                              <common>Weymouth pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus sylvestris</taxonrv>
+                              <common>Scots pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus thunbergii</taxonrv>
+                              <common>Japanese black pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus halepensis</taxonrv>
+                              <common>aleppo pine</common>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus brutia</taxonrv>
+                              <common>Turkish pine</common>
+                              <common>Calabrian pine</common>
+                              <taxoncl>
+                                <taxonrn>Variety</taxonrn>
+                                <taxonrv>Pinus brutia var. eldarica</taxonrv>
+                                <common>Afghan pine</common>
+                                <common>Eilar pine</common>
+                              </taxoncl>
+                            </taxoncl>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pinus canariensis</taxonrv>
+                              <common>Canary Island pine</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Cedrus</taxonrv>
+                            <common>cedar</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Cedrus deodara</taxonrv>
+                              <common>Deodar cedar</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Pseudotsuga</taxonrv>
+                            <common>Douglas-fir</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Pseudotsuga menziesii</taxonrv>
+                              <common>red fir</common>
+                              <common>Douglas spruce</common>
+                              <common>Oregon pine</common>
+                              <common>Douglas-fir</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Cupressaceae</taxonrv>
+                          <common>cypress</common>
+                          <common>redwood</common>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Juniperus</taxonrv>
+                            <common>juniper</common>
+                            <common>cedar</common>
+                            <common>cedro</common>
+                            <common>redcedar</common>
+                            <common>sabino</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Juniperus virginiana</taxonrv>
+                              <common>eastern red-cedar</common>
+                              <common>genévrier rouge</common>
+                              <common>red cedar juniper</common>
+                              <common>eastern redcedar</common>
+                              <taxoncl>
+                                <taxonrn>Variety</taxonrn>
+                                <taxonrv>Juniperus virginiana var. silicicola</taxonrv>
+                                <common>coastal redcedar</common>
+                                <common>southern red-cedar</common>
+                                <common>southern redcedar</common>
+                                <common>coast juniper</common>
+                              </taxoncl>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Sequoia</taxonrv>
+                            <common>redwood</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Sequoia sempervirens</taxonrv>
+                              <common>redwood</common>
+                              <common>California redwood</common>
+                              <common>coast redwood</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Calocedrus</taxonrv>
+                            <common>incense cedar</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Calocedrus decurrens</taxonrv>
+                              <common>incense cedar</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Platycladus</taxonrv>
+                            <common>platycladus</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Platycladus orientalis</taxonrv>
+                              <common>oriental arborvitae</common>
+                            </taxoncl>
+                          </taxoncl>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Callitropsis</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Callitropsis macrocarpa</taxonrv>
+                              <common>Monterey cypress</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                        <taxoncl>
+                          <taxonrn>Family</taxonrn>
+                          <taxonrv>Podocarpaceae</taxonrv>
+                          <taxoncl>
+                            <taxonrn>Genus</taxonrn>
+                            <taxonrv>Podocarpus</taxonrv>
+                            <common>plum pine</common>
+                            <taxoncl>
+                              <taxonrn>Species</taxonrn>
+                              <taxonrv>Podocarpus macrophyllus</taxonrv>
+                              <common>yew plum pine</common>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                  </taxoncl>
+                </taxoncl>
+              </taxoncl>
+            </taxoncl>
+          </taxoncl>
+        </taxoncl>
+      </taxoncl>
+    </taxonomy>
+    <accconst>None</accconst>
+    <useconst>These data were collected using funding from the U.S. Government and can be used without additional permissions or fees. If you use these data in a publication, presentation, or other research product please use the following citation:  
+
+McPherson, E. Gregory; van Doorn, Natalie S.; Peper, Paula J. 2016. Urban tree database. Fort Collins, CO: Forest Service Research Data Archive. Updated 21 January 2020. https://doi.org/10.2737/RDS-2016-0005</useconst>
+    <datacred>Funding for this project provided by USDA Forest Service, Pacific Southwest Research Station.</datacred>
+    <crossref>
+      <citeinfo>
+        <origin>McPherson, E. Gregory</origin>
+        <origin>van Doorn, Natalie S.</origin>
+        <origin>Peper, Paula J.</origin>
+        <pubdate>2016</pubdate>
+        <title>Urban tree database and allometric equations</title>
+        <geoform>document</geoform>
+        <serinfo>
+          <sername>Gen. Tech. Rep.</sername>
+          <issue>PSW-GTR-253</issue>
+        </serinfo>
+        <pubinfo>
+          <pubplace>Albany, CA</pubplace>
+          <publish>U.S. Department of Agriculture, Forest Service, Pacific Southwest Research Station</publish>
+        </pubinfo>
+        <othercit>86 p.</othercit>
+        <onlink>https://www.treesearch.fs.fed.us/pubs/52933</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Peper, Paula J.</origin>
+        <origin>Alzate, Claudia P.</origin>
+        <origin>McNeil, John W.</origin>
+        <origin>Hashemi, Jalil</origin>
+        <pubdate>2014</pubdate>
+        <title>Allometric equations for urban ash trees (Fraxinus spp.) in Oakville, Southern Ontario, Canada</title>
+        <geoform>journal article</geoform>
+        <serinfo>
+          <sername>Urban Forestry &amp; Urban Greening</sername>
+          <issue>13(1):175-183</issue>
+        </serinfo>
+        <onlink>https://doi.org/10.1016/j.ufug.2013.07.002</onlink>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Modesto was the first city to be sampled (1998) and the growth equations are least representative of the region (InlVal = inland valleys). Sacramento is considered to be more representative of InlVal.
+	  
+For more information on data limitations, see McPherson et al. 2016 (section “Data limitations and future research needs”).</attraccr>
+    </attracc>
+    <logic>not applicable</logic>
+    <complete>In \Data\TS5_Foliar_biomass_leaf_samples.csv, not all regions are listed because foliar samples were not collected in four of the reference cities (InlVal, InterW, PacfNW, SacVal - see \Data\TS1_Regional_information.csv for acronym definitions). Similarly, a few species that were measured for use in growth equations were not measured for foliar biomass.
+	
+In \Data\TS2_Regional_species_and_counts.csv, \Data\TS5_Foliar_biomass_leaf_samples.csv, \Data\TS6_Growth_coefficients.csv, \Data\TS8_Volume_and_biomass_eqns_from_rural.csv, and \Data\TS9_Biomass_density_factors.csv blank cells indicate there are no applicable data. Zeros in the data are actual measurements of zero. In \Data\TS3_Raw_tree_data.csv “-1” indicates no data were collected.</complete>
+    <lineage>
+      <method>
+        <methtype>Lab</methtype>
+        <methdesc>Species and Tree Sampling
+
+Termed “reference city”, one city was selected for intensive study within each climate zone (Davey Resource Group 2010). Data were collected for a second reference city in the Inland Valleys climate zone, Sacramento, CA, because tree growth data were required for several ongoing studies. Criteria for selecting a reference city included 1) an updated computerized tree inventory with location information for each tree (20,000 to 250,000 street/park trees), 2) information to accurately age a sample of about 900 trees by the city forester, 3) large, old trees present in the community and, 4) an aerial lift truck available for one week to sample foliage.
+
+The trees sampled in each reference city were obtained from the tree inventory. First, the inventory was cleaned to remove stumps, dead trees (shown as scheduled for removal) and vacant sites. It was sorted by species to identify the most abundant species for sampling. Approximately 20 of the most abundant species were selected for sampling in each city. Table S2 lists the number of trees of each species sampled in each city. The sampled species accounted for 50% to 95% of all trees in the municipal tree inventories (McPherson 2010). To obtain information spanning the life cycle of each of the predominant tree species, a stratified random sample was drawn. The sample was stratified into nine diameter at breast height (dbh) classes (3 inch and 6 inch classes: 0-3, 3-6, 6-12, 12-18, 18-24, 24-30, 30-36, 36-42, &gt; 42 inches). Thirty to 70 trees of each species were randomly selected to survey, approximately 5 to 10 trees in each dbh class. Smaller samples of 30 trees were drawn for small-growing species such as Prunus spp. and Malus spp.. Seventy trees were drawn for species with individuals represented in all size classes. An equal number of alternative trees were selected as replacement trees in the event that the originally sampled trees could not be located. 
+
+Although 30 to 70 trees were randomly selected for sampling each species, the final samples ranged from 22 to 79 trees. The lower number resulted when the original and replacement trees could not be located. The higher numbers occurred when the sample trees were actually in a different size class than reported in the inventory. These trees were measured in case viable replacements could not be found. In fact, replacements were found and sample numbers became greater than normal.</methdesc>
+        <methcite>
+          <citeinfo>
+            <origin>McPherson, E. Gregory</origin>
+            <origin>van Doorn, Natalie S.</origin>
+            <origin>Peper, Paula J.</origin>
+            <pubdate>2016</pubdate>
+            <title>Urban tree database and allometric equations</title>
+            <geoform>document</geoform>
+            <serinfo>
+              <sername>Gen. Tech. Rep.</sername>
+              <issue>PSW-GTR-253</issue>
+            </serinfo>
+            <pubinfo>
+              <pubplace>Albany, CA</pubplace>
+              <publish>U.S. Department of Agriculture, Forest Service, Pacific Southwest Research Station</publish>
+            </pubinfo>
+            <othercit>86 p.</othercit>
+            <onlink>https://www.treesearch.fs.fed.us/pubs/52933</onlink>
+          </citeinfo>
+        </methcite>
+        <methcite>
+          <citeinfo>
+            <origin>Davey Resource Group</origin>
+            <pubdate>2010</pubdate>
+            <title>Indiana's Street Tree Benefits Summary</title>
+            <geoform>document</geoform>
+            <othercit>Retrieved January 7, 2015</othercit>
+            <onlink>https://www.in.gov/dnr/forestry/files/Fo-INSpeciesDistributionUrbanTrees709.pdf</onlink>
+          </citeinfo>
+        </methcite>
+        <methcite>
+          <citeinfo>
+            <origin>McPherson, E. Gregory</origin>
+            <pubdate>2010</pubdate>
+            <title>Selecting reference cities for i-Tree Streets</title>
+            <geoform>journal article</geoform>
+            <serinfo>
+              <sername>Arboriculture and Urban Forestry</sername>
+              <issue>36(5):230-240</issue>
+            </serinfo>
+            <onlink>https://www.treesearch.fs.fed.us/pubs/36468</onlink>
+          </citeinfo>
+        </methcite>
+      </method>
+      <method>
+        <methtype>Field</methtype>
+        <methdesc>Tree Data Collection
+
+Metrics recorded for each tree sampled included species, address/location, dbh (to nearest 0.1 centimeters [cm] by tape), tree crown and bole height (to nearest 0.5 meter [m] by clinometer or sonar measuring device), crown diameter in two directions (parallel and perpendicular to nearest street to nearest 0.5 m by sonar measuring device) (Table 2 in McPherson et al. 2016; Table S3). Observational information was recorded on crown shape, land use, distance and direction from nearest air-conditioned/heated building, car shade and conflicts with utility lines. 
+
+Tree age was determined from interviews with residents, the city’s urban forester, street and home construction dates, historical planting records, and aerial and historical photos. In two cases extra effort was required to obtain age information. Tree coring was used in Queens, New York City to estimate planting dates instead of relying solely on historical research. Unlike other cities, where streets are lined with trees of the same age because they were all planted at the time of development, street trees in Queens were of all ages because several  episodes of planting had occurred. Dendrologists at the Lamont-Doherty Earth Observatory’s Tree Ring Laboratory cored 150 randomly sampled trees to establish mean tree age. These trees represented a subsample of the original 910 sample trees. One to two trees in size classes 2 through 9 were cored for each species. Cores were analyzed in the lab and tree age established. Urban foresters provided tree ages for an additional 104 sample trees in dbh classes 8 and 9 (91.4-106.7 cm and &gt; 106.7 cm), based on building records, and 34 trees in dbh class 1 and 2 based on planting records. These data were pooled with ring-count data to develop regressions based on the mean age for each dbh size class. Thus, the online data for Queens, NYC shows two sets of data, one for data directly collected from each tree and one for tree ages collected from a combination of coring a subsample of the measured trees and aging information provided by New York City Parks &amp; Recreation. Although more accurate aging of trees is required for that region, equations relationships between dbh and parameters other than age reflect actual measured data.</methdesc>
+        <methcite>
+          <citeinfo>
+            <origin>McPherson, E. Gregory</origin>
+            <origin>van Doorn, Natalie S.</origin>
+            <origin>Peper, Paula J.</origin>
+            <pubdate>2016</pubdate>
+            <title>Urban tree database and allometric equations</title>
+            <geoform>document</geoform>
+            <serinfo>
+              <sername>Gen. Tech. Rep.</sername>
+              <issue>PSW-GTR-253</issue>
+            </serinfo>
+            <pubinfo>
+              <pubplace>Albany, CA</pubplace>
+              <publish>U.S. Department of Agriculture, Forest Service, Pacific Southwest Research Station</publish>
+            </pubinfo>
+            <othercit>86 p.</othercit>
+            <onlink>https://www.treesearch.fs.fed.us/pubs/52933</onlink>
+          </citeinfo>
+        </methcite>
+      </method>
+      <method>
+        <methtype>Field</methtype>
+        <methdesc>Foliar Sampling and Data Collection
+
+For each species, one tree to three trees that were typical of species in age, size, and condition were selected for foliar sampling. One set of 10 random quadrat (a cube 30 cm x 30 cm x 30 cm) samples were taken from each tree: 3 from the lower one-third of the crown, 4 from the middle section and 3 from the top one-third. Within each crown stratum, at least one sample was from the outer, middle and inner portions. Leaves were clipped along the outside of the cube and each sample was stored in a labeled zip-lock bag. The bags were stored in an ice chest and shipped by over-night delivery to the cold-storage site in Davis, CA. 
+
+The foliar samples were processed to develop relationships between leaf area and foliar biomass for each tree species. The leaves in each bag were separated from stems and twigs, then weighed (fresh weight) and run through the leaf area meter to obtain the sample’s total surface area (leaf area). The foliage was returned to the paper bag and dried in an oven at 65°Celsius (149°Fahrenheit) for 3 days (72 hours minimum). On the fourth day the bag was removed from the oven and weighed (dry weight). The bag was returned to the oven and dried 24 hours, removed from the oven and weighed. If the bag weighed less than its previous weight it was returned to the oven and dried. This process was repeated until the weight no longer changed. The fresh weight, dry weight and leaf area were recorded for the foliar samples in each of the ten bags per species. Leaf area to dry weight and fresh weight to dry weight relationships were calculated for each species using standard descriptive statistics.</methdesc>
+        <methcite>
+          <citeinfo>
+            <origin>McPherson, E. Gregory</origin>
+            <origin>van Doorn, Natalie S.</origin>
+            <origin>Peper, Paula J.</origin>
+            <pubdate>2016</pubdate>
+            <title>Urban tree database and allometric equations</title>
+            <geoform>document</geoform>
+            <serinfo>
+              <sername>Gen. Tech. Rep.</sername>
+              <issue>PSW-GTR-253</issue>
+            </serinfo>
+            <pubinfo>
+              <pubplace>Albany, CA</pubplace>
+              <publish>U.S. Department of Agriculture, Forest Service, Pacific Southwest Research Station</publish>
+            </pubinfo>
+            <othercit>86 p.</othercit>
+            <onlink>https://www.treesearch.fs.fed.us/pubs/52933</onlink>
+          </citeinfo>
+        </methcite>
+      </method>
+      <procstep>
+        <procdesc>Six models were tested for seven parameters at four weights. Predicted parameters included: using tree age to predict, dbh, using dbh to predict tree height, crown height, crown diameter, and leaf area. In addition, crown diameter was used to predict dbh for use with imagery and age predicted from dbh for use in backcasting. Models tested included four polynomial models (linear, quadratic, cubic, and quartic), as well as loglog and exponential. See McPherson et al. 2016 and Table S4 for equation forms. The bias-corrected Aikaike’s information criterion (AIC) was used to compare and rank the models because of smaller sample sizes (McPherson et al. 2011). The models with the “best” fit as indicated by having the smallest AIC were selected. The resulting best fitting model is listed for each measured species and region in Table S6 with the measured parameter, predicted tree component, model weight, equation name, coefficients to use in each model, minimum and maximum values to estimate between, mean square error, sample size, adjusted R-squared, the raw data range, and the degrees of freedom. The model weights are already accounted for in the equation coefficients.
+		
+McPherson, E. Gregory; van Doorn, Natalie S.; Peper, Paula J. 2016. Urban tree database and allometric equations. Gen. Tech. Rep. PSW-GTR-253. Albany, CA: U.S. Department of Agriculture, Forest Service, Pacific Southwest Research Station. 86 p. https://www.fs.usda.gov/treesearch/pubs/52933
+
+McPherson, E. Gregory; Simpson, James R.; Peper, Paula J.; Xiao, Qingfu. 2011. Trees pay us back. Albany, CA: USDA Forest Service, Pacific Southwest Research Station. Brochures for 16 U.S. climate regions: 2.</procdesc>
+        <procdate>2015</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <eainfo>
+    <overview>
+      <eaover>\Data\TS1_Regional_information.csv: Comma-delimited ASCII text file containing information on the regions for which data were collected; includes city and year of collection. Below is a list of variables included in the data file.
+	  
+Region Code = Short name / code used to represent each region.
+
+Region Name = Full region name.
+
+City = Name of city.
+
+State = Name of state.
+
+Airport Code = Code for airport near the specified city.
+
+Data Collection Year = Year(s) data were collected.</eaover>
+      <eadetcit>none provided</eadetcit>
+    </overview>
+    <overview>
+      <eaover>\Data\TS2_Regional_species_and_counts.csv: Comma-delimited ASCII text file containing urban tree counts by species for 17 U.S. cities. Below is a list of variables included in the data file.
+
+Region = 16 U.S. climate regions, abbreviations are used (see \Data\TS1_Regional_information.csv).
+
+Scientific Name = Botanical name of species.
+
+Common Name = Common name of species.
+
+SpCode = 4 to 6 letter code consisting of the first two letters of the genus name and the first two letters of the species name followed by two optional letters to distinguish two species with the same four-letter code.
+
+Tree Type = 3 letter code where first two letters refer to life form (BD=broadleaf deciduous, BE=broadleaf evergreen, CE=coniferous evergreen, PE=palm evergreen) and the third letter is mature height (S=small which is &lt; 8 meters, M=medium which is 8-15 meters, and L=large which is &gt; 15 meters).
+
+Dbh_class1 = Count of trees of size class 1 (0-3 inches [in]).
+
+Dbh_class2 = Count of trees of size class 2 (3-6 in).
+
+Dbh_class3 = Count of trees of size class 3 (6-12 in).
+
+Dbh_class4 = Count of trees of size class 4 (12-18 in).
+
+Dbh_class5 = Count of trees of size class 5 (18-24 in).
+
+Dbh_class6 = Count of trees of size class 6 (24-32 in).
+
+Dbh_class7 = Count of trees of size class 7 (32-36 in).
+
+Dbh_class8 = Count of trees of size class 8 (36-42 in). 
+
+Dbh_class9 = Count of trees of size class 9 (&gt; 42 in).
+
+Grand Total = Total count of trees.</eaover>
+      <eadetcit>none provided</eadetcit>
+    </overview>
+    <overview>
+      <eaover>\Data\TS3_Raw tree data.csv: Comma-delimited ASCII text file containing information on the raw tree data. Below is a list of variables included in the data file.
+
+DbaseID = Unique id number for each tree.
+
+Region = 16 U.S. climate regions, abbreviations are used (see \Data\TS1_Regional_information.csv).
+
+City = City/state names where data collected.
+
+Source = Original *.xls filename (not available in this data publication).
+
+TreeID = Number assigned to each tree in inventory by city.
+
+Zone = Number/ID/name of the management area or zone that the tree is located in within a city; or nursery if young tree data collected there.
+
+Park/Street = Data listed as Park, Street, Regional Big Tree, or Nursery (for young tree measurements).
+
+SpCode = 4 to 6 letter code consisting of the first two letters of the genus name and the first two letters of the species name followed by two optional letters to distinguish two species with the same four-letter code (See \Data\TS2_Regional_species_and_counts.csv for a list of the SpCodes and corresponding scientific names.)
+
+ScientificName = Botanical name of species.
+
+CommonName = Common name of species.
+
+Tree Type = 3 letter code where first two letters refer to life form (BD=broadleaf deciduous, BE=broadleaf evergreen, CE=coniferous evergreen, PE=palm evergreen) and the third letter is mature height (S=small which is &lt; 8 meters, M=medium which is 8-15 meters, and L=large which is &gt; 15 meters).
+
+Address = From inventory, street number of building where tree is located.
+
+Street = From inventory, the name of the street the tree is located on. (NOTE: zero values denote data were not recorded in that city. These values were left unchanged because they originated from city inventories.)
+
+Side = From inventory, side of building or lot tree is located on (F=front, M=median, S=side, P=park). (NOTE: zero values denote data were not recorded in that city. These values were left unchanged because they originated from city inventories.)
+
+Cell = From inventory, the cell number (i.e., 1, 2, 3, …), where protocol determines the order trees at same address are numbered (e.g., driving direction or as street number increases).
+
+OnStreet = From inventory (omitted if not a field in city’s inventory), for trees at corner addresses when tree is on cross street rather than addressed street.
+
+FromStreet = From inventory, the name of the first cross street that forms a boundary for trees lining un-addressed boulevards. Trees are typically numbered in order (1, 2, 3 …) on boulevards that have no development adjacent to them, no obvious parcel addresses.
+
+ToStreet = From inventory, the name of the last cross street that forms a boundary for trees lining un-addressed boulevards.
+
+Age = Number of years since planted. (NOTE: zero values represent newly planted trees, &lt; 1 year old.)
+
+DBH (cm) = Diameter at breast height (1.37 meters [m]) measured to nearest 0.1 centimeters (tape). For multi-stemmed trees forking below 1.37 m measured above the butt flare and below the point where the stem begins forking, as per protocol.
+
+TreeHt (m) = From ground level to tree top to nearest 0.5 m (omitting erratic leader).
+
+CrnBase (m) = Average distance between ground and lowest foliage layer to nearest 0.5 m (omitting erratic branch).
+
+CrnHt (m) = Calculated as TreeHT minus Crnbase to nearest 0.5 m. (NOTE: zero values indicate no live crown was present, hence no other tree dimension data were available.)
+
+CdiaPar (m) = Crown diameter measurement taken to the nearest 0.5 m parallel to the street (omitting erratic branch).
+
+CDiaPerp (m) = Crown diameter measurement taken to the nearest 0.5 m perpendicular to the street (omitting erratic branch).
+
+AvgCdia (m) = The average of crown diameter measured parallel and perpendicular to the street.
+
+Leaf (m2) = Estimated using digital imaging method to nearest 0.1 squared meter (m2).
+
+Setback = Distance from tree to nearest air-conditioned/heated space (may not be same address as tree location): 1=0-8 m, 2=8.1-12 m, 3=12.1-18 m, 4=&gt; 18 m.
+
+TreeOr = Taken with compass, the coordinate of tree taken from imaginary lines extending from walls of the nearest conditioned space (may not be same address as tree location).
+
+CarShade = Number of parked automotive vehicles with some part under the tree's drip line. Car must be present (0=no autos, 1=1 auto, etc.).
+
+LandUse = Predominant land use type where tree is growing (1=single family residential, 2=multi-family residential [duplex, apartments, condos], 3=industrial/institutional/large commercial [schools, gov't, hospitals], 4=park/vacant/other [agric., unmanaged riparian areas of greenbelts], 5=small commercial [minimart, retail boutiques, etc.], 6=transportation corridor).
+
+Shape = Visual estimate of crown shape verified from each side with actual measured dimensions of crown height and average crown diameter (1=cylinder [maintains same crown diameter in top and bottom thirds of tree], 2=ellipsoid, the tree's center [whether vertical or horizontal is the widest, includes spherical], 3=paraboloid [widest in bottom third of crown], 4=upside down paraboloid [widest in top third of crown]).
+
+WireConf = Utility lines that interfere with or appear above tree (0=no lines, 1=present and no potential conflict, 2=present and conflicting, 3=present and potential for conflicting). (NOTE: -1 denotes data were not collected.)
+
+dbh1 = Dbh (centimeters [cm]) for multi-stemmed trees; for non-multi-stemmed trees, dbh1 is same as Dbh (cm).
+
+dbh2 = Dbh (cm) for second stem of multi-stemmed trees.
+
+dbh3 = Dbh (cm) for third stem of multi-stemmed trees.
+
+dbh4 = Dbh (cm) for fourth stem of multi-stemmed trees.
+
+dbh5 = Dbh (cm) for fifth stem of multi-stemmed trees.
+
+dbh6 = Dbh (cm) for sixth stem of multi-stemmed trees.
+
+dbh7 = Dbh (cm) for seventh stem of multi-stemmed trees.
+
+dbh8 = Dbh (cm) for eight stem of multi-stemmed trees.</eaover>
+      <eadetcit>none provided</eadetcit>
+    </overview>
+    <overview>
+      <eaover>\Data\TS4_Growth_eqn_forms.csv: Comma-delimited ASCII text file containing the list of equation forms applied to the urban tree data. Below is a list of variables included in the file.
+
+EQNAME = Short name for equation.
+
+EQUATION = Full equation (where a, b, c, d, and e are coefficients; LN = natural log; age = tree age; dbh = diameter at breast height; mse = mean squared error).</eaover>
+      <eadetcit>none provided</eadetcit>
+    </overview>
+    <overview>
+      <eaover>\Data\TS5_Foliar_biomass_leaf_samples.csv: Comma-delimited ASCII text file containing urban Foliar samples data by species for 17 U.S. cities. Below is a list of variables included in the data file.
+
+Region = 16 U.S. climate regions, abbreviations are used (see \Data\TS1_Regional_information.csv).
+
+Scientific Name = Botanical name of species.
+
+Common Name = Common name of species.
+
+SpCode = 4 to 6 letter code consisting of the first two letters of the genus name and the first two letters of the species name followed by two optional letters to distinguish two species with the same four-letter code. 
+
+Tree Type = 3 letter code where first two letters refer to life form (BD=broadleaf deciduous, BE=broadleaf evergreen, CE=coniferous evergreen, PE=palm evergreen) and the third letter is mature height (S=small which is &lt; 8 meters, M=medium which is 8-15 meters, and L=large which is &gt; 15 meters).
+
+Avg dw/fw (g) = Average of foliar dry weight (dw) in grams to fresh weight (fw) in grams.
+
+dw/fw sd = Standard deviation of foliar dry weight (dw) to fresh weight (fw).
+
+Avg dw g/m2 = Average foliar dry weight (dw) in grams per square meter (g/m2).
+
+dw g/m2 sd = Standard deviation of foliar dry weight (dw) in grams per square meter (g/m2).
+
+n = Number of samples.
+
+Notes = Sampling notes.</eaover>
+      <eadetcit>none provided</eadetcit>
+    </overview>
+    <overview>
+      <eaover>\Data\TS6_Growth_coefficients.csv: Comma delimited ASCII text file containing equations for predicting tree growth parameters by species and predicted parameter in different climate zones. Units of predicted components: age = years, dbh = centimeters, cdiameter = meters, crown height = meters, la = squared meters. Model components: dbh = diameter at breast height, cdia = cdiameter, cht = crown height, tht = tree height, la = leaf area. Below is a list of variables included in the data file. (NOTE: blank cells mean not applicable)
+	  
+Region = 16 U.S. climate regions, abbreviations are used (see \Data\TS1_Regional_information.csv).
+
+Scientific Name = Botanical name of species.
+
+SpCode = 4 to 6 letter code consisting of the first two letters of the genus name and the first two letters of the species name followed by two optional letters to distinguish two species with the same four-letter code. 
+
+Independent variable = Name of independent variable.
+
+Predicts component = Variable being predicted.
+
+Units of predicted components = Units for the predicted component.
+
+Model weight = Model weight used.
+
+EqName = Equation name referring to equations in \Data\T4_Growth_eqn_forms.csv. (Loglog and exponential models require an input for mean-squared-error (mse) which is listed in column 'c' (do not calculate and use sigma2).
+
+a = Value of coefficient a in the specified model.
+
+b = Value of coefficient b in the specified model.
+
+c = Value of coefficient c in the specified model.
+
+d = value of coefficient d in the specified model.
+
+e = Value of coefficient e in the specified model.
+
+Apps min = Reasonable minimum data value to use when applying this equation.
+
+Apps max = Reasonable maximum data value to use when applying this equation.
+
+Sigma = Standard deviation of the model.
+
+n = Number of data points in the model.
+
+adj R2 = Adjusted R-squared.
+
+Data min (from raw data) = Actual minimum value for the data collected.
+
+Data max (from raw data) = Actual maximum value for the data collected.
+
+DF = Degrees of freedom.</eaover>
+      <eadetcit>none provided</eadetcit>
+    </overview>
+    <overview>
+      <eaover>\Data\T7_Volume_eqns_from_urban.csv: Comma-delimited ASCII text file containing volume equations for 28 urban tree species requiring 1) only diameter at breast height (dbh) or 2) dbh and height measurements to calculate volume. All equations predict aboveground volume in cubic meters per tree. Below is a list of variables included in the data file.
+
+Equation Species = Botanical name of species.
+
+DBH lower (cm) = Lower range of dbh (centimeters) of the trees used to derive the equations.
+
+DBH upper (cm) = Upper range of dbh (centimeters) of the trees used to derive the equations.
+
+Equation = Full equation (where dbhcm = diameter at breast height [centimeters] and htm = height [meters]).
+
+Predicts = Variable being predicted, which in this case is above ground volume (cubic meters per tree).
+
+DW Density = Dry weight density factor (for Jenkins: see Jenkins et al. 2004; for DRYAD (Global Wood Density Database): see Zanne et al. 2009 and Chave et al. 2009). The general equations predict cubic meters of fresh wood volume. Fresh wood volume is then multiplied by the species’ DW density factor to obtain aboveground DW biomass. Resulting units are kilograms per cubic meter.
+
+Equation Source = Name of the source from which the equation was obtained.</eaover>
+      <eadetcit>Aguaron, E.; McPherson, E. G. 2012. Comparison of methods for estimating carbon dioxide storage by Sacramento's urban forest. In: R. Lal and B. Augustin. eds. Carbon Sequestration in Urban Ecosystems. Dordrecht, Netherlands, Springer-Verlag: 43-71. https://doi.org/10.1007/978-94-007-2366-5_3
+
+Chave, J.; Coomes, D.; Jansen, S.; Lewis, S.; Swenson, N.; Zanne, A. 2009. Towards a worldwide wood economics spectrum. Dryad Digital Repository. Ecology Letters 12 (4): 351-366. https://doi.org/10.1111/j.1461-0248.2009.01285.x
+	  
+Jenkins, Jennifer C.; Chojnacky, David C.; Heath, Linda S.; Birdsey, Richard A. 2004. Comprehensive database of diameter-based biomass regressions for North American tree species. Gen. Tech. Rep. NE-319. Newtown Square, PA: U.S. Department of Agriculture, Forest Service, Northeastern Research Station. 45 p. [1 CD-ROM]. https://doi.org/10.2737/ne-gtr-319
+
+Lefsky, Michael; McHale, Melissa R. 2008. Volume estimates of trees with complex architecture from terrestrial laser scanning. Journal of Applied Remote Sensing 2(1):023521-023521. https://doi.org/10.1117/1.2939008
+
+Pillsbury, N.; Reimer, J. L.; Thompson, R. 1998. Tree volume equations for fifteen urban species in California. San Luis Obispo, CA, Urban Forest Ecosystems Institute, California Polytechnic State University: 45.
+
+Zanne, A.; Lopez-Gonzalez, G.; Coomes, D.; Ilic, J.; Jansen, S.; Lewis, S.; Miller, R.; Swenson, N.; Wiemann, M.; Chave, J. 2009. Data from: Towards a worldwide wood economics spectrum. Dryad Digital Repository. https://doi.org/10.5061/dryad.234</eadetcit>
+    </overview>
+    <overview>
+      <eaover>\Data\TS8_Volume_and_biomass_eqns_from_rural.csv: Comma-delimited ASCII text file containing dry weight biomass and volume equations from rural forests. Below is a list of variables included in the data file.
+
+Equation Species = Botanical name of species.
+
+DBH lower (cm) = Lower range of dbh (centimeters) of the trees used to derive the equations.
+
+DBH upper (cm) = Upper range of dbh (centimeters) of the trees used to derive the equations.
+
+Equation = Full equation (where dbhcm = diameter at breast height [centimeters] and htm = height [meters]).
+
+Predicts = Variable being predicted, which in this case is above ground volume (cubic meters per tree).
+
+DW Density = dry weight density factor (for Jenkins: see Jenkins et al. 2004; for DRYAD (Global Wood Density Database): see Zanne et al. 2009 and Chave et al. 2009). Resulting units are kilograms per cubic meter.
+
+Equation Source = Name of the source from which the equation was obtained.</eaover>
+      <eadetcit>Chave, J.; Andalo, C.; Brown, S.; Cairns, M. A.; Chambers, J. Q.; Eamus, D.; ,Folster, H.; Fromard, F.; Higuchi, N.; Kira, T.; Lescure, J.-P.; Nelson, B. W.; Ogawa, H.; Puig, H.; Riera, B.; Yamakura, T. 2005. Tree allometry and improved estimation of carbon stocks and balance in tropical forests. Oecologia 145(1): 87-99. https://doi.org/10.1007/s00442-005-0100-x
+	    
+Chave, J.; Coomes, D.; Jansen, S.; Lewis, S.; Swenson, N.; Zanne, A. 2009. Towards a worldwide wood economics spectrum. Dryad Digital Repository. Ecology Letters 12 (4): 351-366. https://doi.org/10.1111/j.1461-0248.2009.01285.x
+
+Frangi, Jorge L.; Lugo, Ariel E. 1985. Ecosystem dynamics of a subtropical floodplain forest. Ecological Monographs 55(3): 351-369. https://doi.org/10.2307/1942582
+
+Harris, W. F.; Goldstein, R. A.; Henderson, G. S. 1973. Analysis of forest biomass pools, annual primary production and turnover of biomass for a mixed deciduous forest watershed. In Proc. IUFRO Conference on Forest Biomass Studies, edited by H. Young, pp 41-64. Orno: University of Maine Press.
+	  
+Jenkins, Jennifer C.; Chojnacky, David C.; Heath, Linda S.; Birdsey, Richard A. 2004. Comprehensive database of diameter-based biomass regressions for North American tree species. Gen. Tech. Rep. NE-319. Newtown Square, PA: U.S. Department of Agriculture, Forest Service, Northeastern Research Station. 45 p. [1 CD-ROM]. https://doi.org/10.2737/ne-gtr-319
+
+Pillsbury, Norman H.; Kirkley, Michael L. 1984. Equations for total, wood, and saw-log volume for thirteen California hardwoods. Res. Note PNW-RN-414. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 52 p. https://doi.org/10.2737/pnw-rn-414
+
+Ter-Mikaelian, Michael T.; Korzukhin, Michael D. 1997. Biomass equations for sixty-five North American tree species. Forest Ecology and Management 97(1): 1-23. https://doi.org/10.1016/s0378-1127(97)00019-4
+
+Van, T. K.; Rayachhetry, M. B.; Center, T. D. 2000. Estimating above-ground biomass of Melaluca quinquenervia in Florida, USA. Journal of Aquatic Plant Management 38:62-67.
+
+Vieilledent, G.; Vaudry, R.; Andriamanohisoa, S. F. D.; Rakotonarivo, O. S.; Randrianasolo, H. Z.; Razafindrabe, H. N.; Rakotoarivony, C. B.; Ebeling, J; Rasamoelina, M. 2012. A universal approach to estimate biomass and carbon stock in tropical forests using generic allometric models. Ecological Applications 22(2):572-583. https://doi.org/10.1890/11-0039.1
+
+Zanne, A.; Lopez-Gonzalez, G.; Coomes, D.; Ilic, J.; Jansen, S.; Lewis, S.; Miller, R.; Swenson, N.; Wiemann, M.; Chave, J. 2009. Data from: Towards a worldwide wood economics spectrum. Dryad Digital Repository. https://doi.org/10.5061/dryad.234</eadetcit>
+    </overview>
+    <overview>
+      <eaover>\Data\T9_Biomass_density_factors.csv: Comma-delimited ASCII text file containing an expanded list of biomass density factors for common urban species. Species without a specific equation and/or dry weight density factor are matched to known species. Below is a list of variables included in the data file.(blank cells = not applicable)
+	  
+SpCode = 4 to 6 letter code consisting of the first two letters of the genus name and the first two letters of the species name followed by two optional letters to distinguish two species with the same four-letter code. 
+
+Scientific Name = Botanical name of species that needs to be matched.
+
+Common Name = Common name of species that needs to be matched.
+
+DW Density = Dry weight density factor (for Jenkins: see Jenkins et al. 2004; for DRYAD (Global Wood Density Database): see Zanne et al. 2009 and Chave et al. 2009). Resulting units are kilograms per cubic meter.
+
+Matched Equation Species = Botanical name of species that has been chosen as the match.
+
+Matched Equation SpCode = Species code (see SpCode) for the species that has been chosen as the match.
+
+Eq Source = name of the source from which the equation was obtained.</eaover>
+      <eadetcit>Aguaron, E.; McPherson, E. G. 2012. Comparison of methods for estimating carbon dioxide storage by Sacramento's urban forest. In: R. Lal and B. Augustin. eds. Carbon Sequestration in Urban Ecosystems. Dordrecht, Netherlands, Springer-Verlag: 43-71. https://doi.org/10.1007/978-94-007-2366-5_3
+	  
+Chave, J.; Andalo, C.; Brown, S.; Cairns, M. A.; Chambers, J. Q.; Eamus, D.; ,Folster, H.; Fromard, F.; Higuchi, N.; Kira, T.; Lescure, J.-P.; Nelson, B. W.; Ogawa, H.; Puig, H.; Riera, B.; Yamakura, T. 2005. Tree allometry and improved estimation of carbon stocks and balance in tropical forests. Oecologia 145(1): 87-99. https://doi.org/10.1007/s00442-005-0100-x
+
+Chave, J.; Coomes, D.; Jansen, S.; Lewis, S.; Swenson, N.; Zanne, A. 2009. Towards a worldwide wood economics spectrum. Dryad Digital Repository. Ecology Letters 12 (4): 351-366. https://doi.org/10.1111/j.1461-0248.2009.01285.x
+	  
+Frangi, Jorge L.; Lugo, Ariel E. 1985. Ecosystem dynamics of a subtropical floodplain forest. Ecological Monographs 55(3): 351-369. https://doi.org/10.2307/1942582
+
+Harris, W. F.; Goldstein, R. A.; Henderson, G. S. 1973. Analysis of forest biomass pools, annual primary production and turnover of biomass for a mixed deciduous forest watershed. In Proc. IUFRO Conference on Forest Biomass Studies, edited by H. Young, pp 41-64. Orno: University of Maine Press.
+
+Jenkins, Jennifer C.; Chojnacky, David C.; Heath, Linda S.; Birdsey, Richard A. 2004. Comprehensive database of diameter-based biomass regressions for North American tree species. Gen. Tech. Rep. NE-319. Newtown Square, PA: U.S. Department of Agriculture, Forest Service, Northeastern Research Station. 45 p. [1 CD-ROM]. https://doi.org/10.2737/ne-gtr-319
+
+Lefsky, Michael; McHale, Melissa R. 2008. Volume estimates of trees with complex architecture from terrestrial laser scanning. Journal of Applied Remote Sensing 2(1):023521-023521. https://doi.org/10.1117/1.2939008
+
+Pillsbury, Norman H.; Kirkley, Michael L. 1984. Equations for total, wood, and saw-log volume for thirteen California hardwoods. Res. Note PNW-RN-414. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 52 p. https://doi.org/10.2737/pnw-rn-414
+
+Pillsbury, N.; Reimer, J. L.; Thompson, R. 1998. Tree volume equations for fifteen urban species in California. San Luis Obispo, CA, Urban Forest Ecosystems Institute, California Polytechnic State University: 45.
+
+Ter-Mikaelian, Michael T.; Korzukhin, Michael D. 1997. Biomass equations for sixty-five North American tree species. Forest Ecology and Management 97(1): 1-23. https://doi.org/10.1016/s0378-1127(97)00019-4
+
+Van, T. K.; Rayachhetry, M. B.; Center, T. D. 2000. Estimating above-ground biomass of Melaluca quinquenervia in Florida, USA. Journal of Aquatic Plant Management 38: 62-67.
+
+Vieilledent, G.; Vaudry, R.; Andriamanohisoa, S. F. D.; Rakotonarivo, O. S.; Randrianasolo, H. Z.; Razafindrabe, H. N.; Rakotoarivony, C. B.; Ebeling, J; Rasamoelina, M. 2012. A universal approach to estimate biomass and carbon stock in tropical forests using generic allometric models. Ecological Applications 22(2):572-583. https://doi.org/10.1890/11-0039.1
+
+Zanne, A.; Lopez-Gonzalez, G.; Coomes, D.; Ilic, J.; Jansen, S.; Lewis, S.; Miller, R.; Swenson, N.; Wiemann, M.; Chave, J. 2009. Data from: Towards a worldwide wood economics spectrum. Dryad Digital Repository. https://doi.org/10.5061/dryad.234</eadetcit>
+    </overview>
+    <overview>
+      <eaover>SUPPLEMENTAL FILES
+	  
+\Supplements\Errata_Jan2020_PSW-GTR-253.pdf: Portable Document Format file containing a list of January 2020 changes for the General Technical Report associated with the Urban Tree Database: McPherson, E. Gregory; van Doorn, Natalie S.; Peper, Paula J. 2016. Urban tree database and allometric equations. Gen. Tech. Rep. PSW-GTR-253. Albany, CA: U.S. Department of Agriculture, Forest Service, Pacific Southwest Research Station. 86 p. https://www.fs.usda.gov/treesearch/pubs/52933 
+
+\Supplements\Errata_Jan2020_RDS-2016-0005.pdf: Portable Document Format file containing a list of changes made to Urban Tree Database (https://doi.org/10.2737/RDS-2016-0005) in January 2020.
+</eaover>
+      <eadetcit>none provided</eadetcit>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>USDA Forest Service, Research and Development</cntorg>
+        </cntorgp>
+        <cntpos>Research Data Archivist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>240 West Prospect Road</address>
+          <city>Fort Collins</city>
+          <state>CO</state>
+          <postal>80526</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>see Contact Instructions</cntvoice>
+        <cntinst>This contact information was current as of January 2020. For current information see Contact Us page on: https://doi.org/10.2737/RDS.</cntinst>
+      </cntinfo>
+    </distrib>
+    <resdesc>RDS-2016-0005</resdesc>
+    <distliab>Metadata documents have been reviewed for accuracy and completeness. Unless otherwise stated, all data and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. However, neither the author, the Archive, nor any part of the federal government can assure the reliability or suitability of these data for a particular purpose. The act of distribution shall not constitute any such warranty, and no responsibility is assumed for a user's application of these data or related materials.
+
+The metadata, data, or related materials may be updated without notification. If a user believes errors are present in the metadata, data or related materials, please use the information in (1) Identification Information: Point of Contact, (2) Metadata Reference: Metadata Contact, or (3) Distribution Information: Distributor to notify the author or the Archive of the issues.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>ASCII</formname>
+          <formvern>see Format Specification</formvern>
+          <formspec>Comma-delimited ASCII text (CSV)</formspec>
+          <filedec>Files zipped with 7-Zip 18.05</filedec>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>https://doi.org/10.2737/RDS-2016-0005</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20200121</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Natalie S. van Doorn</cntper>
+          <cntorg>USDA Forest Service, Pacific Southwest Research Station</cntorg>
+        </cntperp>
+        <cntpos>Research Forester</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>800 Buchanan Street</address>
+          <city>Albany</city>
+          <state>CA</state>
+          <postal>94710</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>510-883-8856</cntvoice>
+        <cntemail>natalie.vandoorn@usda.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Biological Data Profile of the Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001.1-1999</metstdv>
+  </metainfo>
+</metadata>
