@@ -150,6 +150,17 @@ cobra_df = pd.read_csv('data/cobra_data.csv')
 df = pd.read_csv('Wallen_trees.csv')
 
 years = [2020, 2040, 2060] # years for which to calculate rootvolume
+
+# create directories for years
+for l in ['marginal', 'reasonable', 'optimal']:
+    for y in years:
+        dirName = 'output/{}/{}'.format(l, y)
+        binaryName = 'output_bin/{}/{}'.format(l, y)
+        if not os.path.exists(dirName):
+            os.makedirs(dirName)
+        if not os.path.exists(binaryName):
+            os.makedirs(binaryName)
+
 for y in years:
     radius_list = []
     groundlevel_list = []
@@ -177,15 +188,15 @@ for y in years:
 
     city_json_opt = to_cityJSON(radius_T[0], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'optimal')
     json_string_opt = json.dumps(city_json_opt)
-    with open('output/json_opt_{}.city.json'.format(y), 'w') as outfile:
+    with open('output/optimal/{}/json_opt.city.json'.format(y), 'w') as outfile:
         outfile.write(json_string_opt)
 
     city_json_res = to_cityJSON(radius_T[1], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'reasonable')
     json_string_res = json.dumps(city_json_res)
-    with open('output/json_res_{}.city.json'.format(y), 'w') as outfile:
+    with open('output/reasonable/{}/json_res.city.json'.format(y), 'w') as outfile:
         outfile.write(json_string_res)
 
     city_json_mar = to_cityJSON(radius_T[2], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'marginal')
     json_string_mar = json.dumps(city_json_mar)
-    with open('output/json_mar_{}.city.json'.format(y), 'w') as outfile:
+    with open('output/marginal/{}/json_mar.city.json'.format(y), 'w') as outfile:
         outfile.write(json_string_mar)
