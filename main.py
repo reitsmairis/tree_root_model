@@ -70,12 +70,18 @@ def main(tree, year, cobra_df, mesh):
 
     # determine type of ground from bgt
     col, row, i, j = WMTS_calculator(rd_x, rd_y)
-    properties = get_properties(col, row, i, j)
-    bgt_class = bgt_classifier(properties)
+    try:
+        properties = get_properties(col, row, i, j)
+        bgt_class = bgt_classifier(properties)
+    except:
+        print('BGT retrieval function was not executed')
+        bgt_class = None
     print('bgt class:', bgt_class)
+
 
     # read out cobra information
     index = cobra_df.index[cobra_df.uid_gemeente == tree_number]
+    # TODO als hoogte 3 is cobra kroon niet meenemen?
 
     # if crown size & bgt value unknown
     if len(index) == 0 and not bgt_class:
@@ -84,10 +90,18 @@ def main(tree, year, cobra_df, mesh):
 
     # what if bgt value unknown
     elif len(index) != 0 and not bgt_class:
+        print('bgt was unknown')
         crown_diameter = cobra_df.at[index[0], 'kroondiameter']
+        cobra_height = cobra_df.at[index[0], 'boomhoogte']
+
+        # if cobra height is 3, crown is not accurate
+        if cobra_height == 3:
+            print('cobra info unknown')
+            return [0, 0, 0], 0, 0, rd_x, rd_y, tree_number
+
         crown_class = crown_classifier(crown_diameter, height, type)
         rootvolume = bgt_unknown(height_class, crown_class, circulation, fast_growth)
-        print('bgt was unknown')
+
 
     # what if tree is not Cobra dataset (thus crown not known)
     elif len(index) == 0 and bgt_class:

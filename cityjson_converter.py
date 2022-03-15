@@ -15,7 +15,7 @@ def to_cityJSON(radius_list, ground_level_list, groundwater_level_list, rd_x_lis
         "vertices": []
     }
 
-    # add little bit of height difference, otherwise weird visual effects will come in
+    # add little bit of height difference, otherwise z-fighting happens
     if ambition == 'optimal':
         factor = 0.
     if ambition == 'reasonable':
@@ -36,6 +36,7 @@ def to_cityJSON(radius_list, ground_level_list, groundwater_level_list, rd_x_lis
         for i in range(points_on_circle):
             x = rd_x + r * np.cos(i * angle)
             y = rd_y + r * np.sin(i * angle)
+            print(x, y, ground_level)
             points.append([x, y, ground_level + factor])
             lower_points.append([x, y, groundwater_level - factor])
 

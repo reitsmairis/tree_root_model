@@ -11,10 +11,11 @@ from interpolation import interpolate, intersect
 from cityjson_converter import to_cityJSON
 from exceptions import crown_unknown, bgt_unknown
 from timedependency import *
+from treedict import fast_growers
 
-def main(year, cobra_df, mesh, age, name, tree_number, bgt_class, origin, type):
+
+def main(year, mesh, name, tree_number, bgt_class, origin, type, data_df):
     '''for 1 tree'''
-    # todo cobra df maybe van tevoren al splitten dat ik niet steeds heel df meegeef
 
     # if year of planting is not known it is not possible to determine rootvolume
     if origin == 0:
@@ -22,6 +23,9 @@ def main(year, cobra_df, mesh, age, name, tree_number, bgt_class, origin, type):
         return [0, 0, 0], 0, 0, rd_x, rd_y, tree_number
     circulation = year - origin
     print('origin', origin)
+
+    # age is the same as circulation
+    age = year - origin
 
     # determine if tree grows fast or regular
     group = name.split()
@@ -32,13 +36,16 @@ def main(year, cobra_df, mesh, age, name, tree_number, bgt_class, origin, type):
         fast_growth = False
 
     print('year', year)
-    dbh = predict_value(age, name, 'age', 'dbh')
+    dbh = predict_value(age, name, 'age', 'dbh', data_df)
     print('dbh', dbh)
 
     # determine height and crown class
-    height = predict_value(dbh, name, 'dbh', 'tree ht')
+    height = predict_value(dbh, name, 'dbh', 'tree ht', data_df)
+    if not height:
+        print('height could not be determined so rootvolume could not be determined')
+        return [0, 0, 0], 0, 0, rd_x, rd_y, tree_number
     height_class = height_classifier(height)
-    crown_diameter = predict_value(dbh, name, 'dbh', 'crown dia')
+    crown_diameter = predict_value(dbh, name, 'dbh', 'crown dia', data_df)
     crown_class = crown_classifier(crown_diameter, height, type)
     print('height', height, 'crown', crown_diameter)
 
@@ -131,6 +138,11 @@ cobra_df = pd.read_csv('data/cobra_data.csv')
 
 df = pd.read_csv('Wallen_trees.csv')
 
+# load in df from paper
+data_df = pd.read_csv('data/RDS-2016-0005/Data/TS6_Growth_coefficients.csv')
+climate = 'PacfNW'
+data_df = data_df.drop(data_df[data_df.Region != climate].index)
+
 years = [2020, 2040, 2060] # years for which to calculate rootvolume
 
 # create directories for years
@@ -180,25 +192,30 @@ for index, tree in df.iterrows():
 
     # determine type of ground from bgt
     col, row, i, j = WMTS_calculator(rd_x, rd_y)
-    properties = get_properties(col, row, i, j)
-    bgt_class = bgt_classifier(properties)
+    try:
+        properties = get_properties(col, row, i, j)
+        bgt_class = bgt_classifier(properties)
+    except:
+        print('BGT retrieval function was not executed')
+        bgt_class = None
     print('bgt class:', bgt_class)
 
     # determine age in year of data aquisition
-    age_0 = determine_base(tree, cobra_df, tree_number, name, rd_x, rd_y)
+    # age_0 = determine_base(tree, cobra_df, tree_number, name, rd_x, rd_y)
+
 
     # TODO wat als leeftijd niet bepaald kon worden -> backup, dus hier al een soort check van als de soort niet in amerikaans paper staat
     # for future
-    if age_0 == None:
-        continue
+    # if age_0 == None:
+    #     continue
 
     for n, y in enumerate(years):
 
         # calculate new age
-        additional_years = y - data_year
-        age = age_0 + additional_years
+        # additional_years = y - data_year
+        # age = age_0 + additional_years
 
-        radius, ground_level, groundwater_level, rd_x, rd_y, tree_number = main(y, cobra_df, mesh, age, name, tree_number, bgt_class, origin, type)
+        radius, ground_level, groundwater_level, rd_x, rd_y, tree_number = main(y, mesh, name, tree_number, bgt_class, origin, type, data_df)
         radius_list[n].append(radius)
         groundlevel_list[n].append(ground_level)
         groundwater_list[n].append(groundwater_level)
@@ -211,17 +228,17 @@ for n, y in enumerate(years):
     radius_T = np.array(radius_list[n]).T.tolist()
 
 
-    city_json_opt = to_cityJSON(radius_T[0], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'optimal')
+    city_json_opt = to_cityJSON(radius_T[0], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'optimal')
     json_string_opt = json.dumps(city_json_opt)
     with open('output/optimal/{}/json_opt.city.json'.format(y), 'w') as outfile:
         outfile.write(json_string_opt)
 
-    city_json_res = to_cityJSON(radius_T[1], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'reasonable')
+    city_json_res = to_cityJSON(radius_T[1], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'reasonable')
     json_string_res = json.dumps(city_json_res)
     with open('output/reasonable/{}/json_res.city.json'.format(y), 'w') as outfile:
         outfile.write(json_string_res)
 
-    city_json_mar = to_cityJSON(radius_T[2], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'marginal')
+    city_json_mar = to_cityJSON(radius_T[2], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'marginal')
     json_string_mar = json.dumps(city_json_mar)
     with open('output/marginal/{}/json_mar.city.json'.format(y), 'w') as outfile:
         outfile.write(json_string_mar)

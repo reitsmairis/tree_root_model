@@ -32,11 +32,15 @@ def intersect(mesh, x, y):
 
     return intersect_coord
 
-points = np.load('GHG_values.npy')
+points = np.load('grondwater/GHG_values_Sarphati.npy')
 print(points)
 mesh = interpolate(points)
-x, y = 121670, 486887
-intersect(mesh, x, y)
+mesh.write('Sarphati_mesh.vtk')
+mesh_v = mesh.addElevationScalars(lowPoint=(0,0,-3), highPoint=(0,0,1), vrange=(-1,1))
+#mesh_v.cmap('hot')
+show(Points(points, r=6), mesh_v, bg="Mint", axes=1).close()
+#x, y = 121670, 486887
+#intersect(mesh, x, y)
 
 # visualize, but difference is not big enough to visualize
 # pts = Points(points, r=6).c('blue3')

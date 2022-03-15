@@ -80,31 +80,30 @@ def calculate_GHG(df):
     return GHG_mean
 
 
-def create_points(files):
+def create_points(files, path):
     '''Creates 3D points of (x,y)-coordinates and their GHG value'''
 
     points = []
 
     # loop through groundwaterlevel measure files
     for f in files:
-        df = pd.read_csv('grondwater/{}'.format(f), sep=';', encoding_errors='ignore', index_col=False, names=['parameter', 'value', 'unit'])
+        df = pd.read_csv(path + '/{}'.format(f), sep=';', encoding_errors='ignore', index_col=False, names=['parameter', 'value', 'unit'])
         GHG = calculate_GHG(df)
-        print(GHG)
 
         # find x and y coordinate of well
         index_x = df.index[df.parameter == 'x-cordinaat'][0]
         index_y = df.index[df.parameter == 'y-cordinaat'][0]
         x = df.at[index_x, 'value']
         y = df.at[index_y, 'value']
-        print(x, y)
 
         points.append([x, y, GHG])
 
     return np.array(points)
 
-print(os.listdir('grondwater'))
-files = os.listdir('grondwater')
+path = 'grondwater/Sarphati'
+print(os.listdir(path))
+files = os.listdir(path)
 # todo: #probleem: einddataframe heeft bepaalde rijen niet meer die plek 1 of 2 waren -> probleem als < 3 punten in hydrolisch jaar
 # todo alleen recentste jaren meenemen? maybe neit want bomen staan er gwn lang
-points = create_points(files)
-np.save('GHG_values', points)
+points = create_points(files, path)
+np.save('grondwater/GHG_values_Sarphati', points)

@@ -97,7 +97,7 @@ def intersect_value(info, y):
 
     return np.mean(x_values)
 
-def predict_value(indep_var_value, name, independent_var_str, predicts_str):
+def predict_value(indep_var_value, name, independent_var_str, predicts_str, data_df):
     info = data_df[(data_df['Scientific Name'] == name) & (data_df['Independent variable'] == independent_var_str) & (data_df['Predicts component '] == predicts_str)]
     if not info.empty:
         value = get_value(info, indep_var_value)

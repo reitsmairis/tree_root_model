@@ -11,6 +11,8 @@ from interpolation import interpolate, intersect
 from cityjson_converter import to_cityJSON
 from exceptions import crown_unknown, bgt_unknown
 from treedict import tree_properties
+from treedict import fast_growers
+
 
 def main(tree, year, mesh):
     '''for 1 tree'''
@@ -68,9 +70,14 @@ def main(tree, year, mesh):
 
     # determine type of ground from bgt
     col, row, i, j = WMTS_calculator(rd_x, rd_y)
-    properties = get_properties(col, row, i, j)
-    bgt_class = bgt_classifier(properties)
+    try:
+        properties = get_properties(col, row, i, j)
+        bgt_class = bgt_classifier(properties)
+    except:
+        print('BGT retrieval function was not executed')
+        bgt_class = None
     print('bgt class:', bgt_class)
+
 
     # if crown size & bgt value unknown
     if not crown_class and not bgt_class:
@@ -141,7 +148,7 @@ for l in ['marginal', 'reasonable', 'optimal']:
             os.makedirs(dirName)
         if not os.path.exists(binaryName):
             os.makedirs(binaryName)
-            
+
 for y in years:
     radius_list = []
     groundlevel_list = []
