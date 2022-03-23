@@ -28,7 +28,7 @@ def get_rivm(x_min, y_min, x_max, y_max):
     return height
 
 
-def get_treeheight(rd_x, rd_y):
+def backup_treeheight(rd_x, rd_y):
     '''Reads out height from AHN4 DTM 50cm (2020-2022) at coordinate and gaussian noise around coordinate
     and reads out rivm tree height (2017) as backup. Takes the maximal value of all retrieved heights as tree height'''
 
@@ -64,52 +64,8 @@ def get_treeheight(rd_x, rd_y):
         heights.append(height_rivm)
 
     return max(heights)
-#
-# import pandas as pd
-# # compare height calculators and data
-# cobra_df = pd.read_csv('data/cobra_data.csv')
-# df = pd.read_csv('Wallen_trees.csv')
-#
-# for index, tree in df.iterrows():
-#     print()
-#     # if index > 5:
-#     #     continue
-#
-#     # retrieve tree id
-#     tree_number = tree['Boomnummer']
-#     # use object number if tree number is unknown (=0)
-#     if tree_number == 0:
-#         tree_number = 'objNR_' + str(tree['OBJECTNUMMER'])
-#     print('tree_number', tree_number)
-#
-#     # read out name
-#     name = tree['Soortnaam_WTS']
-#     print('name', name)
-#
-#     i = cobra_df.index[cobra_df.uid_gemeente == tree_number]
-#     if len(i) != 0:
-#         cobra_height = cobra_df.at[i[0], 'boomhoogte']
-#         print('cobra height', cobra_height)
-#
-#     height_string = tree['Boomhoogte']
-#     print('gemeente height', height_string)
-#
-#     # read out tree location from gemeente data
-#     lng = tree['LNG']
-#     lat = tree['LAT']
-#
-#     # convert location from WGS84 to Rijksdriehoek
-#     # hoeft niet voor gisib, wel voor dingen van maps.amsteram, TODO maybe somehow coordinatensysteem checken?
-#     rd_x, rd_y = wgs_to_rd(lat, lng)
-#
-#     height_ahn = get_treeheight(rd_x, rd_y)
-#     print('height ahn', height_ahn)
-#
-#     x_min, y_min, x_max, y_max = WMS_calculator(rd_x, rd_y)
-#     height_rivm = get_rivm(x_min, y_min, x_max, y_max)
-#     print('height_rivm', height_rivm)
-#
-# print(hoi)
+
+
 def get_mean_height(x, y):
     '''take average of nearby points when ground level not known'''
     coords = [(x+0.5, y+0.5), (x-0.5, y+0.5), (x-0.5, y-0.5), (x+0.5, y-0.5)]
@@ -145,8 +101,7 @@ def get_mean_height(x, y):
     return ground_level
 
 
-# had t eerst via wms op pdok maar daar waren waardes van weggelaten dus nu gwn via de ahn site (deze heeft ook ahn4 :)
-def get_height(x, y):
+def get_groundlevel(x, y):
     '''Reads out height from AHN4 DTM 50cm at coordinate'''
 
     # create url corresponding to (x, y)-coordinate
@@ -170,58 +125,8 @@ def get_height(x, y):
         json_data = json.loads(response.read())
         height = json_data['value']
 
-    # # try nearby coordinates if ahn3 and ahn4 dont have data
-    # if height == 'NoData':
-    #     coords = [(x+0.5, y+0.5), (x-0.5, y+0.5), (x-0.5, y-0.5), (x+0.5, y-0.5)]
-    #     heights = []
-    #     for c in coords:
-    #         h = get_height(c[0], c[1])
-    #         print(h)
-    #         if h != 'NoData':
-    #             heights.append(float(h))
-    #     height = np.mean(heights)
-    #     return(height)
+    # try nearby coordinates if ahn3 and ahn4 dont have data
     if height == 'NoData':
         height = get_mean_height(x, y)
 
     return float(height)
-
-# test get_height
-x, y = 121631.7739398157,486691.88852783048
-get_height(x, y)
-
-# def get_height(x_min, y_min, x_max, y_max):
-#
-#     # create url corresponding to bounding box
-#     url = "https://geodata.nationaalgeoregister.nl/ahn3/ows?service=wms&version=1.3.0&request=GetFeatureInfo&bbox={},{},{},{}&crs=EPSG:28992&width=3&height=3&layers=ahn3_05m_dtm&styles=&format=image/png&query_layers=ahn3_05m_dtm&info_format=application/json&i=1&j=1".format(str(x_min), str(y_min), str(x_max), str(y_max))
-#
-#     # store response of the url
-#     response = urlopen(url)
-#
-#     # read out json file
-#     json_data = json.loads(response.read())
-#     features = json_data['features'][0]
-#     properties = features['properties']
-#     height = properties['GRAY_INDEX']
-#
-#     return height
-
-# # # test get_height, bron: https://geoforum.nl/t/ahn3-hoogte-opvragen-in-pyqgis/5604/2
-# # url = "https://geodata.nationaalgeoregister.nl/ahn3/ows?service=wms&version=1.3.0&request=GetFeatureInfo&bbox=149999,449999,150001,450001&crs=EPSG:28992&width=3&height=3&layers=ahn3_05m_dtm&styles=&format=image/png&query_layers=ahn3_05m_dtm&info_format=application/json&i=1&j=1"
-# # result = get_height(url)
-# # print(result)
-#
-# def WMS_calculator(x, y):
-#     '''Creates bounding box of that returns 3 by 3 pixels of which the middle one should be read out (i=1, j=1 in url)'''
-#     x_min = x - 1
-#     y_min = y - 1
-#     x_max = x + 1
-#     y_max = y + 1
-#
-#     return x_min, y_min, x_max, y_max
-#
-# # test WMS_calculator
-# x, y = 121684, 485401
-# x_min, y_min, x_max, y_max = WMS_calculator(x, y)
-# result = get_height(x_min, y_min, x_max, y_max)
-# print(result)
