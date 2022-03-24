@@ -1,12 +1,17 @@
+#############################################################################
+# Code for calculating the GHG values of groundwater level measures
+#############################################################################
+
 import pandas as pd
 import numpy as np
 import copy
 import os
 
+
 def convert_years(df):
     df_hyd = copy.deepcopy(df)
 
-    # transform to hydrolic years
+    # transform years to hydrolic years
     df_hyd['hydrolic_year'] = None
     hydyear = 0
     years_done = []
@@ -26,6 +31,7 @@ def convert_years(df):
             if years_done[-1] - year > 1:
                 hydyear += 1
 
+        # save hydrolic year to dataframe
         df_hyd['hydrolic_year'][index] = hydyear
 
     return df_hyd
@@ -52,16 +58,12 @@ def calculate_GHG(df):
     group_1 = df.groupby('hydrolic_year')
     max_1 = group_1['value'].transform(lambda x: max(x))
     df['max_1'] = max_1
-
-    # drop 1st place
     df_2 = df.drop(index=df[df.value == df.max_1].index, axis=0)
 
     # calculate 2nd place
     group_2 = df_2.groupby('hydrolic_year')
     max_2 = group_2['value'].transform(lambda x: max(x))
     df_2['max_2'] = max_2
-
-    # drop 2nd place
     df_3 = df_2.drop(index=df_2[df_2.value == df_2.max_2].index, axis=0)
 
     # calculate third place
@@ -81,7 +83,7 @@ def calculate_GHG(df):
 
 
 def create_points(files, path):
-    '''Creates 3D points of (x,y)-coordinates and their GHG value'''
+    '''Creates 3D points of (x,y)-coordinates and their GHG value and saves them as np.array'''
 
     points = []
 
@@ -90,20 +92,26 @@ def create_points(files, path):
         df = pd.read_csv(path + '/{}'.format(f), sep=';', encoding_errors='ignore', index_col=False, names=['parameter', 'value', 'unit'])
         GHG = calculate_GHG(df)
 
-        # find x and y coordinate of well
+        # find x and y coordinate of measurement
         index_x = df.index[df.parameter == 'x-cordinaat'][0]
         index_y = df.index[df.parameter == 'y-cordinaat'][0]
         x = df.at[index_x, 'value']
         y = df.at[index_y, 'value']
 
+        # save 3D point
         points.append([x, y, GHG])
 
     return np.array(points)
 
-path = 'grondwater/Sarphati'
-print(os.listdir(path))
+
+#################################### main ############################################
+
+path = 'grondwater/Sarphati' # path to groundwater measurements
+
+# determine GHG values
 files = os.listdir(path)
-# todo: #probleem: einddataframe heeft bepaalde rijen niet meer die plek 1 of 2 waren -> probleem als < 3 punten in hydrolisch jaar
-# todo alleen recentste jaren meenemen? maybe neit want bomen staan er gwn lang
 points = create_points(files, path)
-np.save('grondwater/GHG_values_Sarphati', points)
+
+np.save('grondwater/GHG_values_Sarphati', points) # path to GHG value output
+
+######################################################################################

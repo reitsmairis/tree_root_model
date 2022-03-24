@@ -1,3 +1,9 @@
+#############################################################################
+# This file contains two dictionaries with information: 
+# A dictionary with tree genera that are classified as fast growing.
+# A dictionary with the tree height and crown classes, and their maximal crown and height in m.
+#############################################################################
+
 import pandas as pd
 from collections import Counter
 
@@ -1592,25 +1598,4 @@ tree_properties = {
         }
 
 }
-#
-# x = None
-# if x:
-#     print('oi')
-# if not x:
-#     print('doei')
-# species_list = []
-# df = pd.read_csv('Wallen_trees.csv')
-# for index, tree in df.iterrows():
-#     # read out name
-#     name = tree['Soortnaam_WTS']
-#     # print('name', name)
-#     species_list.append(name)
-#     # if name in tree_properties:
-#     #     properties = tree_properties[name]
-#     #     print(name, properties)
-#     #     c = properties['max_crown']
-#     #     print(c)
-#     #     print()
-#
-# print(Counter(species_list))
-# print(len(species_list))
+

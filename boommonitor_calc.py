@@ -1,13 +1,15 @@
-####################
+#############################################################################
+# Code for interpolating the rootvolume numbers
+#
 # Soure of the number represented in the dataframe:
 # Rekenprogramma boommonitor
 # Norminstituut Bomen
-#
-#
-###############
+#############################################################################
+
 import numpy as np
 import copy
 import pandas as pd
+
 
 def rootdata_preparation(df, year_interval, base, output_name):
     '''Takes a csv file with output numbers from the calculation program boommonitor (https://www.norminstituutbomen.nl/instrumenten/boommonitor/)
@@ -37,6 +39,7 @@ def rootdata_preparation(df, year_interval, base, output_name):
     # store relevant information in new dataframe
     df_final = df_conv[['height', 'crown', 'place', 'optimal', 'reasonable', 'marginal', 'optimal_growth', 'reasonable_growth', 'marginal_growth', 'optimal_init', 'reasonable_init', 'marginal_init']]
     df_final.to_csv('data/{}.csv'.format(output_name))
+
 
 # for regular growing trees
 base = 20 # the years of the first number in the output matrix from boommonitor

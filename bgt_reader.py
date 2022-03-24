@@ -1,6 +1,11 @@
+#############################################################################
+# Code for requestigng the bgt value 
+#############################################################################
+
 from urllib.request import urlopen
 import json
 import math
+
 
 def bgt_classifier(properties):
     '''Classifies bgt attribute output in one of the four used categories of ground type (open ground/light load/ moderate load/ heavy load)'''
@@ -25,60 +30,58 @@ def bgt_classifier(properties):
         'open verharding': 'light_load'
     }
     bgt_exceptions = {
-        'building': False,
+        'building': None,
         'bordes': 'light_load',
-        'kademuur': False,
-        'waterloop': False
+        'kademuur': None,
+        'waterloop': None
     }
 
-    # check function
+    # check returned function of bgt 
     if 'functie' in properties:
         function = properties['functie']
-        print('function:', function)
 
-        # 'berm' (roadside) because it can be multiple things
+        # check for 'berm' (roadside) because it can be multiple things
         if function == 'berm':
             appearance = properties['fysiek_voorkomen']
             ground_type = bgt_berm.get(appearance)
-            print('appearance berm:', appearance, 'ground_type:', ground_type)
+
             return ground_type
 
         ground_type = bgt_functions.get(function)
-        print('function:', function, 'ground_type:', ground_type)
+
         return ground_type
 
-    # check appearance
+    # check returned appearance of bgt
     if 'fysiek_voorkomen' in properties:
         appearance = properties['fysiek_voorkomen']
         ground_type = bgt_appearance.get(appearance)
-        print('appearance:', appearance, 'ground_type:', ground_type)
+
         return ground_type
 
-    # some trees are misplaced in buildings
+    # check if returned bgt is a building
     if 'bag_pnd' in properties:
         ground_type = bgt_exceptions['building']
-        print('tree misplaced in building')
+
         return ground_type
 
-    # some trees are placed in 'bordes'
+    # check returned plus type of bgt
     if 'plus_type' in properties and properties['plus_type'] != '':
         type = properties['plus_type']
-        print('plustype', type)
         ground_type = bgt_exceptions.get(type)
+
         return ground_type
 
-    # tree in kademuur:
+    # check returned type of bgt
     if 'type' in properties:
         type = properties['type']
-        print('type', type)
         ground_type = bgt_exceptions.get(type)
+
         return ground_type
 
-
     else:
-        print('bgt unknown', properties)
-        return None
+        print('bgt unknown:', properties)
 
+        return None
 
 
 def get_properties(col, row, i, j):
@@ -89,18 +92,12 @@ def get_properties(col, row, i, j):
     # store response of the url
     response = urlopen(url)
 
-    # read out json file
+    # read bgt properties out json file
     json_data = json.loads(response.read())
-    print(len(json_data['features']))
     features = json_data['features'][0]
     properties = features['properties']
 
     return properties
-
-# # test get_function
-# url = "https://service.pdok.nl/lv/bgt/wmts/v1_0?service=WMTS&SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetFeatureInfo&LAYER=achtergrondvisualisatie&STYLE=&FORMAT=image/png&TileCol=7745&TileRow=8265&TileMatrix=EPSG:28992:14&TileMatrixSet=EPSG:28992&I=125&J=196&infoformat=application/json&info_format=application/json&"
-# result = get_function(url)
-# print(result)
 
 
 def WMTS_calculator(x, y):
@@ -127,10 +124,3 @@ def WMTS_calculator(x, y):
 
     return math.floor(wmts_col), math.floor(wmts_row), round(i), round(j)
 
-
-# test WMTS_calculator
-rd_x, rd_y = 121137, 485369
-col, row, i, j = WMTS_calculator(rd_x, rd_y)
-result = get_properties(col, row, i, j)
-classification = bgt_classifier(result)
-print(classification)

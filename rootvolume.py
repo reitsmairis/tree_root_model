@@ -1,3 +1,7 @@
+#############################################################################
+# Code for determining the rootvolume of a tree and classifying its height and crown
+#############################################################################
+
 import numpy as np
 import pandas as pd
 
@@ -43,10 +47,12 @@ def height_classifier(h):
 
     return height_class
 
+
 def crown_classifier(c, h, type):
     '''Takes crown diameter of tree as input and classifies them into the
     boommonitor classifications.'''
 
+    # assign crown class for shape and pollard trees
     if type == 'Vormboom' or type == 'Knotboom':
         if c >= 5:
             crown_class = 'broad'
@@ -54,6 +60,7 @@ def crown_classifier(c, h, type):
             crown_class = 'regular'
         if c < 3:
             crown_class = 'small'
+    # assign crown class for regular trees
     else:
         if h >= 15:
             if c >= 15:
@@ -79,14 +86,3 @@ def crown_classifier(c, h, type):
 
     return crown_class
 
-# # test
-# h = 16
-# c = 16
-# circulation = 80
-# bgt_class = 'light_load'
-#
-# height_class, crown_class = rootvolume_classifier(h, c)
-# rootvolume = rootvolume_calc(height_class, crown_class, bgt_class, circulation)
-#
-#
-# print(rootvolume)

@@ -1,3 +1,7 @@
+#############################################################################
+# Main code for executing the rootvolume models
+#############################################################################
+
 import pandas as pd
 import numpy as np
 import os
@@ -97,7 +101,7 @@ def get_crown(tree_number):
     return crown
 
 	
-def __main__(model, df, mesh, years, vertices):
+def __main__(model, area, df, mesh, years, vertices):
 
     # create lists for storing necessary output
     radius_list = [[] for i in range(len(years))]
@@ -110,8 +114,8 @@ def __main__(model, df, mesh, years, vertices):
     # create directories for years if not existing
     for l in ['marginal', 'reasonable', 'optimal']:
         for y in years:
-            dirName = 'output/{}/{}/{}'.format(model, l, y)
-            binaryName = 'output_bin/{}/{}/{}'.format(model, l, y)
+            dirName = 'output/{}/{}/{}/{}'.format(area, model, l, y)
+            binaryName = 'output_bin/{}/{}/{}/{}'.format(area, model, l, y)
             if not os.path.exists(dirName):
                 os.makedirs(dirName)
             if not os.path.exists(binaryName):
@@ -125,7 +129,7 @@ def __main__(model, df, mesh, years, vertices):
 
         # read out name and type
         name = tree['Soortnaam_WTS']
-        type = tree['Boomtype'] # TODO type anders noemen
+        tree_type = tree['Boomtype'] 
 
         # read out origin
         origin = tree['Plantjaar']
@@ -157,14 +161,14 @@ def __main__(model, df, mesh, years, vertices):
         for n, y in enumerate(years):
 
             if model == 'static':
-                rootvolume = main_static(y, mesh, name, tree_number, bgt_class, origin, type, rd_x, rd_y, height, crown)
+                rootvolume = main_static(y, mesh, name, tree_number, bgt_class, origin, tree_type, rd_x, rd_y, height, crown)
 
             if model == 'treedict':
-                rootvolume = main_treedict(y, mesh, name, tree_number, bgt_class, origin, type)
+                rootvolume = main_treedict(y, mesh, name, tree_number, bgt_class, origin, tree_type)
 
             if model == 'treegrowth':
                 data_df = pd.read_csv('data/grow_data.csv')
-                rootvolume = main_treegrowth(y, mesh, name, tree_number, bgt_class, origin, type, data_df)
+                rootvolume = main_treegrowth(y, mesh, name, tree_number, bgt_class, origin, tree_type, data_df)
 
             # determine cylinder radius
             radius = np.sqrt(rootvolume / (np.pi * relative_depth))
@@ -183,33 +187,35 @@ def __main__(model, df, mesh, years, vertices):
 
         city_json_opt = to_cityJSON(radius_T[0], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'optimal')
         json_string_opt = json.dumps(city_json_opt)
-        with open('output/{}/optimal/{}/json_opt.city.json'.format(model, y), 'w') as outfile:
+        with open('output/{}/{}/optimal/{}/json_opt.city.json'.format(area, model, y), 'w') as outfile:
             outfile.write(json_string_opt)
 
         city_json_res = to_cityJSON(radius_T[1], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'reasonable')
         json_string_res = json.dumps(city_json_res)
-        with open('output/{}/reasonable/{}/json_res.city.json'.format(model, y), 'w') as outfile:
+        with open('output/{}/{}/reasonable/{}/json_res.city.json'.format(area, model, y), 'w') as outfile:
             outfile.write(json_string_res)
 
         city_json_mar = to_cityJSON(radius_T[2], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'marginal')
         json_string_mar = json.dumps(city_json_mar)
-        with open('output/{}/marginal/{}/json_mar.city.json'.format(model, y), 'w') as outfile:
+        with open('output/{}/{}/marginal/{}/json_mar.city.json'.format(area, model, y), 'w') as outfile:
             outfile.write(json_string_mar)
 
 
 ####################### adjust model parameters #####################################
 
-model = 'static' # Choose which model to use, options: 'static', 'treedict', 'treegrowth'
+model = 'treegrowth' # chhoose which model to use, options: 'static', 'treedict', 'treegrowth'
 
-df = pd.read_csv('Wallen_trees.csv') # TODO tree file kiezen
+area = 'Wallengebied_small' # choose the area, used for naming output
 
-points = np.load('GHG_values.npy') # TODO kies je GHG bestand
+df = pd.read_csv('data/wallengebied_trees_small.csv') # choose the file containing the tree data
+
+points = np.load('grondwater/GHG_values_Wallengebied_small.npy') # choose the file containing the GHG data
 mesh = interpolate(points)
 
-years = [2020, 2040, 2060] # TODO kies years for which to calculate rootvolume
+years = [2020, 2040, 2060] # choose years for which to calculate rootvolume
 
-vertices = 30 # TODO kiezen must be even number of at least 8, defines vertices of cylinder
+vertices = 30 # choose number of vertices for cylinder, must be even number of at least 8
 
-__main__(model, df, mesh, years, vertices)
+__main__(model, area, df, mesh, years, vertices)
 
 ######################################################################################

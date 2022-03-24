@@ -1,5 +1,10 @@
+#############################################################################
+# Code for dealing with when the crown size or bgt value is unknown
+#############################################################################
+
 import pandas as pd
 import numpy as np
+
 
 def crown_unknown(height_class, bgt_class, circulation, fast_growth):
     '''If the crown diameter is unknown, take as upper boundary the optimal volume for the tree with a broad crown, and as lower bound the
@@ -30,7 +35,8 @@ def crown_unknown(height_class, bgt_class, circulation, fast_growth):
 
 
 def bgt_unknown(height_class, crown_class, circulation, fast_growth):
-    '''..'''
+    '''Determine rootvolume when the bgt value is unknown'''
+
     # read out data corresponding to type of growth
     if fast_growth == True:
         df = pd.read_csv('data/volume_data_fast.csv')
