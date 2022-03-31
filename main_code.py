@@ -151,8 +151,11 @@ def __main__(model, area, df, mesh, years, vertices):
         ground_level = get_groundlevel(rd_x, rd_y)
 
         # retrieve groundwater level (interpolated)
-        intersect_coord = intersect(mesh, rd_x, rd_y)
-        groundwater_level = intersect_coord[2]
+        try:
+            intersect_coord = intersect(mesh, rd_x, rd_y)
+            groundwater_level = intersect_coord[2]
+        except:
+            continue
 
         # determine relative depth
         relative_depth = ground_level - groundwater_level
@@ -172,6 +175,8 @@ def __main__(model, area, df, mesh, years, vertices):
 
             # determine cylinder radius
             radius = np.sqrt(rootvolume / (np.pi * relative_depth))
+
+            print(origin, rootvolume, ground_level, groundwater_level)
 
             # store output neccesary for cylinders
             radius_list[n].append(radius)
@@ -203,16 +208,16 @@ def __main__(model, area, df, mesh, years, vertices):
 
 ####################### adjust model parameters #####################################
 
-model = 'treegrowth' # chhoose which model to use, options: 'static', 'treedict', 'treegrowth'
+model = 'treedict' # choose which model to use, options: 'static', 'treedict', 'treegrowth'
 
-area = 'Wallengebied_small' # choose the area, used for naming output
+area = 'Sarphati' # choose the area, used for naming output
 
-df = pd.read_csv('data/wallengebied_trees_small.csv') # choose the file containing the tree data
+df = pd.read_csv('data/sarphati_trees.csv') # choose the file containing the tree data
 
-points = np.load('grondwater/GHG_values_Wallengebied_small.npy') # choose the file containing the GHG data
+points = np.load('grondwater/GHG_values_Sarphati.npy') # choose the file containing the GHG data
 mesh = interpolate(points)
 
-years = [2020, 2040, 2060] # choose years for which to calculate rootvolume
+years = [2018, 2020] # choose years for which to calculate rootvolume
 
 vertices = 30 # choose number of vertices for cylinder, must be even number of at least 8
 

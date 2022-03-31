@@ -106,12 +106,12 @@ def create_points(files, path):
 
 #################################### main ############################################
 
-path = 'grondwater/Sarphati' # path to groundwater measurements
+path = 'grondwater/Centraal' # path to groundwater measurements
 
 # determine GHG values
 files = os.listdir(path)
 points = create_points(files, path)
 
-np.save('grondwater/GHG_values_Sarphati', points) # path to GHG value output
+np.save('grondwater/GHG_values_Centraal', points) # path to GHG value output
 
 ######################################################################################

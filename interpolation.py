@@ -37,7 +37,7 @@ def intersect(mesh, x, y):
 
 ####################### adjust interpolation parameters ##############################
 
-## code for creating a mesh from points
+# code for creating a mesh from points
 #points = np.load('grondwater/GHG_values_Sarphati.npy') # load the GHG values
 #mesh = interpolate(points)
 #mesh.write('Sarphati_mesh.vtk') # save the mesh

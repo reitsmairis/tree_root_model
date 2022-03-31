@@ -4,7 +4,6 @@
 
 import numpy as np
 from rootvolume import rootvolume_calc, height_classifier, crown_classifier
-from exceptions import crown_unknown, bgt_unknown
 from timedependency import *
 from treedict import fast_growers
 
