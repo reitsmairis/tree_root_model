@@ -135,15 +135,18 @@ def __main__(model, area, df, mesh, years, vertices):
         origin = tree['Plantjaar']
 
         # retrieve tree position in RD coordinates
-        rd_x, rd_y = get_coordinates(tree)
+        if 'RD_X' not in tree.keys():
+            rd_x, rd_y = get_coordinates(tree)
+        else:
+            rd_x, rd_y = tree['RD_X'], tree['RD_Y']
 
         # retrieve tree height
         print(rd_x, rd_y, tree_number)
         height = get_treeheight(tree, rd_x, rd_y)
 
         # retrieve tree crown
-        crown = get_crown(tree_number)
-
+        #crown = get_crown(tree_number)
+        crown = tree['Cobra_crown']
         # retrieve soil type at location of tree
         bgt_class = get_soiltype(rd_x, rd_y)
 
@@ -155,10 +158,16 @@ def __main__(model, area, df, mesh, years, vertices):
             intersect_coord = intersect(mesh, rd_x, rd_y)
             groundwater_level = intersect_coord[2]
         except:
+            print('no intersection point')
             continue
 
         # determine relative depth
         relative_depth = ground_level - groundwater_level
+        
+        # continue if interpolated GHG is higher than ground level
+        if relative_depth < 0:
+            print('interpolation wrong for ', rd_x, rd_y)
+            continue
 
         # calculate root volume for every year using the chosen model
         for n, y in enumerate(years):
@@ -176,7 +185,11 @@ def __main__(model, area, df, mesh, years, vertices):
             # determine cylinder radius
             radius = np.sqrt(rootvolume / (np.pi * relative_depth))
 
-            print(origin, rootvolume, ground_level, groundwater_level)
+            print(y, rd_x, rd_y, origin, rootvolume, radius, relative_depth, ground_level, groundwater_level)
+
+            # continue if rootvolume could not be determined
+            if rootvolume[0] == 0:
+                continue
 
             # store output neccesary for cylinders
             radius_list[n].append(radius)
@@ -185,6 +198,23 @@ def __main__(model, area, df, mesh, years, vertices):
             x_list[n].append(rd_x)
             y_list[n].append(rd_y)
             number_list[n].append(tree_number)
+
+        # save progress once every 100 trees
+        if index % 100 == 0:
+            np.save('output/numpy_files/{}_{}_radius'.format(area, model), np.array(radius_list))
+            np.save('output/numpy_files/{}_{}_groundlevel'.format(area, model), np.array(groundlevel_list))
+            np.save('output/numpy_files/{}_{}_groundwater'.format(area, model), np.array(groundwater_list))
+            np.save('output/numpy_files/{}_{}_rdx'.format(area, model), np.array(x_list))
+            np.save('output/numpy_files/{}_{}_rdy'.format(area, model), np.array(y_list))
+            np.save('output/numpy_files/{}_{}_number'.format(area, model), np.array(number_list))
+
+    # save in the end
+    np.save('output/numpy_files/{}_{}_radius'.format(area, model), np.array(radius_list))
+    np.save('output/numpy_files/{}_{}_groundlevel'.format(area, model), np.array(groundlevel_list))
+    np.save('output/numpy_files/{}_{}_groundwater'.format(area, model), np.array(groundwater_list))
+    np.save('output/numpy_files/{}_{}_rdx'.format(area, model), np.array(x_list))
+    np.save('output/numpy_files/{}_{}_rdy'.format(area, model), np.array(y_list))
+    np.save('output/numpy_files/{}_{}_number'.format(area, model), np.array(number_list))
 
     # convert output to CityJSON cylinders
     for n, y in enumerate(years):
@@ -208,16 +238,16 @@ def __main__(model, area, df, mesh, years, vertices):
 
 ####################### adjust model parameters #####################################
 
-model = 'treedict' # choose which model to use, options: 'static', 'treedict', 'treegrowth'
+model = 'treegrowth' # choose which model to use, options: 'static', 'treedict', 'treegrowth'
 
-area = 'Sarphati' # choose the area, used for naming output
+area = 'Centraal' # choose the area, used for naming output
 
-df = pd.read_csv('data/sarphati_trees.csv') # choose the file containing the tree data
+df = pd.read_excel('data/centraal_trees.xlsx') # choose the file containing the tree data
 
-points = np.load('grondwater/GHG_values_Sarphati.npy') # choose the file containing the GHG data
+points = np.load('grondwater/GHG_values_Centraal.npy') # choose the file containing the GHG data
 mesh = interpolate(points)
 
-years = [2018, 2020] # choose years for which to calculate rootvolume
+years = [2018] # choose years for which to calculate rootvolume
 
 vertices = 30 # choose number of vertices for cylinder, must be even number of at least 8
 
