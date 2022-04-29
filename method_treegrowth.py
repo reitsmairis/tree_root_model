@@ -10,10 +10,6 @@ from treedict import fast_growers
 
 def main_treegrowth(year, mesh, name, tree_number, bgt_class, origin, type, data_df):
 
-    # if year of planting is not known it is not possible to determine rootvolume
-    if origin == 0:
-        return np.array([0, 0, 0])
-
     # determine circulation of tree
     circulation = year - origin
 
@@ -41,7 +37,7 @@ def main_treegrowth(year, mesh, name, tree_number, bgt_class, origin, type, data
 
     # determine rootvolume
     if not bgt_class:
-        rootvolume = bgt_unknown(height_class, crown_class, circulation, fast_growth)
+        return np.array([0, 0, 0])
     else:
         rootvolume = rootvolume_calc(height_class, crown_class, bgt_class, circulation, fast_growth)
 

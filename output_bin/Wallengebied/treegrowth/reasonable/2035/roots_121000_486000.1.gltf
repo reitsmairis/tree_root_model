@@ -1,0 +1,105 @@
+{
+  "asset": {
+    "generator": "Netherlands3D Tile Bake Tool",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Node-0",
+      "scale": [
+        1,
+        1,
+        -1
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Submesh-0",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 19350,
+      "max": [
+        500,
+        500,
+        500
+      ],
+      "min": [
+        -500,
+        -500,
+        -500
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 19350,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 19350,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 36120,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 232200,
+      "byteOffset": 24
+    },
+    {
+      "buffer": 0,
+      "byteLength": 232200,
+      "byteOffset": 232224
+    },
+    {
+      "buffer": 0,
+      "byteLength": 154800,
+      "byteOffset": 464424
+    },
+    {
+      "buffer": 0,
+      "byteLength": 144480,
+      "byteOffset": 619224
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 763724,
+      "uri": "roots_121000_486000.1.bin"
+    }
+  ]
+}

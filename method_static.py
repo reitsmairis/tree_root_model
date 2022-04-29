@@ -9,10 +9,6 @@ from treedict import fast_growers
 
 def main_static(year, mesh, name, tree_number, bgt_class, origin, type, rd_x, rd_y, height, crown):
 
-    # if year of planting is not known it is not possible to determine rootvolume
-    if origin == 0:
-        return np.array([0, 0, 0])
-
     # determine circulation of tree
     circulation = year - origin
 

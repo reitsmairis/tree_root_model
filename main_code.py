@@ -4,6 +4,7 @@
 
 import pandas as pd
 import numpy as np
+import math
 import os
 import json
 from method_treegrowth import main_treegrowth
@@ -110,6 +111,7 @@ def __main__(model, area, df, mesh, years, vertices):
     x_list = [[] for i in range(len(years))]
     y_list = [[] for i in range(len(years))]
     number_list = [[] for i in range(len(years))]
+    volume_list = [[] for i in range(len(years))]
 
     # create directories for years if not existing
     for l in ['marginal', 'reasonable', 'optimal']:
@@ -131,8 +133,10 @@ def __main__(model, area, df, mesh, years, vertices):
         name = tree['Soortnaam_WTS']
         tree_type = tree['Boomtype'] 
 
-        # read out origin
+        # read out origin, if not known it is not possible to determine rootvolume
         origin = tree['Plantjaar']
+        if origin == 0:
+            continue
 
         # retrieve tree position in RD coordinates
         if 'RD_X' not in tree.keys():
@@ -145,13 +149,15 @@ def __main__(model, area, df, mesh, years, vertices):
         height = get_treeheight(tree, rd_x, rd_y)
 
         # retrieve tree crown
-        #crown = get_crown(tree_number)
-        crown = tree['Cobra_crown']
+        crown = get_crown(tree_number)
+       
         # retrieve soil type at location of tree
         bgt_class = get_soiltype(rd_x, rd_y)
 
         # retrieve ahn height
         ground_level = get_groundlevel(rd_x, rd_y)
+        if math.isnan(ground_level):
+            continue
 
         # retrieve groundwater level (interpolated)
         try:
@@ -164,10 +170,15 @@ def __main__(model, area, df, mesh, years, vertices):
         # determine relative depth
         relative_depth = ground_level - groundwater_level
         
-        # continue if interpolated GHG is higher than ground level
-        if relative_depth < 0:
-            print('interpolation wrong for ', rd_x, rd_y)
-            continue
+        # boundary for minimal root depth is 1.25 m
+        if relative_depth < 0.25:
+            relative_depth = 0.25
+            groundwater_level = ground_level - relative_depth
+
+        # boundary for maximal root depth is 1.25 m
+        if relative_depth > 1.25:
+            relative_depth = 1.25
+            groundwater_level = ground_level - relative_depth
 
         # calculate root volume for every year using the chosen model
         for n, y in enumerate(years):
@@ -198,6 +209,7 @@ def __main__(model, area, df, mesh, years, vertices):
             x_list[n].append(rd_x)
             y_list[n].append(rd_y)
             number_list[n].append(tree_number)
+            volume_list[n].append(rootvolume)
 
         # save progress once every 100 trees
         if index % 100 == 0:
@@ -207,6 +219,7 @@ def __main__(model, area, df, mesh, years, vertices):
             np.save('output/numpy_files/{}_{}_rdx'.format(area, model), np.array(x_list))
             np.save('output/numpy_files/{}_{}_rdy'.format(area, model), np.array(y_list))
             np.save('output/numpy_files/{}_{}_number'.format(area, model), np.array(number_list))
+            np.save('output/numpy_files/{}_{}_volume'.format(area, model), np.array(volume_list))
 
     # save in the end
     np.save('output/numpy_files/{}_{}_radius'.format(area, model), np.array(radius_list))
@@ -215,6 +228,7 @@ def __main__(model, area, df, mesh, years, vertices):
     np.save('output/numpy_files/{}_{}_rdx'.format(area, model), np.array(x_list))
     np.save('output/numpy_files/{}_{}_rdy'.format(area, model), np.array(y_list))
     np.save('output/numpy_files/{}_{}_number'.format(area, model), np.array(number_list))
+    np.save('output/numpy_files/{}_{}_volume'.format(area, model), np.array(volume_list))
 
     # convert output to CityJSON cylinders
     for n, y in enumerate(years):
@@ -238,19 +252,20 @@ def __main__(model, area, df, mesh, years, vertices):
 
 ####################### adjust model parameters #####################################
 
-model = 'treegrowth' # choose which model to use, options: 'static', 'treedict', 'treegrowth'
+model = 'static' # choose which model to use, options: 'static', 'treedict', 'treegrowth'
 
-area = 'Centraal' # choose the area, used for naming output
+area = 'Wallengebied' # choose the area, used for naming output
 
-df = pd.read_excel('data/centraal_trees.xlsx') # choose the file containing the tree data
+df = pd.read_csv('data/wallengebied_trees.csv') # choose the file containing the tree data
 
-points = np.load('grondwater/GHG_values_Centraal.npy') # choose the file containing the GHG data
+points = np.load('grondwater/GHG_values_wallengebied.npy') # choose the file containing the GHG data
 mesh = interpolate(points)
 
-years = [2018] # choose years for which to calculate rootvolume
+years = [2020] # choose years for which to calculate rootvolume
 
 vertices = 30 # choose number of vertices for cylinder, must be even number of at least 8
 
-__main__(model, area, df, mesh, years, vertices)
+for model in ['static', 'treedict', 'treegrowth']:
+    __main__(model, area, df, mesh, years, vertices)
 
 ######################################################################################

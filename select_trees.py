@@ -2,14 +2,18 @@
 # Code for selecting trees from the gemeente files based on a bounding box
 #############################################################################
 
-from helpers import wgs_to_rd
+from helpers import wgs_to_rd, rd_to_wgs
 import pandas as pd
 import copy
 
+xmin, ymin = 121286.543523646, 486706.535702859
+xmax, ymax = 122369.802, 487744.353
+lat_1, lng_1 = rd_to_wgs(xmin, ymin)
+lat_2, lng_2 = rd_to_wgs(xmax, ymax)
 
 # define bounding box with two coorinates of vertices of box
-lat_1, lng_1 = 52.355310, 4.892947
-lat_2, lng_2 = 52.353315, 4.899928
+#lat_1, lng_1 = 52.355310, 4.892947
+#lat_2, lng_2 = 52.353315, 4.899928
 lat_values = [lat_1, lat_2]
 lng_values = [lng_1, lng_2]
 max_lat = max(lat_values)
@@ -42,4 +46,4 @@ for index, row in df_tot.iterrows():
         df_selected = df_selected.drop(index)
 
 # save new dataframe
-df_selected.to_csv('data/sarphati_trees.csv')
+df_selected.to_csv('data/IGP_trees.csv')
