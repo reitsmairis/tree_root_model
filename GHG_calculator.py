@@ -89,6 +89,7 @@ def create_points(files, path):
 
     # loop through groundwaterlevel measure files
     for f in files:
+        print(f)
         df = pd.read_csv(path + '/{}'.format(f), sep=';', encoding_errors='ignore', index_col=False, names=['parameter', 'value', 'unit'])
         GHG = calculate_GHG(df)
 
@@ -106,12 +107,12 @@ def create_points(files, path):
 
 #################################### main ############################################
 
-path = 'grondwater/Centraal' # path to groundwater measurements
+path = r"C:\Users\Iris Reitsma\Documents\Master\jaar 2\stage\notmain_code\grondwaterdata" # path to groundwater measurements
 
 # determine GHG values
 files = os.listdir(path)
 points = create_points(files, path)
 
-np.save('grondwater/GHG_values_Centraal', points) # path to GHG value output
+np.save('grondwater/GHG_values_Amsterdam', points) # path to GHG value output
 
 ######################################################################################

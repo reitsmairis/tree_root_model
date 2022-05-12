@@ -7,7 +7,7 @@ from rootvolume import rootvolume_calc, height_classifier, crown_classifier
 from treedict import fast_growers, tree_properties
 
 
-def main_treedict(year, mesh, name, tree_number, bgt_class, origin, type):
+def main_treedict(year, name, bgt_class, origin, type):
 
     # determine circulation of tree
     circulation = year - origin
@@ -28,11 +28,11 @@ def main_treedict(year, mesh, name, tree_number, bgt_class, origin, type):
     else:
         height_class = None
         crown_class = None
-        print('this tree species is not yet classified:', name)
+        #print('this tree species is not yet classified:', name)
 
     # rootvolume cannot be determined if height is not classified
     if not height_class:
-        print('height class was not known so rootvolume could not be determined')
+        #print('height class was not known so rootvolume could not be determined')
         return np.array([0, 0, 0])
 
     # determine rootvolume

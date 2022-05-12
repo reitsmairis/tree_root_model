@@ -40,9 +40,9 @@ def height_classifier(h):
     # assign height class
     if h >= 15:
         height_class = 1
-    if 8 <= h < 15:
+    elif 8 <= h < 15:
         height_class = 2
-    if h < 8:
+    elif h < 8:
         height_class = 3
 
     return height_class

@@ -8,7 +8,7 @@ from timedependency import *
 from treedict import fast_growers
 
 
-def main_treegrowth(year, mesh, name, tree_number, bgt_class, origin, type, data_df):
+def main_treegrowth(year, name, bgt_class, origin, type, data_df):
 
     # determine circulation of tree
     circulation = year - origin

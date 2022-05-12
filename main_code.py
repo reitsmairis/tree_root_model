@@ -15,7 +15,7 @@ from helpers import wgs_to_rd
 from bgt_reader import get_properties, WMTS_calculator, bgt_classifier
 from ahn_reader import get_groundlevel, backup_treeheight
 from cityjson_converter import to_cityJSON
-
+from vedo import *
 
 def get_treenumber(tree):
 
@@ -66,7 +66,10 @@ def get_treeheight(tree, rd_x, rd_y):
 
     # if height not known use ahn
     if height_string == 'Onbekend':
-        height = backup_treeheight(rd_x, rd_y)
+        try:
+            height = backup_treeheight(rd_x, rd_y)
+        except:
+            height = None
 
     # read out height string from gemeente data and convert to average of the range
     else:
@@ -106,11 +109,11 @@ def __main__(model, area, df, mesh, years, vertices):
 
     # create lists for storing necessary output
     radius_list = [[] for i in range(len(years))]
-    groundlevel_list = [[] for i in range(len(years))]
-    groundwater_list = [[] for i in range(len(years))]
-    x_list = [[] for i in range(len(years))]
-    y_list = [[] for i in range(len(years))]
-    number_list = [[] for i in range(len(years))]
+    groundlevel_list = []
+    groundwater_list = []
+    x_list = []
+    y_list = []
+    number_list = []
     volume_list = [[] for i in range(len(years))]
 
     # create directories for years if not existing
@@ -122,6 +125,14 @@ def __main__(model, area, df, mesh, years, vertices):
                 os.makedirs(dirName)
             if not os.path.exists(binaryName):
                 os.makedirs(binaryName)
+
+    # create columns for bgt class, ground level and groundwater level if missing 
+    if 'BGT_class' not in df.columns:
+        df['BGT_class'] = None 
+    if 'maaiveld' not in df.columns:
+        df['maaiveld'] = None 
+    if 'GHG' not in df.columns:
+        df['GHG'] = None 
 
     # retrieve tree properties and rootvolume
     for index, tree in df.iterrows():
@@ -145,27 +156,37 @@ def __main__(model, area, df, mesh, years, vertices):
             rd_x, rd_y = tree['RD_X'], tree['RD_Y']
 
         # retrieve tree height
-        print(rd_x, rd_y, tree_number)
         height = get_treeheight(tree, rd_x, rd_y)
 
         # retrieve tree crown
         crown = get_crown(tree_number)
        
         # retrieve soil type at location of tree
-        bgt_class = get_soiltype(rd_x, rd_y)
-
+        bgt_class = tree['BGT_class']
+        if not bgt_class: 
+            bgt_class = get_soiltype(rd_x, rd_y)
+            df.at[index, 'BGT_class'] = bgt_class
+            
         # retrieve ahn height
-        ground_level = get_groundlevel(rd_x, rd_y)
-        if math.isnan(ground_level):
-            continue
+        ground_level = tree['maaiveld']
+        if not ground_level: 
+            try:
+                ground_level = get_groundlevel(rd_x, rd_y)
+                if math.isnan(ground_level):
+                    continue
+                df.at[index, 'maaiveld'] = ground_level
+            except:
+                continue
 
         # retrieve groundwater level (interpolated)
-        try:
-            intersect_coord = intersect(mesh, rd_x, rd_y)
-            groundwater_level = intersect_coord[2]
-        except:
-            print('no intersection point')
-            continue
+        groundwater_level = tree['GHG']
+        if not groundwater_level:
+            try:
+                intersect_coord = intersect(mesh, rd_x, rd_y)
+                groundwater_level = intersect_coord[2]
+                df.at[index, 'GHG'] = groundwater_level
+            except:
+                continue
 
         # determine relative depth
         relative_depth = ground_level - groundwater_level
@@ -184,35 +205,41 @@ def __main__(model, area, df, mesh, years, vertices):
         for n, y in enumerate(years):
 
             if model == 'static':
-                rootvolume = main_static(y, mesh, name, tree_number, bgt_class, origin, tree_type, rd_x, rd_y, height, crown)
+                if height == None:
+                    continue
+                rootvolume = main_static(y, name, bgt_class, origin, tree_type, height, crown)
 
             if model == 'treedict':
-                rootvolume = main_treedict(y, mesh, name, tree_number, bgt_class, origin, tree_type)
+                rootvolume = main_treedict(y, name, bgt_class, origin, tree_type)
 
             if model == 'treegrowth':
                 data_df = pd.read_csv('data/grow_data.csv')
-                rootvolume = main_treegrowth(y, mesh, name, tree_number, bgt_class, origin, tree_type, data_df)
+                rootvolume = main_treegrowth(y, name, bgt_class, origin, tree_type, data_df)
 
             # determine cylinder radius
             radius = np.sqrt(rootvolume / (np.pi * relative_depth))
 
-            print(y, rd_x, rd_y, origin, rootvolume, radius, relative_depth, ground_level, groundwater_level)
+            #print(y, rd_x, rd_y, origin, rootvolume, radius, relative_depth, ground_level, groundwater_level)
 
             # continue if rootvolume could not be determined
-            if rootvolume[0] == 0:
+            if rootvolume[0] == 0 or math.isnan(rootvolume[0]):
                 continue
 
-            # store output neccesary for cylinders
+            # store static output in last run
+            if y == years[-1]:
+                groundlevel_list.append(ground_level)
+                groundwater_list.append(groundwater_level)
+                x_list.append(rd_x)
+                y_list.append(rd_y)
+                number_list.append(tree_number)
+
+            # store nonstatic output neccesary for cylinders
             radius_list[n].append(radius)
-            groundlevel_list[n].append(ground_level)
-            groundwater_list[n].append(groundwater_level)
-            x_list[n].append(rd_x)
-            y_list[n].append(rd_y)
-            number_list[n].append(tree_number)
             volume_list[n].append(rootvolume)
 
         # save progress once every 100 trees
         if index % 100 == 0:
+            print(index)
             np.save('output/numpy_files/{}_{}_radius'.format(area, model), np.array(radius_list))
             np.save('output/numpy_files/{}_{}_groundlevel'.format(area, model), np.array(groundlevel_list))
             np.save('output/numpy_files/{}_{}_groundwater'.format(area, model), np.array(groundwater_list))
@@ -230,42 +257,60 @@ def __main__(model, area, df, mesh, years, vertices):
     np.save('output/numpy_files/{}_{}_number'.format(area, model), np.array(number_list))
     np.save('output/numpy_files/{}_{}_volume'.format(area, model), np.array(volume_list))
 
-    # convert output to CityJSON cylinders
-    for n, y in enumerate(years):
-        radius_T = np.array(radius_list[n]).T.tolist()
+    # safe dataframes with new information
+    df.to_csv('data/trees_{}_filled.csv'.format(area))
 
-        city_json_opt = to_cityJSON(radius_T[0], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'optimal')
-        json_string_opt = json.dumps(city_json_opt)
-        with open('output/{}/{}/optimal/{}/json_opt.city.json'.format(area, model, y), 'w') as outfile:
-            outfile.write(json_string_opt)
+    ## convert output to CityJSON cylinders
+    #for n, y in enumerate(years):
+     #   radius_T = np.array(radius_list[n]).T.tolist()
 
-        city_json_res = to_cityJSON(radius_T[1], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'reasonable')
-        json_string_res = json.dumps(city_json_res)
-        with open('output/{}/{}/reasonable/{}/json_res.city.json'.format(area, model, y), 'w') as outfile:
-            outfile.write(json_string_res)
+    #    city_json_opt = to_cityJSON(radius_T[0], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'optimal')
+     #   json_string_opt = json.dumps(city_json_opt)
+     #   with open('output/{}/{}/optimal/{}/json_opt.city.json'.format(area, model, y), 'w') as outfile:
+     #       outfile.write(json_string_opt)
 
-        city_json_mar = to_cityJSON(radius_T[2], groundlevel_list[n], groundwater_list[n], x_list[n], y_list[n], number_list[n], vertices, 'marginal')
-        json_string_mar = json.dumps(city_json_mar)
-        with open('output/{}/{}/marginal/{}/json_mar.city.json'.format(area, model, y), 'w') as outfile:
-            outfile.write(json_string_mar)
+      #  city_json_res = to_cityJSON(radius_T[1], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'reasonable')
+    #    json_string_res = json.dumps(city_json_res)
+     #   with open('output/{}/{}/reasonable/{}/json_res.city.json'.format(area, model, y), 'w') as outfile:
+      #      outfile.write(json_string_res)
+
+      #  city_json_mar = to_cityJSON(radius_T[2], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'marginal')
+     #   json_string_mar = json.dumps(city_json_mar)
+      #  with open('output/{}/{}/marginal/{}/json_mar.city.json'.format(area, model, y), 'w') as outfile:
+      #      outfile.write(json_string_mar)
 
 
 ####################### adjust model parameters #####################################
 
-model = 'static' # choose which model to use, options: 'static', 'treedict', 'treegrowth'
+model = 'treedict' # choose which model to use, options: 'static', 'treedict', 'treegrowth'
 
-area = 'Wallengebied' # choose the area, used for naming output
+area = ['Amsterdam_0', 'Amsterdam_1', 'Amsterdam_2', 'Amsterdam_3']  # choose the area, used for naming output
 
-df = pd.read_csv('data/wallengebied_trees.csv') # choose the file containing the tree data
+#df = pd.read_csv('data/trees_test_filled.csv') # choose the file containing the tree data
+#df = df.replace({np.nan: None})
+# read out dataframes containing the gemeente trees
+df0 = pd.read_csv('data/BOMEN_0.csv', sep=';')
+df0 = df0.replace({np.nan: None})
+df1 = pd.read_csv('data/BOMEN_1.csv', sep=';')
+df1 = df1.replace({np.nan: None})
+df2 = pd.read_csv('data/BOMEN_2.csv', sep=';')
+df2 = df2.replace({np.nan: None})
+df3 = pd.read_csv('data/BOMEN_3.csv', sep=';')
+df3 = df3.replace({np.nan: None})
+df_list = [df0, df1, df2, df3]
+# concatinate dataframes
+#df_tot = pd.concat([df0, df1, df2, df3], ignore_index = True)
 
-points = np.load('grondwater/GHG_values_wallengebied.npy') # choose the file containing the GHG data
-mesh = interpolate(points)
+#points = np.load('grondwater/GHG_values_wallengebied.npy') # choose the file containing the GHG data
+#mesh = interpolate(points)
+#mesh = load('Filled_amsterdam_mesh.vtk')
 
-years = [2020] # choose years for which to calculate rootvolume
+years = [2010, 2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060] # np.arange(2010, 2061, 1) # choose years for which to calculate rootvolume
 
 vertices = 30 # choose number of vertices for cylinder, must be even number of at least 8
 
-for model in ['static', 'treedict', 'treegrowth']:
-    __main__(model, area, df, mesh, years, vertices)
+#for model in ['static', 'treedict', 'treegrowth']:
+for count, a in area: 
+    __main__(model, a, df_list[count], mesh, years, vertices)
 
 ######################################################################################

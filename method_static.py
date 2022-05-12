@@ -7,7 +7,7 @@ from rootvolume import rootvolume_calc, height_classifier, crown_classifier
 from treedict import fast_growers
 
 
-def main_static(year, mesh, name, tree_number, bgt_class, origin, type, rd_x, rd_y, height, crown):
+def main_static(year, name, bgt_class, origin, type, height, crown):
 
     # determine circulation of tree
     circulation = year - origin

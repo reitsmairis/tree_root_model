@@ -7,6 +7,7 @@ from vedo import *
 import numpy as np
 
 
+
 def interpolate(points):
     '''Creates a mesh from 2D Delaunay triangulazition on a set of points'''
 
@@ -14,7 +15,7 @@ def interpolate(points):
     pts = Points(points, r=6)
 
     # do 2D Delaunay interpolation
-    mesh = delaunay2D(pts, mode='xy')
+    mesh = delaunay2D(pts, mode='xy', tol=0.005)
 
     return mesh
 
@@ -38,13 +39,25 @@ def intersect(mesh, x, y):
 ####################### adjust interpolation parameters ##############################
 
 # code for creating a mesh from points
-#points = np.load('grondwater/GHG_values_Sarphati.npy') # load the GHG values
-#mesh = interpolate(points)
-#mesh.write('Sarphati_mesh.vtk') # save the mesh
+points = np.load('grondwater/GHG_values_Amsterdam.npy') # load the GHG values
+
+xmin, xmax = 108000, 136000
+ymin, ymax = 476000, 500000
+    
+area_points = []
+
+for p in points:
+   if xmin <= int(p[0]) <= xmax and ymin <= int(p[1]) <= ymax:
+        area_points.append(p)
+
+mesh = interpolate(area_points)
+mesh = mesh.fillHoles()
+mesh.write('Amsterdam_mesh.vtk') # save the mesh
 
 ## code for visualising the mesh
-#mesh_v = mesh.addElevationScalars(lowPoint=(0,0,-3), highPoint=(0,0,1), vrange=(-1,1))
-#mesh_v.cmap('hot')
-#show(Points(points, r=6), mesh_v, bg="Mint", axes=1).close()
+mesh = load('Filled_amsterdam_mesh.vtk')
+mesh_v = mesh.addElevationScalars(lowPoint=(0,0,-3), highPoint=(0,0,1), vrange=(-1,1))
+mesh_v.cmap('hot')
+show(Points(area_points, r=6), mesh_v, bg="Mint", axes=1).close()
 
 ######################################################################################
