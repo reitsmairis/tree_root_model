@@ -1,4 +1,16 @@
-"# tree_root_model" 
+# Tree Root Model 
+
+A model for estimating the necessary root volume of tree roots, now and in the future.
+
+---
+
+
+## About the Project
+
+
+
+## Project Folder Structure
+
 
 Sources of data: 
 
