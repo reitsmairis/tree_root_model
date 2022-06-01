@@ -105,7 +105,7 @@ def get_crown(tree_number):
     return crown
 
 	
-def __main__(model, area, df, mesh, years, vertices):
+def __main__(model, area, df, mesh, years):
 
     # create lists for storing necessary output
     radius_list = [[] for i in range(len(years))]
@@ -133,6 +133,7 @@ def __main__(model, area, df, mesh, years, vertices):
         df['maaiveld'] = None 
     if 'GHG' not in df.columns:
         df['GHG'] = None 
+
 
     # retrieve tree properties and rootvolume
     for index, tree in df.iterrows():
@@ -166,7 +167,7 @@ def __main__(model, area, df, mesh, years, vertices):
         if not bgt_class: 
             bgt_class = get_soiltype(rd_x, rd_y)
             df.at[index, 'BGT_class'] = bgt_class
-            
+
         # retrieve ahn height
         ground_level = tree['maaiveld']
         if not ground_level: 
@@ -260,24 +261,7 @@ def __main__(model, area, df, mesh, years, vertices):
     # safe dataframes with new information
     df.to_csv('data/trees_{}_filled.csv'.format(area))
 
-    ## convert output to CityJSON cylinders
-    #for n, y in enumerate(years):
-     #   radius_T = np.array(radius_list[n]).T.tolist()
 
-    #    city_json_opt = to_cityJSON(radius_T[0], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'optimal')
-     #   json_string_opt = json.dumps(city_json_opt)
-     #   with open('output/{}/{}/optimal/{}/json_opt.city.json'.format(area, model, y), 'w') as outfile:
-     #       outfile.write(json_string_opt)
-
-      #  city_json_res = to_cityJSON(radius_T[1], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'reasonable')
-    #    json_string_res = json.dumps(city_json_res)
-     #   with open('output/{}/{}/reasonable/{}/json_res.city.json'.format(area, model, y), 'w') as outfile:
-      #      outfile.write(json_string_res)
-
-      #  city_json_mar = to_cityJSON(radius_T[2], groundlevel_list, groundwater_list, x_list, y_list, number_list, vertices, 'marginal')
-     #   json_string_mar = json.dumps(city_json_mar)
-      #  with open('output/{}/{}/marginal/{}/json_mar.city.json'.format(area, model, y), 'w') as outfile:
-      #      outfile.write(json_string_mar)
 
 
 ####################### adjust model parameters #####################################
@@ -303,14 +287,12 @@ df_list = [df0, df1, df2, df3]
 
 #points = np.load('grondwater/GHG_values_wallengebied.npy') # choose the file containing the GHG data
 #mesh = interpolate(points)
-#mesh = load('Filled_amsterdam_mesh.vtk')
+mesh = load('grondwater/Filled_amsterdam_mesh.vtk')
 
 years = [2010, 2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060] # np.arange(2010, 2061, 1) # choose years for which to calculate rootvolume
 
-vertices = 30 # choose number of vertices for cylinder, must be even number of at least 8
 
-#for model in ['static', 'treedict', 'treegrowth']:
-for count, a in area: 
-    __main__(model, a, df_list[count], mesh, years, vertices)
+for count, a in enumerate(area): 
+    __main__(model, a, df_list[count], mesh, years)
 
 ######################################################################################

@@ -41,6 +41,7 @@ def intersect(mesh, x, y):
 # code for creating a mesh from points
 points = np.load('grondwater/GHG_values_Amsterdam.npy') # load the GHG values
 
+# choose boundaries of the mesh 
 xmin, xmax = 108000, 136000
 ymin, ymax = 476000, 500000
     
@@ -52,7 +53,7 @@ for p in points:
 
 mesh = interpolate(area_points)
 mesh = mesh.fillHoles()
-mesh.write('Amsterdam_mesh.vtk') # save the mesh
+mesh.write('Amsterdam_mesh.vtk') # save the mesh, choose filename
 
 ## code for visualising the mesh
 mesh = load('Filled_amsterdam_mesh.vtk')

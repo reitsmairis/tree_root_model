@@ -12,11 +12,11 @@ import os
 
 ####################### adjust model parameters #####################################
 
-models = ['static', 'treedict', 'treegrowth'] # models with which the CityJSON output was generated, options: 'static', 'treedict', 'treegrowth'
+models = ['treedict'] #['static', 'treedict', 'treegrowth'] # models with which the CityJSON output was generated, options: 'static', 'treedict', 'treegrowth'
 
-years = [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060] # years for which the rootvolume is calculated
+years = [2010, 2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060] # years for which the rootvolume is calculated
 
-areas = ['Wallengebied'] # areas for which the rootvolume is calculated
+areas = ['Amsterdam'] # areas for which the rootvolume is calculated
 
 levels = ['marginal', 'reasonable', 'optimal'] # ambition levels used
 
@@ -32,8 +32,8 @@ for a in areas:
     for m in models:
         for l in levels:
             for y in years:
-                config['sourceFolder'] = "C:\\Users\\Iris Reitsma\\Documents\\Master\\jaar 2\\stage\\root_model\\output\\{}\\{}\\{}\\{}\\".format(a, m, l, y)
-                config['outputFolder'] = "C:\\Users\\Iris Reitsma\\Documents\\Master\\jaar 2\\stage\\root_model\\output_bin\\{}\\{}\\{}\\{}\\roots_".format(a, m, l, y)
+                config['sourceFolder'] = "C:\\Users\\jacco\\Documents\\Iris\\output\\{}\\{}\\{}\\{}\\".format(a, m, l, y)
+                config['outputFolder'] = "C:\\Users\\jacco\\Documents\\Iris\\output_bin\\{}\\{}\\{}\\{}\\roots_".format(a, m, l, y)
                 json_string = json.dumps(config)
 
                 # replace config file
@@ -41,4 +41,4 @@ for a in areas:
                     outfile.write(json_string)
 
                 # execute TileBakeTool
-                os.system('TileBakeTool\\TileBakeTool.exe --config "C:\\Users\\Iris Reitsma\\Documents\\Master\\jaar 2\\stage\\root_model\\root_config.json"')
+                os.system('TileBakeTool\\TileBakeTool.exe --config "C:\\Users\\jacco\\Documents\\Iris\\root_config.json"')
