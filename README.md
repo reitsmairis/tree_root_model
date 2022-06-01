@@ -101,4 +101,4 @@ Project link: https://github.com/reitsmairis/tree_root_model
 * The citizen reports about root lifting were made available by the [Signalen Informatievoorziening Amsterdam](https://openresearch.amsterdam/nl/page/39785/de-signalen-informatievoorziening-amsterdam-sia). 
 
 #### Other: 
-* The tool for converting the CityJSON files to binary format is developed by the 3D Amsterdam team and available [here](https://github.com/Amsterdam/CityDataToBinaryModel). 
+* The tool for converting the CityJSON files to binary format (Tile Bake Tool) is developed by the 3D Amsterdam team and available [here](https://github.com/Amsterdam/CityDataToBinaryModel). 
