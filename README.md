@@ -1,14 +1,14 @@
 # Tree Root Model 
 
-A model for estimating the necessary root volume of tree roots, now and in the future.
+A model for estimating the necessary root volume for tree roots, now and in the future.
 
 
 ## About the Project
-This project is an internship thesis for the Master Computational Science at the University of Amsterdam. It was created in the 3D Amsterdam team and the results are included in this 3D environment. 
+This project is an internship thesis for the Master Computational Science at the University of Amsterdam. It was created in the [3D Amsterdam](https://3d.amsterdam.nl/) team and the results are included in this 3D environment. 
 
 The model needs at least some input about the tree, depending on which of the three methods a user wants to use (see Usage). The model also needs information about the BGT and AHN at the location of the input trees. If this is not known by the user, the model requests them via URL. Lastly, the model needs a mesh of Gemiddeld Hoogste Grondwaterstand (GHG, average highest groundwater level) measurements (see Usage). 
 
-The main function in the model outputs NumPy arrays. With another script in the model, they can be converted to CityJSON files (TODO iets over cityjson). (TODO ook naar binary met de tilebaketool, deze tool denkik uit mn map halen).  
+The main function in the model outputs NumPy arrays. With another script in the model, they can be converted to [CityJSON](https://www.cityjson.org/) files. For including the root volume cylinders in 3D Amsterdam, they had to be converted to binary format using the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel) developed by the 3D Amsterdam team. 
 
 ### Built with
 * [Pandas](https://pandas.pydata.org/docs/index.html)
@@ -32,15 +32,37 @@ There are the following folders in the structure:
 3) [`output`](./output): Contains the CityJSON files for the different subregions, methods and years, and the numpy files for the subregions and the whole city. 
 4) [`output_bin`](./output_bin): Contains the binary and gltf tiles of subregion het Wallengebied. 
 5) [`plots`](./plots): Contains the figures resulting from the validation and that are included in the report. 
-6) Validation TODO link: Contains the code used for the validation. This is only functioning as example since most validation data is not publicly available, like the road damage reports and ground radar scans, so it is impossible to rerun most code for other users. 
+6) [`validation`](./validation): Contains the code used for the validation. This is only functioning as example since most validation data is not publicly available, like the road damage reports and ground radar scans, so it is impossible to rerun most code for other users. 
 
-These are the most important scripts:
+These are the most important scripts for using the model:
+1) [`main_code.py`](./main_code.py): For running the model, takes the input parameters and estimates the corresponding necessary root volume in NumPy arrays. 
+2) [`data_to_cityjson.py`](./data_to_cityjson.py): For converting the NumPy arrays to CityJSON geometry.
+3) [`GHG_calculator.py`](./GHG_calculator.py): For calculating the GHG values from the Waternet groundwater measurement CSVs. 
+4) [`interpolation.py`](./interpolation.py): For interpolating the GHG values to a mesh. 
 
-These are descriptions of the other scripts: 
+The other scripts and files are: 
+1) [`ahn_reader.py`](./ahn_reader.py): For making URL requests for the AHN and RIVM data, which determine the tree height when unknown and the ground level height. 
+2) [`bgt_reader.py`](./bgt_reader.py): For making URL requests to the BGT values. It also contains code for classifying the returned BGT value as a corresponding soil profile type. 
+3) [`boommonitor_calc.py`](./boommonitor_calc.py`): Calculates the initial root volume numbers and growth per year numbers using the boommonitor info in the data folder. 
+4) [`city_to_binary.py`](./city_to_binary.py): For converting the CityJSON files to binary. This needs the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel) developed by the 3D Amsterdam team. 
+5) [`cityjson_converter.py`](./cityjson_converter.py): Contains the functionality for converting the NumPy arrays to CityJSONs.
+6) [`method_static.py`](./method_static.py), [`method_treedict.py`](./method_treedict.py), and [`method_treegrowth.py`](./method_treegrowth.py): Contain the code for respectively the static, tree dictionary and tree growth methods. 
+7) [`rootvolume.py`](./rootvolume.py): For classifying height and crown sizes and determining the root volume. 
+8) [`select_climate.py`](./select_climate.py): For selecting a climate region in the tree growth equation database in the data folder. The project used the Pacific Northwest. 
+9) [`select_trees.py`](./select_trees.py): Used to select trees for the different subregions out of the total Amsterdam tree data. Can probably be done faster using for example [QGIS](https://qgis.org/nl/site/) if the user knows to use that. 
+10) [`timedependency.py`](./timedependency.py): contains the allometric growth equations and functions that use them for predictions about the height and crown size of the trees. 
+11) [`treedict.py`](./treedict.py): contains the tree dictionary used in the tree dictionary method, as well as a list of fast growing tree genera. 
+12) [`root_config.json`](./root_config.json): Configuration file that was created for using the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel).
 
 ---
 ## Installation 
+1) Make sure to have Python version 3.5.8 installed on your machine. This project used [Anaconda](https://www.anaconda.com/), which comes with Python and a lot of nice libraries, as well as a nice terminal.
 
+2) Clone this repository using the terminal:
+    ```bash
+    git clone https://github.com/reitsmairis/tree_root_model
+    ```
+3) Install the dependencies listed above (TODO requirements.txt ofzo)
 ---
 ## Usage
 
