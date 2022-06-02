@@ -2,7 +2,7 @@
 
 A model for estimating the necessary root volume for tree roots, now and in the future. The estimation is based on the observable tree parameters and the estimated volume is converted to a cylindrical geometry. These cylinders consist of three different layers, which correspond to the different ambition levels (marginal, reasonable, optimal) following the root volume guidelines from [Norminstituut Bomen](https://www.norminstituutbomen.nl/).
 
-Images:
+#### Images:
 * Top left: An example of how the estimated root volume cylinders look in [Blender](https://www.blender.org/).
 * Top right: A top-down view of 3D Amsterdam with the root volume cylinders included.
 * Bottom: A bottom-up view of 3D Amsterdam with the root volume cylinders included. 
