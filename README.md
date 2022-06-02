@@ -1,6 +1,14 @@
 # Tree Root Model 
 
-A model for estimating the necessary root volume for tree roots, now and in the future.
+A model for estimating the necessary root volume for tree roots, now and in the future. The estimation is based on the observable tree parameters and the estimated volume is converted to a cylindrical geometry. These cylinders consist of three different layers, which correspond to the different ambition levels (marginal, reasonable, optimal) following the root volume guidelines from [Norminstituut Bomen](https://www.norminstituutbomen.nl/).
+
+Images:
+* Top left: An example of how the estimated root volume cylinders look in [Blender](https://www.blender.org/).
+* Top right: A top-down view of 3D Amsterdam with the root volume cylinders included.
+* Bottom: A bottom-up view of 3D Amsterdam with the root volume cylinders included. 
+
+<img src="plots/cilinders.png"  width=49% height=50%> <img src="plots/topdown.png"  width=49% height=50%> 
+<img src="plots/bottomup.png"  width=98.5% height=50%> 
 
 
 ## About the Project
@@ -10,7 +18,7 @@ The model needs at least some input about the tree, depending on which of the th
 
 The main function in the model outputs NumPy arrays. With another script in the model, they can be converted to [CityJSON](https://www.cityjson.org/) files. For including the root volume cylinders in 3D Amsterdam, they had to be converted to binary format using the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel) developed by the 3D Amsterdam team. 
 
-### Built with
+#### Built with
 * [Pandas](https://pandas.pydata.org/docs/index.html)
 * [NumPy](https://numpy.org/)
 * [Math](https://docs.python.org/3/library/math.html#module-math)
@@ -65,7 +73,7 @@ The other scripts and files are:
 3) Install the dependencies listed above (TODO requirements.txt ofzo)
 ---
 ## Usage
-### Necessary input
+#### Necessary input
 The following input is required (or optional) when using the three different methods:
 
 * Static method: 
@@ -89,18 +97,45 @@ TODO example csv input
 
 TODO Grondwater meer uitleggen
 
-### TODO example how to run main
+#### TODO example how to run main
 
-### TODO output numpy files uitleggen
+#### TODO output numpy files uitleggen
 
-### TODO uitleggen hoe naar cityjson / binary gaan
+#### TODO uitleggen hoe naar cityjson / binary gaan
 
 ---
 
 ## How it Works
-TODO pipeline images
+The model consists of three different methods that vary sligthly in input parameters (see Usage). This section shows the pipeline diagrams corresponding to the different methods. 
 
-TODO linkje naar thesis
+#### The static method
+The first method is the static method. This method uses the height and crown information of a tree to estimate the root volume. For the project, we had access to height and crown information from 2020. The static method estimates the future root volumes based on these values as well, which could lead to underestimations of the root volume in the future. 
+
+<figure>
+<img src="plots/pipeline_static.png" alt="Trulli" style="width:100%">
+</figure>
+
+#### The tree dictionary method
+The second method is the tree dictionary method. This method uses the height and crown information from the tree dictionary, which contains the height and crown information for a fully mature tree, based on their species. The tree dictionary contains this information for the 15 most occuring tree genera in Amsterdam. 
+
+<figure>
+<img src="plots/pipeline_dict.png" alt="Trulli" style="width:100%">
+</figure>
+
+
+
+#### The tree growth method
+The third method is the tree growth method. This method uses the equations from the Urban Tree Database to predict the height and crown size for a specific year based on the age of a tree. These equations are species-dependent, and are created for the most occuring tree genera in the US. 
+
+<figure>
+<img src="plots/pipeline_time.png" alt="Trulli" style="width:100%">
+</figure>
+
+#### Volume to cylinders
+The three methods convert the input parameters to an estimated root volume. This estimated root volume needs to be converted to a cylinder. The height of this cylinder is determined by the difference between the ground level and the average highest groundwater level (GHG). With the height and the volume, the cylinder radius can also be determined. 
+
+#### Want to know more?
+The project structure section lists the model scripts and a short description. For a more elaborate explanantion of how the model works see (TODO linkje naar mn report). This report also contains the validation experiments and the conclusions of the thesis project. 
 
 ---
 ## License
@@ -122,7 +157,7 @@ Project link: https://github.com/reitsmairis/tree_root_model
 ## Acknowledgements 
 
 #### Model input data: 
-* The files in data/boommonitor_data contain root volume numbers from the calculation tool [Boommonitor](https://www.norminstituutbomen.nl/instrumenten/boommonitor/) from Norminstituut Bomen. These numbers can be accessed with a license. These guideline numbers are used to estimate the root volume for a tree with specific input parameters. 
+* The files in data/boommonitor_data contain root volume numbers from the calculation tool [Boommonitor](https://www.norminstituutbomen.nl/instrumenten/boommonitor/) from [Norminstituut Bomen](https://www.norminstituutbomen.nl/). These numbers can be accessed with a license. These guideline numbers are used to estimate the root volume for a tree with specific input parameters. 
 * The file data/Cobra.data.csv contains the crown areas and diameters and other information about trees in three subregions of Amsterdam (Wallengebied, Sarphatipark, IJburg). This data is delivered by [Cobra Groeninzicht](https://www.cobra-groeninzicht.nl/). The data was used as input for the static method and to validate the crown predictions of the tree dictionary method. 
 * The other tree data is from the city of Amsterdam and publicly available [here](https://maps.amsterdam.nl/open_geodata/). 
 * The growth equation information in data/RDS-2016-0005 is from the [Urban Tree Database](https://www.fs.usda.gov/rds/archive/Catalog/RDS-2016-0005) and was made available by the [Forest Service U.S. Department of Agriculture](https://www.fs.usda.gov/treesearch/pubs/52933).
