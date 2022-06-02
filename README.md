@@ -112,7 +112,7 @@ TODO Grondwater meer uitleggen
 The model consists of three different methods that vary sligthly in input parameters (see Usage). This section shows the pipeline diagrams corresponding to the different methods. 
 
 #### The static method
-The first method is the static method. This method uses the height and crown information of a tree to estimate the root volume. For the project, we had access to height and crown information from 2020. The static method estimates the future root volumes based on these values as well, which could lead to underestimations of the root volume in the future. 
+The first method is the static method. This method uses the height and crown information of a tree to estimate the root volume. For the project, we had access to height and crown information from 2020. The static method estimates the future root volumes based on these values as well.
 
 <figure>
 <img src="plots/pipeline_static.png" alt="Trulli" style="width:100%">
@@ -138,7 +138,7 @@ The third method is the tree growth method. This method uses the equations from 
 The three methods convert the input parameters to an estimated root volume. This estimated root volume needs to be converted to a cylinder. The height of this cylinder is determined by the difference between the ground level and the average highest groundwater level (GHG). With the height and the volume, the cylinder radius can also be determined. 
 
 #### Want to know more?
-The project structure section lists the model scripts and a short description. For a more elaborate explanantion of how the model works see (TODO linkje naar mn report). This report also contains the validation experiments and the conclusions of the thesis project. 
+The project structure section lists the model scripts and a short description. For a more elaborate explanantion of how the model works see (TODO linkje naar mn report). This report also contains the validation experiments, comparison between the methods, and the conclusions of the thesis project. 
 
 ---
 ## License
