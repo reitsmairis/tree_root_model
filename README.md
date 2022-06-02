@@ -14,7 +14,7 @@ A model for estimating the necessary root volume for tree roots, now and in the 
 ## About the Project
 This project is an internship thesis for the Master Computational Science at the University of Amsterdam. It was created in the [3D Amsterdam](https://3d.amsterdam.nl/) team and the results are included there (TODO is dat uiteindelijk wel zo?). 
 
-We developed three different methods: the static, tree dictionary and tree growth method. For more information about the methods, see How it Works. For the thesis, the different methods were first tested and validated on three different subregions in Amsterdam: het Wallengebied, IJburg, and Sarphatipark. Based on these experiments, the tree dictionary method was used to run the model for the tree datasets of the whole city of Amsterdam. 
+We developed three different methods: the static, tree dictionary, and tree growth method. For more information about the methods, see How it Works. For the thesis, the different methods were first tested and validated on three different subregions in Amsterdam: het Wallengebied, IJburg, and Sarphatipark. Based on these experiments, the tree dictionary method was used to run the model for the tree datasets of the whole city of Amsterdam. 
 
 The model needs at least some input about the tree, depending on which of the three methods a user wants to use (see Usage). The model also needs information about the BGT and AHN at the location of the input trees. If this is not known by the user, the model requests them via URL. Lastly, the model needs a mesh of Gemiddeld Hoogste Grondwaterstand (GHG, average highest groundwater level) measurements (see Usage). 
 
