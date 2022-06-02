@@ -66,6 +66,8 @@ The other scripts and files are:
 ---
 ## Usage
 ### Necessary input
+The following input is required (or optional) when using the three different methods:
+
 * Static method: 
     * Height
     * Crown diameter  
