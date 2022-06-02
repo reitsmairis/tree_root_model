@@ -65,13 +65,44 @@ The other scripts and files are:
 3) Install the dependencies listed above (TODO requirements.txt ofzo)
 ---
 ## Usage
+### Necessary input
+* Static method: 
+    * Height
+    * Crown diameter  
+    * Species (optional, assume regular growing tree if unknown)
+* Tree dictionary method:
+    *  Species
+    *  Tree dictionary
+*  Tree growth method:
+    * Species
+    * Growth equations from the Urban Tree Database
+* For alle three methods:
+    * Year of plantation
+    * Groundwater (GHG) value
+    * Tree type (optional, assume regular tree if unknown)
+    * BGT value (optional, can be requested via URL if unknown)
+    * AHN value (optional, can be requested via URL if unknown)
+
+TODO example csv input
+
+TODO Grondwater meer uitleggen
+
+### TODO example how to run main
+
+### TODO output numpy files uitleggen
+
+### TODO uitleggen hoe naar cityjson / binary gaan
 
 ---
 
 ## How it Works
+TODO pipeline images
+
+TODO linkje naar thesis
 
 ---
 ## License
+TODO 
 
 ---
 
