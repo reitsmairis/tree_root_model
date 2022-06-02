@@ -64,7 +64,7 @@ The other scripts and files are:
 
 ---
 ## Installation 
-1) Make sure to have Python version 3.5.8 installed on your machine. This project used [Anaconda](https://www.anaconda.com/), which comes with Python and a lot of nice libraries, as well as a nice terminal.
+1) Make sure to have Python version 3.8.5 installed on your machine. This project used [Anaconda](https://www.anaconda.com/), which comes with Python and a lot of nice libraries, as well as a nice terminal.
 
 2) Clone this repository using the terminal:
     ```bash
