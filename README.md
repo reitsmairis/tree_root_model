@@ -159,7 +159,7 @@ Project link: https://github.com/reitsmairis/tree_root_model
 
 ## Acknowledgements 
 
-#### Model input data: 
+#### Input data: 
 * The files in data/boommonitor_data contain root volume numbers from the calculation tool [Boommonitor](https://www.norminstituutbomen.nl/instrumenten/boommonitor/) from [Norminstituut Bomen](https://www.norminstituutbomen.nl/). These numbers can be accessed with a license. These guideline numbers are used to estimate the root volume for a tree with specific input parameters. 
 * The file data/Cobra.data.csv contains the crown areas and diameters and other information about trees in three subregions of Amsterdam (Wallengebied, Sarphatipark, IJburg). This data is delivered by [Cobra Groeninzicht](https://www.cobra-groeninzicht.nl/). The data was used as input for the static method and to validate the crown predictions of the tree dictionary method. 
 * The other tree data is from the city of Amsterdam and publicly available [here](https://maps.amsterdam.nl/open_geodata/). 
