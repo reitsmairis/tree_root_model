@@ -70,7 +70,10 @@ The other scripts and files are:
     ```bash
     git clone https://github.com/reitsmairis/tree_root_model
     ```
-3) Install the dependencies listed above (TODO requirements.txt ofzo)
+3) Install all dependencies listed above: 
+    ```bash
+    pip install -r requirements.txt
+    ```
 ---
 ## Usage
 ### Necessary input
