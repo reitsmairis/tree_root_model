@@ -18,7 +18,7 @@ The model needs at least some input about the tree, depending on which of the th
 
 The main function in the model outputs NumPy arrays. With another script in the model, they can be converted to [CityJSON](https://www.cityjson.org/) files. For including the root volume cylinders in 3D Amsterdam, they had to be converted to binary format using the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel) developed by the 3D Amsterdam team. 
 
-#### Built with
+### Built with
 * [Pandas](https://pandas.pydata.org/docs/index.html)
 * [NumPy](https://numpy.org/)
 * [Math](https://docs.python.org/3/library/math.html#module-math)
@@ -73,7 +73,7 @@ The other scripts and files are:
 3) Install the dependencies listed above (TODO requirements.txt ofzo)
 ---
 ## Usage
-#### Necessary input
+### Necessary input
 The following input is required (or optional) when using the three different methods:
 
 * Static method: 
@@ -97,11 +97,11 @@ TODO example csv input
 
 TODO Grondwater meer uitleggen
 
-#### TODO example how to run main
+### TODO example how to run main
 
-#### TODO output numpy files uitleggen
+### TODO output numpy files uitleggen
 
-#### TODO uitleggen hoe naar cityjson / binary gaan
+### TODO uitleggen hoe naar cityjson / binary gaan
 
 ---
 
