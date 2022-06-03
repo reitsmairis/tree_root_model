@@ -16,7 +16,7 @@ This project is an internship thesis for the Master Computational Science at the
 
 We developed three different methods: the static, tree dictionary, and tree growth method. For more information about the methods, see How it Works. For the thesis, the different methods were first tested and validated on three different subregions in Amsterdam: het Wallengebied, IJburg, and Sarphatipark. Based on these experiments, the tree dictionary method was used to run the model for the tree datasets of the whole city of Amsterdam. 
 
-The model needs at least some input about the tree, depending on which of the three methods a user wants to use (see Usage). The model also needs information about the BGT and AHN at the location of the input trees. If this is not known by the user, the model requests them via URL. Lastly, the model needs a mesh of Gemiddeld Hoogste Grondwaterstand (GHG, average highest groundwater level) measurements (see Usage). 
+The model needs at least some input about the tree, depending on which of the three methods a user wants to use (see Usage). The model also needs information about the BGT and maaiveld (AHN) at the location of the input trees. If this is not known by the user, the model requests them via URL. Lastly, the model needs a mesh of Gemiddeld Hoogste Grondwaterstand (GHG, average highest groundwater level) measurements (see Usage). 
 
 The main function in the model outputs NumPy arrays. With another script in the model, they can be converted to [CityJSON](https://www.cityjson.org/) files. For including the root volume cylinders in 3D Amsterdam, they had to be converted to binary format using the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel) developed by the 3D Amsterdam team. 
 
@@ -68,7 +68,7 @@ The other scripts and files are:
 
 ---
 ## Installation 
-1) Make sure to have Python version 3.8.5 installed on your machine. This project used [Anaconda](https://www.anaconda.com/), which comes with Python and a lot of nice libraries, as well as a nice terminal.
+1) Make sure to have Python version 3.8.5 installed on your machine. This project used [Anaconda](https://www.anaconda.com/), which comes with Python and a lot of nice libraries, as well as a terminal.
 
 2) Clone this repository using the terminal:
     ```bash
@@ -81,27 +81,48 @@ The other scripts and files are:
 ---
 ## Usage
 ### Necessary input
+The file [`data/template.csv`](./data/template.csv) is a template for the input parameters related to the tree. This is a CSV separated by ';', just like the CSVs for the trees that the city of Amsterdam uses (TODO daarheen verwijzen). The template adapted the same column headers as those CSV files. The template contains additional columns as well: 'Boomkroon', 'RD_X', 'RD_Y', 'BGT_class', 'maaiveld', and 'GHG'. If the user knows these values, they should be filled in. If the values are unknown for all trees, these columns should be deleted such that they can be created and filled in by the model. The list below explains what to fill in for a specific tree: 
+
+TODO dit weg denkik: 
+If the crown size ('Boomkroon') or tree height ('Boomhoogte) are unkown for a specific tree, their CSV entry should be 'Onbekend'. If the year of plantation ('Plantjaar') is unkown, it should be 0. This is adapted from the city of Amsterdam CSV files, so running the model with these files should work instantly.
+
+* OBJECTNUMMER: object number, is used for giving the root volume cylinder an ID if Boomnummer is unknown ('Onbekend')
+* Boomnummer: tree number, is used for giving the root volume cylinder an ID. Fill in 'Onbekend' when unknown. 
+* Soortnaam_WTS: scientific species name, determines the species of the tree. Fill in 'Onbekend' when unknown. 
+* Boomtype: tree type, determines the tree type (e.g., shape or pollard tree). Fill in 'Onbekend' when unkown. 
+* Boomhoogte: tree height, can be a float, int or string range (e.g, '15 tot 18 m' or 12.2). Fill in 'Onbekend' when unkown.
+* Boomkroon: crown diameter, can be a float or int. Fill in 'Onbekend' when unkown.
+* Plantjaar: year of plantation. Fill in 0 when unkown.
+* LNG: longitude of tree position in WGS84 coordinates.
+* LAT: latitude of tree position in WGS84 coordinates. 
+* RD_X: x-coordinate of tree position in RD.
+* RD_Y: y-coordinate of tree position in RD. 
+* BGT_CLASS: soil profile type at tree location, should be left empty when unknown.
+* maaiveld: ground level height (AHN) at tree location (WRT NAP), should be left empty when unknown.
+* GHG: average heighest groundwater level at tree location (WRT NAP), should be left empty when unknown.
+
 The following input is required (or optional) when using the three different methods:
 
 * Static method: 
-    * Height
-    * Crown diameter  
-    * Species (optional, assume regular growing tree if unknown)
+    * Boomhoogte
+    * Boomkroon
+    * Soortnaam_WTS (optional, assume regular growing tree if unknown)
 * Tree dictionary method:
-    *  Species
-    *  Tree dictionary
+    *  Soortnaam_WTS
+    *  Tree dictionary: [`treedict.py`](./treedict.py)
 *  Tree growth method:
-    * Species
-    * Growth equations from the Urban Tree Database
+    * Soortnaam_WTS
+    * Growth equations from the Urban Tree Database: [`data/RDS-2016-0005`](./data/RDS-2016-0005) 
 * For alle three methods:
-    * Year of plantation
-    * Groundwater (GHG) value
-    * Tree type (optional, assume regular tree if unknown)
-    * BGT value (optional, can be requested via URL if unknown)
-    * AHN value (optional, can be requested via URL if unknown)
-
-TODO example csv input
-
+    * Plantjaar
+    * either Boomnummer or OBJECTNUMMER
+    * either LNG and LAT or RD_X and RD_Y
+    * Boomtype (optional, assume regular tree if unknown)
+    * BGT_CLASS (optional, can be requested via URL if unknown)
+    * maaiveld (AHN ground level) value (optional, can be requested via URL if unknown)
+    * GHG (average highest groundwater level) value (optional, but see explanation below)
+    
+Concerning the GHG: 
 TODO Grondwater meer uitleggen
 
 ### TODO example how to run main
@@ -167,7 +188,7 @@ Project link: https://github.com/reitsmairis/tree_root_model
 * The files in data/boommonitor_data contain root volume numbers from the calculation tool [Boommonitor](https://www.norminstituutbomen.nl/instrumenten/boommonitor/) from [Norminstituut Bomen](https://www.norminstituutbomen.nl/). These numbers can be accessed with a license. These guideline numbers are used to estimate the root volume for a tree with specific input parameters. 
 * The file data/Cobra.data.csv contains the crown areas and diameters and other information about trees in three subregions of Amsterdam (Wallengebied, Sarphatipark, IJburg). This data is delivered by [Cobra Groeninzicht](https://www.cobra-groeninzicht.nl/). The data was used as input for the static method and to validate the crown predictions of the tree dictionary method. 
 * The other tree data is from the city of Amsterdam and publicly available [here](https://maps.amsterdam.nl/open_geodata/). 
-* The growth equation information in data/RDS-2016-0005 is from the [Urban Tree Database](https://www.fs.usda.gov/rds/archive/Catalog/RDS-2016-0005) and was made available by the [Forest Service U.S. Department of Agriculture](https://www.fs.usda.gov/treesearch/pubs/52933).
+* The growth equation information in [`data/RDS-2016-0005`](./data/RDS-2016-0005) data/RDS-2016-0005 is from the [Urban Tree Database](https://www.fs.usda.gov/rds/archive/Catalog/RDS-2016-0005) and was made available by the [Forest Service U.S. Department of Agriculture](https://www.fs.usda.gov/treesearch/pubs/52933).
 * The groundwater level measurements are done by Waternet and can be downloaded [here](https://maps.waternet.nl/kaarten/peilbuizen.html). 
 
 #### Validation data: 
