@@ -39,26 +39,26 @@ def intersect(mesh, x, y):
 ####################### adjust interpolation parameters ##############################
 
 # code for creating a mesh from points
-points = np.load('grondwater/GHG_values_Amsterdam.npy') # load the GHG values
+#points = np.load('grondwater/GHG_values_Amsterdam.npy') # load the GHG values
 
 # choose boundaries of the mesh 
-xmin, xmax = 108000, 136000
-ymin, ymax = 476000, 500000
+#xmin, xmax = 108000, 136000
+#ymin, ymax = 476000, 500000
     
-area_points = []
+#area_points = []
 
-for p in points:
-   if xmin <= int(p[0]) <= xmax and ymin <= int(p[1]) <= ymax:
-        area_points.append(p)
+#for p in points:
+ #  if xmin <= int(p[0]) <= xmax and ymin <= int(p[1]) <= ymax:
+       # area_points.append(p)
 
-mesh = interpolate(area_points)
-mesh = mesh.fillHoles()
-mesh.write('Amsterdam_mesh.vtk') # save the mesh, choose filename
+#mesh = interpolate(area_points)
+#mesh = mesh.fillHoles()
+#mesh.write('grondwater/Amsterdam_mesh.vtk') # save the mesh, choose filename
 
 ## code for visualising the mesh
-mesh = load('Filled_amsterdam_mesh.vtk')
-mesh_v = mesh.addElevationScalars(lowPoint=(0,0,-3), highPoint=(0,0,1), vrange=(-1,1))
-mesh_v.cmap('hot')
-show(Points(area_points, r=6), mesh_v, bg="Mint", axes=1).close()
+#mesh = load('grondater/Filled_amsterdam_mesh.vtk')
+#mesh_v = mesh.addElevationScalars(lowPoint=(0,0,-3), highPoint=(0,0,1), vrange=(-1,1))
+#mesh_v.cmap('hot')
+#(Points(area_points, r=6), mesh_v, bg="Mint", axes=1).close()
 
 ######################################################################################

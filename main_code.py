@@ -31,8 +31,6 @@ def get_treenumber(tree):
 
 def get_coordinates(tree):
 
-    # TODO checken of t rd of latlong is 
-
     # read out tree location from gemeente data
     lng = tree['LNG']
     lat = tree['LAT']
@@ -59,13 +57,19 @@ def get_soiltype(rd_x, rd_y):
 
 
 def get_treeheight(tree, rd_x, rd_y):
-    # TODO checken of t een range is of n getal
 
     # retrieve tree height
-    height_string = tree['Boomhoogte']
+    if 'Boomhoogte' not in tree.keys():
+        height_string == 'Onbekend'
+    else:
+        height_string = tree['Boomhoogte']
+
+    # check if height is float or string
+    if type(height_string) == int or type(height_string) == float:
+        height = height_string
 
     # if height not known use ahn
-    if height_string == 'Onbekend':
+    elif height_string == 'Onbekend':
         try:
             height = backup_treeheight(rd_x, rd_y)
         except:
@@ -82,10 +86,15 @@ def get_treeheight(tree, rd_x, rd_y):
     return height
 
 
-def get_crown(tree_number):
-    # TODO ook crown van ander groot bestand kunnen meenemen
+def get_crown(tree, tree_number):
+
+    # check if crown information is known
+    if 'Boomkroon' in tree.keys():
+        crown = tree['Boomkroon']
+        if crown != 'Onbekend':   
+            return crown
     
-    # read out crown data from Cobra Groeninzicht
+    # try to read out crown data from Cobra Groeninzicht
     cobra_df = pd.read_csv('data/cobra_data.csv')
 
     # read out Cobra Groeninzicht information
@@ -137,6 +146,7 @@ def __main__(model, area, df, mesh, years):
 
     # retrieve tree properties and rootvolume
     for index, tree in df.iterrows():
+        print(tree)
 
         # retrieve tree id
         tree_number = get_treenumber(tree) 
@@ -160,7 +170,7 @@ def __main__(model, area, df, mesh, years):
         height = get_treeheight(tree, rd_x, rd_y)
 
         # retrieve tree crown
-        crown = get_crown(tree_number)
+        crown = get_crown(tree, tree_number)
        
         # retrieve soil type at location of tree
         bgt_class = tree['BGT_class']
@@ -220,7 +230,7 @@ def __main__(model, area, df, mesh, years):
             # determine cylinder radius
             radius = np.sqrt(rootvolume / (np.pi * relative_depth))
 
-            #print(y, rd_x, rd_y, origin, rootvolume, radius, relative_depth, ground_level, groundwater_level)
+            print(y, rd_x, rd_y, origin, rootvolume, radius, relative_depth, ground_level, groundwater_level)
 
             # continue if rootvolume could not be determined
             if rootvolume[0] == 0 or math.isnan(rootvolume[0]):
@@ -268,31 +278,15 @@ def __main__(model, area, df, mesh, years):
 
 model = 'treedict' # choose which model to use, options: 'static', 'treedict', 'treegrowth'
 
-area = ['Amsterdam_0', 'Amsterdam_1', 'Amsterdam_2', 'Amsterdam_3']  # choose the area, used for naming output
+area = 'test_area' # choose the area, used for naming output
 
-#df = pd.read_csv('data/trees_test_filled.csv') # choose the file containing the tree data
-#df = df.replace({np.nan: None})
-# read out dataframes containing the gemeente trees
-df0 = pd.read_csv('data/BOMEN_0.csv', sep=';')
-df0 = df0.replace({np.nan: None})
-df1 = pd.read_csv('data/BOMEN_1.csv', sep=';')
-df1 = df1.replace({np.nan: None})
-df2 = pd.read_csv('data/BOMEN_2.csv', sep=';')
-df2 = df2.replace({np.nan: None})
-df3 = pd.read_csv('data/BOMEN_3.csv', sep=';')
-df3 = df3.replace({np.nan: None})
-df_list = [df0, df1, df2, df3]
-# concatinate dataframes
-#df_tot = pd.concat([df0, df1, df2, df3], ignore_index = True)
+df = pd.read_csv('data/template.csv', sep=';') # choose the file containing the tree data
+df = df.replace({np.nan: None})
 
-#points = np.load('grondwater/GHG_values_wallengebied.npy') # choose the file containing the GHG data
-#mesh = interpolate(points)
 mesh = load('grondwater/Filled_amsterdam_mesh.vtk')
 
-years = [2010, 2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060] # np.arange(2010, 2061, 1) # choose years for which to calculate rootvolume
+years = [2020, 2025] # choose years for which to calculate rootvolume
 
-
-for count, a in enumerate(area): 
-    __main__(model, a, df_list[count], mesh, years)
+__main__(model, area, df, mesh, years)
 
 ######################################################################################
