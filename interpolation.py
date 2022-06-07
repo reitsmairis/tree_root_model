@@ -41,7 +41,7 @@ def intersect(mesh, x, y):
 # code for creating a mesh from points
 #points = np.load('grondwater/GHG_values_Amsterdam.npy') # load the GHG values
 
-# choose boundaries of the mesh 
+# choose boundaries of the mesh  # TODO Dit weg? 
 #xmin, xmax = 108000, 136000
 #ymin, ymax = 476000, 500000
     

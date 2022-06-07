@@ -7,9 +7,9 @@ import numpy as np
 import math
 
 
-def to_cityJSON(radius_list, ground_level_list, groundwater_level_list, rd_x_list, rd_y_list, number_list, vertices, ambition, area, model, y, main_area):
-    open('output/{}/{}/{}/{}/json_{}.city.json'.format(main_area, model, ambition, y, area), 'w') 
-    f = open('output/{}/{}/{}/{}/json_{}.city.json'.format(main_area, model, ambition, y, area), 'a')
+def to_cityJSON(radius_list, ground_level_list, groundwater_level_list, rd_x_list, rd_y_list, number_list, vertices, ambition, area, model, y):
+    open('output/{}/{}/{}/{}/json_{}.city.json'.format(area, model, ambition, y, ambition), 'w') 
+    f = open('output/{}/{}/{}/{}/json_{}.city.json'.format(area, model, ambition, y, ambition), 'a')
     f.write("{\"type\": \"CityJSON\", \"version\": \"1.0\", \"metadata\": {}, \"CityObjects\":")
     f.write("{")
 
