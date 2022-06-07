@@ -62,8 +62,8 @@ The other scripts and files are:
 7) [`rootvolume.py`](./rootvolume.py): For classifying height and crown sizes and determining the root volume. 
 8) [`select_climate.py`](./select_climate.py): For selecting a climate region in the tree growth equation database in the data folder. The project used the Pacific Northwest. 
 9) [`select_trees.py`](./select_trees.py): Used to select trees for the different subregions out of the total Amsterdam tree data. Can probably be done faster using for example [QGIS](https://qgis.org/nl/site/) if the user knows to use that. 
-10) [`timedependency.py`](./timedependency.py): contains the allometric growth equations and functions that use them for predictions about the height and crown size of the trees. 
-11) [`treedict.py`](./treedict.py): contains the tree dictionary used in the tree dictionary method, as well as a list of fast growing tree genera. 
+10) [`timedependency.py`](./timedependency.py): Contains the allometric growth equations and functions that use them for predictions about the height and crown size of the trees. 
+11) [`treedict.py`](./treedict.py): Contains the tree dictionary used in the tree dictionary method, as well as a list of fast growing tree genera. 
 12) [`root_config.json`](./root_config.json): Configuration file that was created for using the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel).
 
 ---
@@ -117,16 +117,58 @@ The following input is required (or optional) when using the three different met
     * Boomtype (optional, assume regular tree if unknown)
     * BGT_CLASS (optional, can be requested via URL if unknown)
     * maaiveld (AHN ground level) value (optional, can be requested via URL if unknown)
-    * GHG (average highest groundwater level) value (optional, but see explanation below)
+    * GHG (average highest groundwater level) value (see explanation below)
     
-Concerning the GHG: 
-TODO Grondwater meer uitleggen
+#### Concerning the GHG (average highest groundwater level): 
+[`Filled_Amsterdam_mesh.vtk`](./grondwater/Filled_Amsterdam_mesh.vtk) is a mesh of the GHG values in Amsterdam that the model reads out at the location of an input tree. If a user wants to use the model for a different city than Amsterdam or with a more recent mesh, the following steps should be taken to create a new mesh:
+1) Create a NumPy array containing three-dimensional coordinates: (x, y, GHG). Here x and y are the locations of the GHG measurements, and GHG is the value of the measurement (WRT NAP). We created such an array from the groundwater files from Waternet, which can be downloaded [here](https://maps.amsterdam.nl/open_geodata/). The code that creates an array from the CSVs is [`GHG_calculator`](./GHG_calculator.py). A user can change the ‘path’ in this script to the folder path containing their Waternet files, and change the output name and location of the NumPy array. The script is then ready to run:
+    ```bash
+    python GHG_calculator.py
+    ```
+2. Create a mesh of the GHG values. The GHG values from before are point data. They should be interpolated to a mesh. This can be done with the code [`interpolation.py`](./interpolation.py), in which a user should change the filepath for the input NumPy array GHG points from step 1 and a location for the mesh to be stored. The script is then ready to run:
+3. 
+    ```bash
+    python interpolation.py
+    ```
+    
+### Running the main code
+When a user has assembled the necessary input data, they are almost ready to run the model using the main script [`main_code.py`](./main_code.py). In the lowest part of this script, a user can change the following parameters:
+* model: To pick the method that should be used: the options are 'static' (static method), 'treedict' (tree dictionary method), and 'treegrowth' (tree growth method). 
+* area: Solely used for naming the output files and folders.
+* df: Adjust the filepath for the location and name of your tree CSV.
+* mesh: Adjust the filepath to your GHG mesh.
+* years: Choose the years for which you want to estimate the root volumes.
 
-### TODO example how to run main
+The model is then ready to run: 
+```bash
+python main_code.py
+```
+    
+Running the above stores the data that is necessary for the rootvolume as NumPy arrays in the numpy_files folder. The ground level, GHG, x,y and tree number are stored in single arrays. The values that change over time, which are the radius and the volume, are stored in an array of arrays, corresponding to the different years. Furthermore, the radius and volume numbers are threefold: they contain three values corresponding to the three different ambition levels. These values are backed up every 100 trees for if something goes wrong. In the end, the ground level (AHN), soil profile type (BGT) and GHG values are appended to the input tree CSV if they were not provided (a new CSV is created with the same name as the input CSV but with 'filled' as extension), to make future runs faster. If a user does not want to use this data for future runs, they can delete the CSV columns again. 
 
-### TODO output numpy files uitleggen
+### NumPy arrays to CityJSON
+If everything went well in the previous steps, an output folder for the CityJSON files is created containing the folder with the name that you picked for 'area'. The data from the run that we just did however, is still only available in the numpy_files folder in NumPy array format. With the [`data_to_cityjson.py`](./data_to_cityjson.py) script, the NumPy arrays that the main code outputs can be converted to cityjson files. The upper part of this script contains some parameters that a user could change:
+* years: The years for which rootvolumes are estimated.
+* vertices: The amount of vertices that you want your cylinders to have. This should be an even number of at least 8. 
+* model: The used method, or the method for which you want CityJSON cylinders
+* ?Subareas: if you divided the output in different subregions, if not just choose the name that you used for the full area
+* ?Main_area: TODO
 
-### TODO uitleggen hoe naar cityjson / binary gaan
+The script is then ready to run: 
+```bash
+python data_to_cityjson.py
+```
+
+If everything went well, this created CityJSON files in the output folder with the name that you picked for 'area'. 
+
+### TODO uitleggen hoe naar  / binary gaan
+The previous step converted the estimated root volumes to CityJSON format. In order to include the CityJSONs in Unity projects like 3D Amsterdam, they should be converted to binary format. If one wants to have binary tiles of the estimated cylinders, they should follow these steps: 
+1) Install the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel) following the instructions in that link. 
+2) Change the models, years, areas and levels parameters in the [`city_to_binary.py`](./city_to_binary.py) script. Besides, the last line of this script should be changed to the location of where the tilebaketool is stored. Also the 'config[‘sourceFolder’]' and 'config[‘outputFolder’]' paths to resp. where the cityjson output is stored and where the binary data should be stored. 
+3) Run the script:
+    ```bash
+    python city_to_binary.py
+    ```
 
 ---
 
