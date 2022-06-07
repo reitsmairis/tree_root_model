@@ -32,8 +32,8 @@ for a in areas:
     for m in models:
         for l in levels:
             for y in years:
-                config['sourceFolder'] = "C:\\Users\\jacco\\Documents\\Iris\\output\\{}\\{}\\{}\\{}\\".format(a, m, l, y)
-                config['outputFolder'] = "C:\\Users\\jacco\\Documents\\Iris\\output_bin\\{}\\{}\\{}\\{}\\roots_".format(a, m, l, y)
+                config['sourceFolder'] = "C:\\Users\\Iris Reitsma\\Documents\\Master\\jaar 2\\stage\\root_model\\output\\{}\\{}\\{}\\{}\\".format(a, m, l, y)
+                config['outputFolder'] = "C:\\Users\\Iris Reitsma\\Documents\\Master\\jaar 2\\stage\\root_model\\output_bin\\{}\\{}\\{}\\{}\\roots_".format(a, m, l, y)
                 json_string = json.dumps(config)
 
                 # replace config file
