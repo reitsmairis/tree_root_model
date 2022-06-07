@@ -151,8 +151,7 @@ If everything went well in the previous steps, an output folder for the CityJSON
 * years: The years for which rootvolumes are estimated.
 * vertices: The amount of vertices that you want your cylinders to have. This should be an even number of at least 8. 
 * model: The used method, or the method for which you want CityJSON cylinders
-* ?Subareas: if you divided the output in different subregions, if not just choose the name that you used for the full area
-* ?Main_area: TODO
+* area: The name of the area that you chose for naming the output files. 
 
 The script is then ready to run: 
 ```bash
