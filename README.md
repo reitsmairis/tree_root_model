@@ -161,7 +161,7 @@ python data_to_cityjson.py
 
 If everything went well, this created CityJSON files in the output folder with the name that you picked for 'area'. 
 
-### TODO uitleggen hoe naar  / binary gaan
+### CityJSON to binary
 The previous step converted the estimated root volumes to CityJSON format. In order to include the CityJSONs in Unity projects like 3D Amsterdam, they should be converted to binary format. If one wants to have binary tiles of the estimated cylinders, they should follow these steps: 
 1) Install the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel) following the instructions in that link. 
 2) Change the models, years, areas and levels parameters in the [`city_to_binary.py`](./city_to_binary.py) script. Besides, the last line of this script should be changed to the location of where the tilebaketool is stored. Also the 'config[‘sourceFolder’]' and 'config[‘outputFolder’]' paths to resp. where the cityjson output is stored and where the binary data should be stored. 
