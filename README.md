@@ -29,7 +29,7 @@ The main function in the model outputs NumPy arrays. With another script in the 
 * [Os](https://docs.python.org/3/library/os.html#module-os)
 * [Json](https://docs.python.org/3/library/json.html#module-json)
 * [Vedo 2022.2.3](https://vedo.embl.es/)
-* [Urllib3 1.26.9](https://docs.python.org/3/library/urllib.html#module-urllib)
+* [Urllib3 1.26.9](https://pypi.org/project/urllib3/)
 * [Copy](https://docs.python.org/3/library/copy.html)
 * [Matplotlib 3.5.2](https://matplotlib.org/) 
 * [Rijksdriehoek 0.0.1](https://pypi.org/project/rijksdriehoek/) 
