@@ -1,5 +1,5 @@
 #############################################################################
-# Code containing helper functions 
+# Code containing helper functions for switching between coordinate systems.
 #############################################################################
 
 from rijksdriehoek import rijksdriehoek
@@ -23,5 +23,3 @@ def rd_to_wgs(x, y):
     lat, lon = rd.to_wgs()
 
     return lat, lon
-
-

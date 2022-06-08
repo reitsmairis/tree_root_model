@@ -1,5 +1,5 @@
 #############################################################################
-# Code for requestigng the bgt value 
+# Code for requestigng the BGT (soil profile type) value 
 #############################################################################
 
 from urllib.request import urlopen
@@ -8,7 +8,8 @@ import math
 
 
 def bgt_classifier(properties):
-    '''Classifies bgt attribute output in one of the four used categories of ground type (open ground/light load/ moderate load/ heavy load)'''
+    '''Classifies bgt attribute output in one of the four used categories 
+    of ground type (open ground/light load/ moderate load/ heavy load).'''
 
     # classify bgt attributes
     bgt_functions = {
@@ -40,7 +41,7 @@ def bgt_classifier(properties):
     if 'functie' in properties:
         function = properties['functie']
 
-        # check for 'berm' (roadside) because it can be multiple things
+        # check for 'berm' (roadside) because it can be multiple soil profile types
         if function == 'berm':
             appearance = properties['fysiek_voorkomen']
             ground_type = bgt_berm.get(appearance)
@@ -101,7 +102,8 @@ def get_properties(col, row, i, j):
 
 
 def WMTS_calculator(x, y):
-    '''Converts Rijksdriehoek coordinates to WMTS tilematrix coordinates, for more information see WMTS documentation: https://www.ogc.org/standards/wmts'''
+    '''Converts Rijksdriehoek coordinates to WMTS tilematrix coordinates, 
+    for more information see WMTS documentation: https://www.ogc.org/standards/wmts'''
 
     # tile matrix properties, source: GetCapabilities identifier 14 (zoom level), https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0?request=getcapabilities&service=wmts
     offset_x, offset_y = -285401.92, 903402.92 # top left corner

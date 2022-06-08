@@ -1,5 +1,5 @@
 #############################################################################
-# Main code for executing the rootvolume models
+# Main code for executing the rootvolume methods. 
 #############################################################################
 
 import pandas as pd
@@ -146,7 +146,6 @@ def __main__(model, area, df, mesh, years):
 
     # retrieve tree properties and rootvolume
     for index, tree in df.iterrows():
-        print(tree)
 
         # retrieve tree id
         tree_number = get_treenumber(tree) 
@@ -230,7 +229,7 @@ def __main__(model, area, df, mesh, years):
             # determine cylinder radius
             radius = np.sqrt(rootvolume / (np.pi * relative_depth))
 
-            print(y, rd_x, rd_y, origin, rootvolume, radius, relative_depth, ground_level, groundwater_level)
+            #print(y, rd_x, rd_y, origin, rootvolume, radius, relative_depth, ground_level, groundwater_level)
 
             # continue if rootvolume could not be determined
             if rootvolume[0] == 0 or math.isnan(rootvolume[0]):
@@ -283,10 +282,11 @@ area = 'test_area' # choose the area, used for naming output
 df = pd.read_csv('data/template.csv', sep=';') # choose the file containing the tree data
 df = df.replace({np.nan: None})
 
-mesh = load('grondwater/Filled_amsterdam_mesh.vtk')
+mesh = load('grondwater/Filled_amsterdam_mesh.vtk') # load the groundwater mesh
 
 years = [2020, 2025] # choose years for which to calculate rootvolume
 
+# run the model
 __main__(model, area, df, mesh, years)
 
 ######################################################################################

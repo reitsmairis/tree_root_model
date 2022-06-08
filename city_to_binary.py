@@ -12,7 +12,7 @@ import os
 
 ####################### adjust model parameters #####################################
 
-models = ['treedict'] #['static', 'treedict', 'treegrowth'] # models with which the CityJSON output was generated, options: 'static', 'treedict', 'treegrowth'
+models = ['treedict'] # models with which the CityJSON output was generated, options: 'static', 'treedict', 'treegrowth'
 
 years = [2010, 2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060] # years for which the rootvolume is calculated
 

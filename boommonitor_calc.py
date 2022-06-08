@@ -1,5 +1,5 @@
 #############################################################################
-# Code for interpolating the rootvolume numbers
+# Code for interpolating the rootvolume numbers.
 #
 # Soure of the number represented in the dataframe:
 # Rekenprogramma boommonitor
@@ -13,7 +13,7 @@ import pandas as pd
 
 def rootdata_preparation(df, year_interval, base, output_name):
     '''Takes a csv file with output numbers from the calculation program boommonitor (https://www.norminstituutbomen.nl/instrumenten/boommonitor/)
-    and converts it to be usable for the rootvolume calculation'''
+    and converts it to be usable for the rootvolume calculation.'''
 
     # convert root volumes to list of floats
     df_conv = copy.deepcopy(df)

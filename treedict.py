@@ -1,8 +1,8 @@
-#############################################################################
+###################################################################################################
 # This file contains two dictionaries with information: 
 # A dictionary with tree genera that are classified as fast growing.
 # A dictionary with the tree height and crown classes, and their maximal crown and height in m.
-#############################################################################
+###################################################################################################
 
 import pandas as pd
 from collections import Counter

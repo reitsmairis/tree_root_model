@@ -1,6 +1,6 @@
-#############################################################################
-# Code for determining the rootvolume of a tree and classifying its height and crown
-#############################################################################
+#########################################################################################
+# Code for determining the rootvolume of a tree and classifying its height and crown.
+#########################################################################################
 
 import numpy as np
 import pandas as pd
@@ -60,6 +60,7 @@ def crown_classifier(c, h, type):
             crown_class = 'regular'
         if c < 3:
             crown_class = 'small'
+
     # assign crown class for regular trees
     else:
         if h >= 15:

@@ -1,6 +1,6 @@
-#############################################################################
-# Code for requestigng the ahn files for tree height and groundlevel height
-#############################################################################
+########################################################################################
+# Code for requestigng the ahn and rivm servers for tree height and groundlevel height
+########################################################################################
 
 from urllib.request import urlopen
 import json
@@ -8,7 +8,8 @@ import numpy as np
 
 
 def WMS_calculator(x, y):
-    '''Creates bounding box of that returns 3 by 3 pixels of which the middle one should be read out (i=1, j=1 in url)'''
+    '''Creates bounding box of that returns 3 by 3 pixels of which 
+    the middle one should be read out (i=1, j=1 in url).'''
 
     x_min = x - 1
     y_min = y - 1
@@ -19,7 +20,8 @@ def WMS_calculator(x, y):
 
 
 def get_rivm(x_min, y_min, x_max, y_max):
-
+    
+    # retrieve rivm information
     url = 'https://apps.geodan.nl/public/atlasnextgen/configuration/proxy/?configuration=58bf95bc-67bf-402d-a355-af211ad33949&url=https%3A%2F%2Fgeodata.rivm.nl%2Fgeoserver%2Fwms%3FSERVICE%3DWMS%26VERSION%3D1.3.0%26REQUEST%3DGetFeatureInfo%26FORMAT%3Dimage%252Fpng%26TRANSPARENT%3Dtrue%26QUERY_LAYERS%3Ddank%253Arivm_087_20170415_gm_boomhoogte%26LAYERS%3Ddank%253Arivm_087_20170415_gm_boomhoogte%26SERVICEKEY%3D5da6383b-b70c-11eb-ad75-52540072701a%26STYLES%3D%26BUFFER%3D5%26EXCEPTIONS%3DINIMAGE%26FEATURE_COUNT%3D10%26INFO_FORMAT%3Dapplication%252Fjson%26I%3D1%26J%3D1%26WIDTH%3D256%26HEIGHT%3D256%26CRS%3DEPSG%253A28992%26BBOX%3D{}%252C{}%252C{}%252C{}&layerid=1554471415790'.format(str(x_min), str(y_min), str(x_max), str(y_max))
 
     # store response of the url
@@ -35,8 +37,9 @@ def get_rivm(x_min, y_min, x_max, y_max):
 
 
 def backup_treeheight(rd_x, rd_y):
-    '''Reads out tree height from AHN4 DTM 50cm (2020-2022) at coordinate and gaussian noise around coordinate
-    and reads out rivm tree height (2017) as backup. Takes the maximal value of all retrieved heights as tree height'''
+    '''Reads out tree height from AHN4 DTM 50cm (2020-2022) at coordinate 
+    and gaussian noise around coordinate and reads out rivm tree height (2017) 
+    as backup. Takes the maximal value of all retrieved heights as tree height.'''
 
     # generate Gaussian noise
     points = 20 # amount of extra sample points (noise)
@@ -77,7 +80,7 @@ def backup_treeheight(rd_x, rd_y):
 
 
 def get_mean_height(x, y):
-    '''take average of nearby points when ground level not known'''
+    '''Take average of nearby points when ground level not known.'''
 
     # create sample points at adjacent grid cells
     coords = [(x+0.5, y+0.5), (x-0.5, y+0.5), (x-0.5, y-0.5), (x+0.5, y-0.5)]
@@ -118,7 +121,7 @@ def get_mean_height(x, y):
 
 
 def get_groundlevel(x, y):
-    '''Reads out height from AHN4 DTM 50cm at coordinate'''
+    '''Reads out height from AHN4 DTM 50cm at coordinate.'''
 
     # create url corresponding to (x, y)-coordinate
     url = "https://ahn.arcgisonline.nl/arcgis/rest/services/AHNviewer/AHN4_DTM_50cm/ImageServer/identify?f=json&geometry=%7B%22x%22%3A{}%2C%22y%22%3A{}%2C%22spatialReference%22%3A%7B%22wkid%22%3A28992%2C%22latestWkid%22%3A28992%7D%7D&returnGeometry=true&returnCatalogItems=true&geometryType=esriGeometryPoint&pixelSize=%7B%22x%22%121762.38643022369%2C%22y%22%487011.29600616463%2C%22spatialReference%22%3A%7B%22wkid%22%3A28992%2C%22latestWkid%22%3A28992%7D%7D&renderingRules=%5B%7B%22rasterFunction%22%3A%22AHN2%20-%20Color%20Ramp%20C%22%7D%5D".format(x, y)

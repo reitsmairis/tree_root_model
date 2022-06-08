@@ -1,5 +1,5 @@
 #############################################################################
-# Code for selecting the correct climate data
+# Code for selecting the correct climate data.
 #############################################################################
 
 import pandas as pd

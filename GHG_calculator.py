@@ -66,7 +66,7 @@ def calculate_GHG(df):
     df_2['max_2'] = max_2
     df_3 = df_2.drop(index=df_2[df_2.value == df_2.max_2].index, axis=0)
 
-    # calculate third place
+    # calculate 3rd place
     group_3 = df_3.groupby('hydrolic_year')
     max_3 = group_3['value'].transform(lambda x: max(x))
     df_3['max_3'] = max_3
@@ -107,12 +107,12 @@ def create_points(files, path):
 
 #################################### main ############################################
 
-path = r"C:\Users\Iris Reitsma\Documents\Master\jaar 2\stage\notmain_code\grondwaterdata" # path to groundwater measurements
+path = r"C:\Users\Iris Reitsma\Documents\Master\jaar 2\stage\notmain_code\grondwaterdata" # choose path to load groundwater measurements
 
 # determine GHG values
 files = os.listdir(path)
 points = create_points(files, path)
 
-np.save('grondwater/GHG_values_Amsterdam', points) # path to GHG value output
+np.save('grondwater/GHG_values_Amsterdam', points) # choose path to save GHG value output
 
 ######################################################################################

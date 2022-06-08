@@ -1,15 +1,14 @@
-##############################################################################
+#################################################################################
 # Code for interpolating the groundwater levels (GHG) to a mesh and calculating 
-# the intersection of a tree location with this mesh
-#############################################################################
+# the intersection of a tree location with this mesh.
+################################################################################
 
 from vedo import *
 import numpy as np
 
 
-
 def interpolate(points):
-    '''Creates a mesh from 2D Delaunay triangulazition on a set of points'''
+    '''Creates a mesh from 2D Delaunay triangulazition on a set of points.'''
 
     # create points object
     pts = Points(points, r=6)
@@ -21,9 +20,9 @@ def interpolate(points):
 
 
 def intersect(mesh, x, y):
-    '''Determines the GHG at a tree location by intersection'''
+    '''Determines the GHG at a tree location by intersection.'''
 
-    large_number = 100 # used for intersection, groundwater will not be outside of - and + this number
+    large_number = 100 # used for intersection, groundwater will probably not be outside of - and + this number
 
     # create line
     p0 = (x, y, -large_number)
@@ -36,26 +35,16 @@ def intersect(mesh, x, y):
     return intersect_coord
 
 
-####################### adjust interpolation parameters ##############################
+####################### main: adjust interpolation parameters ##############################
 
-# code for creating a mesh from points
 #points = np.load('grondwater/GHG_values_Amsterdam.npy') # load the GHG values
 
-# choose boundaries of the mesh  # TODO Dit weg? 
-#xmin, xmax = 108000, 136000
-#ymin, ymax = 476000, 500000
-    
-#area_points = []
-
-#for p in points:
- #  if xmin <= int(p[0]) <= xmax and ymin <= int(p[1]) <= ymax:
-       # area_points.append(p)
-
-#mesh = interpolate(area_points)
+## create mesh from points
+#mesh = interpolate(points)
 #mesh = mesh.fillHoles()
 #mesh.write('grondwater/Amsterdam_mesh.vtk') # save the mesh, choose filename
 
-## code for visualising the mesh
+## optional code for visualising the mesh
 #mesh = load('grondater/Filled_amsterdam_mesh.vtk')
 #mesh_v = mesh.addElevationScalars(lowPoint=(0,0,-3), highPoint=(0,0,1), vrange=(-1,1))
 #mesh_v.cmap('hot')

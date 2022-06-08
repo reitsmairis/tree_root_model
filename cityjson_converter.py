@@ -1,6 +1,6 @@
-#############################################################################
-# Code for converting the cylinder measures to CityJSON objects 
-#############################################################################
+################################################################################
+# Code for converting the cylinder measures to CityJSON objects.
+################################################################################
 
 import json
 import numpy as np
@@ -8,6 +8,8 @@ import math
 
 
 def to_cityJSON(radius_list, ground_level_list, groundwater_level_list, rd_x_list, rd_y_list, number_list, vertices, ambition, area, model, y):
+
+    # open initial CityJSON file
     open('output/{}/{}/{}/{}/json_{}.city.json'.format(area, model, ambition, y, ambition), 'w') 
     f = open('output/{}/{}/{}/{}/json_{}.city.json'.format(area, model, ambition, y, ambition), 'a')
     f.write("{\"type\": \"CityJSON\", \"version\": \"1.0\", \"metadata\": {}, \"CityObjects\":")
@@ -40,6 +42,7 @@ def to_cityJSON(radius_list, ground_level_list, groundwater_level_list, rd_x_lis
     # loop throug the rootvolume of every tree
     for count, r in enumerate(radius_list):
 
+        # create no cylinder for invalid values
         if math.isnan(r):
             r = 0
 
@@ -77,7 +80,6 @@ def to_cityJSON(radius_list, ground_level_list, groundwater_level_list, rd_x_lis
 
         # append polygon connecting first and last points
         boundaries.append([[points_on_circle-1 + add, vertices-1 + add, points_on_circle + add, 0 + add]])
-        #total_boundaries.append(boundaries)
 
         # include boundaries of a cylinder in CityJSON
         f.write("\"" + "id-{}_{}".format(number, ambition) + "\":{")
@@ -89,9 +91,10 @@ def to_cityJSON(radius_list, ground_level_list, groundwater_level_list, rd_x_lis
         f.write("}]") #geometry end
         f.write("}")
 
+        # move to next tree
         currentTree +=1
 
-        # end file properly
+        # end file properly when done
         if maxTrees != 0 and (currentTree >= maxTrees):
             break
         if(currentTree < totalTrees):

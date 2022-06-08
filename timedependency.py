@@ -1,5 +1,5 @@
 #############################################################################
-# Code for predicting tree dbh, height and crown
+# Code for predicting tree dbh, height and crown.
 #############################################################################
 
 import numpy as np
@@ -73,10 +73,14 @@ def get_value(info, x):
     ''' go from x to y'''
     y_values = np.array([])
 
-    # execute equation with corresponding parameter values
+    # execute equation (one of the above) with corresponding parameter values
     for i in range(len(info)):
+
+        # choose correct equation and parameters
         eq = info['EqName'].values[i]
         a, b, c, d, e = info.values[i][8:13]
+
+        # predict value
         y = eval(eq + '(x, a, b, c, d, e)')
         y_values = np.append(y_values, y)
 
