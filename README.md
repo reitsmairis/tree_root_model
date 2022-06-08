@@ -23,18 +23,18 @@ The main function in the model outputs NumPy arrays. With another script in the 
 
 
 ### Built with
-* [Pandas](https://pandas.pydata.org/docs/index.html)
-* [NumPy](https://numpy.org/)
+* [Pandas 1.3.3](https://pandas.pydata.org/docs/index.html)
+* [NumPy 1.22.4](https://numpy.org/)
 * [Math](https://docs.python.org/3/library/math.html#module-math)
 * [Os](https://docs.python.org/3/library/os.html#module-os)
 * [Json](https://docs.python.org/3/library/json.html#module-json)
-* [Vedo](https://vedo.embl.es/)
-* [Urllib](https://docs.python.org/3/library/urllib.html#module-urllib)
+* [Vedo 2022.2.3](https://vedo.embl.es/)
+* [Urllib3 1.26.9](https://docs.python.org/3/library/urllib.html#module-urllib)
 * [Copy](https://docs.python.org/3/library/copy.html)
-* [Matplotlib](https://matplotlib.org/) 
-* [Rijksdriehoek](https://pypi.org/project/rijksdriehoek/) 
-* [PyShp](https://pypi.org/project/pyshp/)
-* [BS4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* [Matplotlib 3.5.2](https://matplotlib.org/) 
+* [Rijksdriehoek 0.0.1](https://pypi.org/project/rijksdriehoek/) 
+* [PyShp 2.3.0](https://pypi.org/project/pyshp/)
+* [BS4 4.11.1](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ---
 ## Project Structure 
