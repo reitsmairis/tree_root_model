@@ -202,7 +202,7 @@ The third method is the tree growth method. This method uses the equations from 
 The three methods convert the input parameters to an estimated root volume. This estimated root volume needs to be converted to a cylinder. The height of this cylinder is determined by the difference between the ground level and the average highest groundwater level (GHG). With the height and the volume, the cylinder radius can also be determined. 
 
 #### Want to know more?
-The project structure section lists the model scripts and a short description. For a more elaborate explanantion of how the model works see [`CLS_Thesis_IrisReitsma.pdf`](./CLS_Thesis_IrisReitsma.pdf). This report also contains the validation experiments, comparison between the methods, and the conclusions of the thesis project. 
+The project structure section lists the model scripts and a short description. For a more elaborate explanantion of how the model works see [`CLS_Thesis_IrisReitsma.pdf`](./CLS_Thesis_IrisReitsma.pdf). This report also contains the validation experiments, a comparison between the methods, and the conclusions of the thesis project. 
 
 ---
 ## License
