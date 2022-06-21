@@ -65,6 +65,7 @@ The other scripts and files are:
 10) [`timedependency.py`](./timedependency.py): Contains the allometric growth equations and functions that use them for predictions about the height and crown size of the trees. 
 11) [`treedict.py`](./treedict.py): Contains the tree dictionary used in the tree dictionary method, as well as a list of fast growing tree genera. 
 12) [`root_config.json`](./root_config.json): Configuration file that was created for using the [Tile Bake Tool](https://github.com/Amsterdam/CityDataToBinaryModel).
+13) [`CLS_Thesis_IrisReitsma.pdf`](./CLS_Thesis_IrisReitsma.pdf): The thesis report that contains detailed descriptions of e.g., the models, the derivation of the input, and the experiments. 
 
 ---
 ## Installation 
@@ -201,7 +202,7 @@ The third method is the tree growth method. This method uses the equations from 
 The three methods convert the input parameters to an estimated root volume. This estimated root volume needs to be converted to a cylinder. The height of this cylinder is determined by the difference between the ground level and the average highest groundwater level (GHG). With the height and the volume, the cylinder radius can also be determined. 
 
 #### Want to know more?
-The project structure section lists the model scripts and a short description. For a more elaborate explanantion of how the model works see (TODO linkje naar mn report). This report also contains the validation experiments, comparison between the methods, and the conclusions of the thesis project. 
+The project structure section lists the model scripts and a short description. For a more elaborate explanantion of how the model works see [`CLS_Thesis_IrisReitsma.pdf`](./CLS_Thesis_IrisReitsma.pdf). This report also contains the validation experiments, comparison between the methods, and the conclusions of the thesis project. 
 
 ---
 ## License
