@@ -255,3 +255,4 @@ Project link: https://github.com/reitsmairis/tree_root_model
 
 #### Other: 
 * The tool for converting the CityJSON files to binary format (Tile Bake Tool) is developed by the 3D Amsterdam team and available [here](https://github.com/Amsterdam/CityDataToBinaryModel). 
+* The timeline for controlling the root cylinder growth visualization on the 3D Amsterdam website is developed by the 3D Amsterdam team.
