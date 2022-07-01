@@ -12,7 +12,7 @@ A model for estimating the necessary root volume for tree roots, now and in the 
 
 
 ## About the Project
-This project is an internship thesis for the Master Computational Science at the University of Amsterdam. It was created in the [3D Amsterdam](https://3d.amsterdam.nl/) team and the results are included there (TODO is dat uiteindelijk wel zo?). 
+This project is an internship thesis for the Master Computational Science at the University of Amsterdam. It was created in the [3D Amsterdam](https://3d.amsterdam.nl/) team and the results for the whole city of Amsterdam will be included there in the near future. Currently, the results for het Wallengebied are already visible on [this subpage](https://3d.amsterdam.nl/?project=boomwortels)
 
 We developed three different methods: the static, tree dictionary, and tree growth method. For more information about the methods, see How it Works. For the thesis, the different methods were first tested and validated on three different subregions in Amsterdam: het Wallengebied, IJburg, and Sarphatipark. Based on these experiments, the tree dictionary method was used to run the model for the tree datasets of the whole city of Amsterdam. 
 
